@@ -10,16 +10,16 @@ This ontology was creating working backwards from aAO instance data with the dat
 AAOs are authoritatively listed at [legislation.gov.au](https://www.legislation.gov.au) here: 
 <https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/>.
 
+![](aao.png)
+Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
+
 
 ## Ontology components
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
 * [aao.html](aao.html) - a human-readable, HTML, form od the ontology document
-* [aao.png](aao.png) - a top-level diagram of the ontology classes
+* [aao.png](aao.png) - a top-level diagram of the ontology classes, shown in Figure 1 above
 * [profile.ttl](profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology
 
-
-![](aao.png)
-Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
 
 ## Instance data
 Instances of AAOs presented in [RDF](https://www.w3.org/2001/sw/wiki/RDF) will be made available shortly and listed here.
