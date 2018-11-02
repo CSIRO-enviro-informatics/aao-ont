@@ -7,7 +7,7 @@ This ontology was creating working backwards from aAO instance data with the dat
 [National Archives of Australia](http://www.naa.gov.au)'s 
 [listing of them](http://www.naa.gov.au/information-management/information-governance/aao/index.aspx).
 
-Note that AAOs are authoritatively listed at [legislation.gov.au](https://www.legislation.gov.au) here: 
+AAOs are authoritatively listed at [legislation.gov.au](https://www.legislation.gov.au) here: 
 <https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/>.
 
 
