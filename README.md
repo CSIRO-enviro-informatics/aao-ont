@@ -11,6 +11,16 @@ AAOs are authoritatively listed at [legislation.gov.au](https://www.legislation.
 <https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/>.
 
 
+## Ontology components
+* [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
+* [aao.html](aao.html) - a human-readable, HTML, form od the ontology document
+* [aao.png](aao.png) - a top-level diagram of the ontology classes
+* [profile.ttl](profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology
+
+
+![](aao.png)
+Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
+
 ## Instance data
 Instances of AAOs presented in [RDF](https://www.w3.org/2001/sw/wiki/RDF) will be made available shortly and listed here.
 
@@ -36,6 +46,7 @@ CSIRO Land & Water, Brisbane, Australia
 <nicholas.car@csiro.au>  
 <http://orcid.org/0000-0002-8742-7730>  
 
-*Data preparation & modelling*:
+*Data preparation & modelling*:  
 **David Morton**  
+<david.morton@finance.gov.au>  
 Department of Finance   
