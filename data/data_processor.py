@@ -531,7 +531,7 @@ def make_aaos():
         for line in lines:
             words = line.split(',')
 
-            this_aao = URIRef(AAOS + '/aao/' + words[0])
+            this_aao = URIRef(AAOS + 'aao/' + words[0])
 
             if words[2] == 'Amendment':
                 aao_class = URIRef('http://test.linked.data.gov.au/def/aaos/Amendment')
