@@ -79,7 +79,7 @@ foaf:name a owl:AnnotationProperty ;
         prov:Person,
         foaf:Person ;
     rdfs:label "Stian Soiland-Reyes" ;
-    = <http://soiland-reyes.com/stian/#me> ;
+    # = <http://soiland-reyes.com/stian/#me> ;
     foaf:name "Stian Soiland-Reyes" .
 
 <http://orcid.org/0000-0002-0643-3144> a owl:NamedIndividual,
@@ -91,7 +91,7 @@ foaf:name a owl:AnnotationProperty ;
         prov:Person,
         foaf:Person ;
     rdfs:label "Paolo Ciccarese" ;
-    = <http://www.hcklab.org/foaf.rdf#me> ;
+    # = <http://www.hcklab.org/foaf.rdf#me> ;
     foaf:name "Paolo Ciccarese" .
 
 <http://orcid.org/0000-0002-5711-4872> a owl:NamedIndividual,
