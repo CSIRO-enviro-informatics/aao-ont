@@ -11,8 +11,8 @@ AAOs are authoritatively listed at [legislation.gov.au](https://www.legislation.
 <https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/>.
 
 ![](aao.png)
-Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
 
+Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
 
 ## Ontology components
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
@@ -20,10 +20,8 @@ Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
 * [aao.png](aao.png) - a top-level diagram of the ontology classes, shown in Figure 1 above
 * [profile.ttl](profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology
 
-
 ## Instance data
 Instances of AAOs presented in [RDF](https://www.w3.org/2001/sw/wiki/RDF) will be made available shortly and listed here.
-
 
 ## Motivation
 This ontology and instance data have been created for the *Longitudinal Spine of Government Functions* project which is 
@@ -31,12 +29,10 @@ a [Platforms for Open Data](https://pmc.gov.au/public-data/open-data/platforms-o
 [CSIRO](https://www.csiro.au/), the [Department of Finance](https://www.finance.gov.au/), the [National Archives of 
 Australia](http://naa.gov.au/) and other interested agencies.
 
-
 ## License
 This ontology and all other content in this repository are licensed under the 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 
 (local copy of deed: [LICENSE](LICENSE)).
-
 
 ## Contacts
 *Ontology author*:  
@@ -45,6 +41,12 @@ This ontology and all other content in this repository are licensed under the
 CSIRO Land & Water, Brisbane, Australia    
 <nicholas.car@csiro.au>  
 <http://orcid.org/0000-0002-8742-7730>  
+
+**Simon J D Cox**  
+*Research Scientist*  
+CSIRO Land & Water, Melbourne, Australia    
+<simon.cox@csiro.au>  
+<http://orcid.org/0000-0002-3884-3420>  
 
 *Data preparation & modelling*:  
 **David Morton**  
