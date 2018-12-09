@@ -1,0 +1,129 @@
+# baseURI: https://linked.data.gov.au/ont/aao
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/pav/
+# imports: http://www.w3.org/ns/prov-o#
+
+@prefix aao: <https://linked.data.gov.au/ont/aao/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linked.data.gov.au/ont/aao>
+  rdf:type owl:Ontology ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://purl.org/pav/> ;
+  owl:imports <http://www.w3.org/ns/prov-o#> ;
+.
+aao:AAO
+  rdf:type owl:Class ;
+  rdfs:label "Administrative Arrangements Order" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty <http://purl.org/dc/terms/modified> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom aao:AAO ;
+      owl:onProperty <http://purl.org/dc/terms/isReplacedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:inForce ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty <http://purl.org/dc/terms/isReplacedBy> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass xsd:date ;
+      owl:onProperty <http://purl.org/dc/terms/created> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass xsd:date ;
+      owl:onProperty <http://purl.org/dc/terms/issued> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+aao:Department
+  rdf:type owl:Class ;
+  rdfs:label "Department of State" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:partOfPortfolio ;
+    ] ;
+.
+aao:Legislation
+  rdf:type owl:Class ;
+  rdfs:label "An item of Legistlation administered by a Minister" ;
+.
+aao:Matter
+  rdf:type owl:Class ;
+  rdfs:label "A matter dealt with by a department" ;
+.
+aao:Part
+  rdf:type owl:Class ;
+  rdfs:label "AAO Part - usually concerned with one Department" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:administeredLegislation ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:matterDealtWith ;
+    ] ;
+.
+aao:Portfolio
+  rdf:type owl:Class ;
+  rdfs:label "Portfolio of government" ;
+.
+aao:aaoCode
+  rdf:type owl:AnnotationProperty ;
+  rdfs:domain aao:AAO ;
+  rdfs:label "Official identifier" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+.
+aao:administeredLegislation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Part ;
+  rdfs:range aao:Legislation ;
+.
+aao:hasPart
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:AAO ;
+  rdfs:range aao:Part ;
+.
+aao:inForce
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain aao:AAO ;
+  rdfs:label "Status of this AAO" ;
+  rdfs:range xsd:boolean ;
+.
+aao:matterDealtWith
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Part ;
+  rdfs:range aao:Matter ;
+.
+aao:partOfPortfolio
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Department ;
+  rdfs:range aao:Portfolio ;
+.
+aao:relatedDepartment
+  rdf:type owl:InverseFunctionalProperty ;
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Part ;
+  rdfs:range aao:Department ;
+.
