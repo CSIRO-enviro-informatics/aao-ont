@@ -10,6 +10,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix reg: <http://test.linked.data.gov.au/dataset/reg/> .
+@prefix test: <http://test.linked.data.gov.au/dataset/aaos/aao/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -168,22 +169,23 @@
   rdfs:seeAlso <https://www.pmc.gov.au/resource-centre/government/aao-amendment-28-august-2018> ;
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180828> ;
 .
-aaos:C2010Q00191
+test:C2010Q00191
   rdf:type aao:AAO ;
   dct:created "2010-09-14" ;
+  dct:hasPart test:C2010Q00191-1 ;
+  dct:hasPart test:C2010Q00191-2 ;
+  dct:hasPart test:C2010Q00191-3 ;
   dct:isReplacedBy <http://test.linked.data.gov.au/dataset/aaos/aao/20101014> ;
   dct:issued "2010-09-16" ;
   rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
   aao:dateOfRepeal "2010-10-13"^^xsd:date ;
-  aao:hasPart aaos:C2010Q00191-1 ;
-  aao:hasPart aaos:C2010Q00191-2 ;
-  aao:hasPart aaos:C2010Q00191-3 ;
   aao:inForce "false"^^xsd:boolean ;
   aao:regID "C2010Q00191" ;
 .
-aaos:C2010Q00191-1
-  rdf:type aao:Part ;
+test:C2010Q00191-1
+  rdf:type aao:AAO_Part ;
+  dct:isPartOf test:C2010Q00191 ;
   rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
   aao:administeredLegislation act:C2004A04749 ;
   aao:administeredLegislation act:C2005C00188 ;
@@ -199,8 +201,9 @@ aaos:C2010Q00191-1
   aao:matterDealtWith matter:AFF-J ;
   aao:relatedDepartment dept:AFF ;
 .
-aaos:C2010Q00191-2
-  rdf:type aao:Part ;
+test:C2010Q00191-2
+  rdf:type aao:AAO_Part ;
+  dct:isPartOf test:C2010Q00191 ;
   rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
   aao:administeredLegislation act:C2004A01468 ;
   aao:administeredLegislation act:C2004A04340 ;
@@ -216,8 +219,9 @@ aaos:C2010Q00191-2
   aao:matterDealtWith matter:AG-9 ;
   aao:relatedDepartment dept:AG ;
 .
-aaos:C2010Q00191-3
-  rdf:type aao:Part ;
+test:C2010Q00191-3
+  rdf:type aao:AAO_Part ;
+  dct:isPartOf test:C2010Q00191 ;
   rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
 .
 <http://test.linked.data.gov.au/dataset/aaos/aao/﻿20071203>

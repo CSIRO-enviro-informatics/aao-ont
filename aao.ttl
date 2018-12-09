@@ -42,6 +42,11 @@ aao:AAO
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
+      owl:allValuesFrom aao:AAO_Part ;
+      owl:onProperty dcterms:hasPart ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty aao:inForce ;
     ] ;
@@ -63,7 +68,7 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:hasPart ;
+      owl:onProperty dcterms:hasPart ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -88,8 +93,13 @@ aao:AAO_Amendment
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
+      owl:allValuesFrom aao:AAO_Part ;
+      owl:onProperty dcterms:hasPart ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:hasPart ;
+      owl:onProperty dcterms:hasPart ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -102,6 +112,36 @@ aao:AAO_Amendment
       owl:onClass xsd:date ;
       owl:onProperty dcterms:issued ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+aao:AAO_Part
+  rdf:type owl:Class ;
+  rdfs:label "AAO Part - usually concerned with one Department" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              aao:AAO
+              aao:AAO_Amendment
+            ) ;
+        ] ;
+      owl:onProperty dcterms:isPartOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty dcterms:isPartOf ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:administeredLegislation ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:matterDealtWith ;
     ] ;
 .
 aao:Department
@@ -124,20 +164,6 @@ aao:Matter
   rdfs:label "A matter dealt with by a department" ;
   rdfs:subClassOf prov:Activity ;
 .
-aao:Part
-  rdf:type owl:Class ;
-  rdfs:label "AAO Part - usually concerned with one Department" ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:administeredLegislation ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:matterDealtWith ;
-    ] ;
-.
 aao:Portfolio
   rdf:type owl:Class ;
   rdfs:label "Portfolio of government" ;
@@ -147,7 +173,7 @@ aao:administeredLegislation
   rdfs:domain [
       rdf:type owl:Class ;
       owl:unionOf (
-          aao:Part
+          aao:AAO_Part
           aao:Department
         ) ;
     ] ;
@@ -168,17 +194,6 @@ aao:dateOfRepeal
   rdf:type owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:date ;
 .
-aao:hasPart
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain [
-      rdf:type owl:Class ;
-      owl:unionOf (
-          aao:AAO
-          aao:AAO_Amendment
-        ) ;
-    ] ;
-  rdfs:range aao:Part ;
-.
 aao:inForce
   rdf:type owl:DatatypeProperty ;
   rdfs:domain aao:AAO ;
@@ -190,7 +205,7 @@ aao:matterDealtWith
   rdfs:domain [
       rdf:type owl:Class ;
       owl:unionOf (
-          aao:Part
+          aao:AAO_Part
           aao:Department
         ) ;
     ] ;
@@ -219,6 +234,6 @@ aao:regID
 aao:relatedDepartment
   rdf:type owl:InverseFunctionalProperty ;
   rdf:type owl:ObjectProperty ;
-  rdfs:domain aao:Part ;
+  rdfs:domain aao:AAO_Part ;
   rdfs:range aao:Department ;
 .
