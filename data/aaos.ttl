@@ -175,18 +175,19 @@ test:C2010Q00191
   dct:isReplacedBy <http://test.linked.data.gov.au/dataset/aaos/aao/20101014> ;
   dct:issued "2010-09-16" ;
   rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
-  aao:aaoCode "C2010Q00191" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
   aao:dateOfRepeal "2010-10-13"^^xsd:date ;
   aao:hasPart test:C2010Q00191-1 ;
   aao:hasPart test:C2010Q00191-2 ;
   aao:hasPart test:C2010Q00191-3 ;
   aao:inForce "false"^^xsd:boolean ;
+  aao:regID "C2010Q00191" ;
 .
 test:C2010Q00191-1
   rdf:type aao:Part ;
   rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
-  aao:administeredLegislation act:AFF-1 ;
-  aao:administeredLegislation act:AFF-2 ;
+  aao:administeredLegislation act:C2004A04749 ;
+  aao:administeredLegislation act:C2005C00188 ;
   aao:matterDealtWith matter:AFF-A ;
   aao:matterDealtWith matter:AFF-B ;
   aao:matterDealtWith matter:AFF-C ;
@@ -202,8 +203,8 @@ test:C2010Q00191-1
 test:C2010Q00191-2
   rdf:type aao:Part ;
   rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
-  aao:administeredLegislation act:AG-A ;
-  aao:administeredLegislation act:AG-B ;
+  aao:administeredLegislation act:C2004A01468 ;
+  aao:administeredLegislation act:C2004A04340 ;
   aao:matterDealtWith matter:AG-1 ;
   aao:matterDealtWith matter:AG-10 ;
   aao:matterDealtWith matter:AG-2 ;
@@ -226,21 +227,29 @@ test:C2010Q00191-3
   owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2007-12-03.aspx> ;
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/﻿20071203> ;
 .
-act:AFF-1
-  rdf:type aao:Legislation ;
-  rdfs:label "Agricultural and Veterinary Chemical Products (Collection of Levy) Act 1994" ;
-.
-act:AFF-2
-  rdf:type aao:Legislation ;
-  rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
-.
-act:AG-A
-  rdf:type aao:Legislation ;
-  rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
-.
-act:AG-B
+act:C2004A01468
   rdf:type aao:Legislation ;
   rdfs:label "Acts Citation Act 1976" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A01468> ;
+  aao:regID "C2004A01468" ;
+.
+act:C2004A04340
+  rdf:type aao:Legislation ;
+  rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04340> ;
+  aao:regID "C2004A04340" ;
+.
+act:C2004A04749
+  rdf:type aao:Legislation ;
+  rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04749> ;
+  aao:regID "C2004A04749" ;
+.
+act:C2005C00188
+  rdf:type aao:Legislation ;
+  rdfs:label "Agricultural and Veterinary Chemical Products (Collection of Levy) Act 1994" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005C00188> ;
+  aao:regID "C2005C00188" ;
 .
 dept:AFF
   rdf:type aao:Department ;

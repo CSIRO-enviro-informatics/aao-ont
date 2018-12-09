@@ -2,6 +2,7 @@
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://purl.org/pav/
 # imports: http://www.w3.org/ns/prov-o#
+# imports: http://xmlns.com/foaf/0.1/
 
 @prefix aao: <https://linked.data.gov.au/ont/aao/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -19,6 +20,7 @@
   owl:imports <http://purl.org/dc/elements/1.1/> ;
   owl:imports <http://purl.org/pav/> ;
   owl:imports <http://www.w3.org/ns/prov-o#> ;
+  owl:imports foaf: ;
 .
 aao:AAO
   rdf:type owl:Class ;
@@ -42,6 +44,11 @@ aao:AAO
       rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty aao:inForce ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:regID ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -132,13 +139,6 @@ aao:Portfolio
   rdf:type owl:Class ;
   rdfs:label "Portfolio of government" ;
 .
-aao:aaoCode
-  rdf:type owl:AnnotationProperty ;
-  rdfs:domain aao:AAO ;
-  rdfs:label "Official identifier" ;
-  rdfs:range xsd:string ;
-  rdfs:subPropertyOf dcterms:identifier ;
-.
 aao:administeredLegislation
   rdf:type owl:ObjectProperty ;
   rdfs:domain aao:Part ;
@@ -185,6 +185,21 @@ aao:partOfPortfolio
   rdf:type owl:ObjectProperty ;
   rdfs:domain aao:Department ;
   rdfs:range aao:Portfolio ;
+.
+aao:regID
+  rdf:type owl:AnnotationProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:AAO
+          aao:AAO_Amendment
+          aao:Legislation
+        ) ;
+    ] ;
+  rdfs:label "Official identifier in the Australian Government Federal Register of Legislation" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf dcterms:identifier ;
+  rdfs:subPropertyOf skos:notation ;
 .
 aao:relatedDepartment
   rdf:type owl:InverseFunctionalProperty ;
