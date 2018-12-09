@@ -55,6 +55,37 @@ aao:AAO
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:hasPart ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass xsd:date ;
+      owl:onProperty dcterms:created ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass xsd:date ;
+      owl:onProperty dcterms:issued ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+aao:AAO_Amendment
+  rdf:type owl:Class ;
+  rdfs:label "Administrative Arrangements Order Amendment" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty dcterms:modified ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:hasPart ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
       owl:onClass xsd:date ;
       owl:onProperty dcterms:created ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -113,13 +144,30 @@ aao:administeredLegislation
   rdfs:domain aao:Part ;
   rdfs:range aao:Legislation ;
 .
+aao:amendedBy
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:AAO ;
+  rdfs:range aao:AAO_Amendment ;
+.
+aao:amends
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:AAO_Amendment ;
+  rdfs:range aao:AAO ;
+  owl:inverseOf aao:amendedBy ;
+.
 aao:dateOfRepeal
   rdf:type owl:DatatypeProperty ;
   rdfs:subPropertyOf dcterms:date ;
 .
 aao:hasPart
   rdf:type owl:ObjectProperty ;
-  rdfs:domain aao:AAO ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:AAO
+          aao:AAO_Amendment
+        ) ;
+    ] ;
   rdfs:range aao:Part ;
 .
 aao:inForce
