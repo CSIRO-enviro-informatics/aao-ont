@@ -4,11 +4,14 @@
 # imports: http://www.w3.org/ns/prov-o#
 
 @prefix aao: <https://linked.data.gov.au/ont/aao/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://linked.data.gov.au/ont/aao>
@@ -23,12 +26,17 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
-      owl:onProperty <http://purl.org/dc/terms/modified> ;
+      owl:onProperty dcterms:modified ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty aao:dateOfRepeal ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom aao:AAO ;
-      owl:onProperty <http://purl.org/dc/terms/isReplacedBy> ;
+      owl:onProperty dcterms:isReplacedBy ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -38,18 +46,23 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty <http://purl.org/dc/terms/isReplacedBy> ;
+      owl:onProperty dcterms:isReplacedBy ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:dateOfRepeal ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:onClass xsd:date ;
-      owl:onProperty <http://purl.org/dc/terms/created> ;
+      owl:onProperty dcterms:created ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:onClass xsd:date ;
-      owl:onProperty <http://purl.org/dc/terms/issued> ;
+      owl:onProperty dcterms:issued ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
 .
@@ -93,12 +106,16 @@ aao:aaoCode
   rdfs:domain aao:AAO ;
   rdfs:label "Official identifier" ;
   rdfs:range xsd:string ;
-  rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+  rdfs:subPropertyOf dcterms:identifier ;
 .
 aao:administeredLegislation
   rdf:type owl:ObjectProperty ;
   rdfs:domain aao:Part ;
   rdfs:range aao:Legislation ;
+.
+aao:dateOfRepeal
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf dcterms:date ;
 .
 aao:hasPart
   rdf:type owl:ObjectProperty ;

@@ -1,140 +1,332 @@
-@prefix aao: <http://test.linked.data.gov.au/def/aaos/> .
-@prefix aaos: <http://test.linked.data.gov.au/dataset/aaos/> .
+# baseURI: file:/C:/Users/cox075/dev/aao-ont/data/aaos.ttl
+
+@prefix aao: <https://linked.data.gov.au/ont/aao/> .
+@prefix aaos: <http://test.linked.data.gov.au/dataset/aaos/aao/> .
+@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://test.linked.data.gov.au/dataset/reg/> .
+@prefix test: <http://test.linked.data.gov.au/dataset/aaos/aao/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://test.linked.data.gov.au/dataset/aaos/aao/20080125> a aao:AAO ;
-    dct:issued "2008-01-25"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2008-01-25.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20080125> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20080501> a aao:AAO ;
-    dct:issued "2008-05-01"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2008-01-25.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20080501> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20100308> a aao:AAO ;
-    dct:issued "2010-03-08"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-03-08.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100308> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20100506> a aao:AAO ;
-    dct:issued "2010-05-06"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-05-06.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100506> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20100629> a aao:AAO ;
-    dct:issued "2010-06-29"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-05-06.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100629> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20101014> a aao:AAO ;
-    dct:issued "2010-10-14"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20101014> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20111019> a aao:Amendment ;
-    dct:issued "2011-10-19"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111019> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20111207> a aao:Amendment ;
-    dct:issued "2011-12-07"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111207> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20111214> a aao:AAO ;
-    dct:issued "2011-12-14"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2011-12-14.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111214> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20120209> a aao:AAO ;
-    dct:issued "2012-02-09"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2012-02-09.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20120209> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20130325> a aao:Amendment ;
-    dct:issued "2013-03-25"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2012-02-09.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130325> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20130516> a aao:AAO ;
-    dct:issued "2013-05-16"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-05-16.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130516> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20130918> a aao:AAO ;
-    dct:issued "2013-09-18"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-09-18.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130918> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20131003> a aao:Amendment ;
-    dct:issued "2013-10-03"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-09-18.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20131003> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20141223> a aao:AAO ;
-    dct:issued "2014-12-23"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2014-12-23.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20141223> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20150709> a aao:AAO ;
-    dct:issued "2015-07-09"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2015-07-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20150709> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20150930> a aao:AAO ;
-    dct:issued "2015-09-30"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2015-07-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20150930> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20160901> a aao:AAO ;
-    dct:issued "2016-09-01"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20160901> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20161027> a aao:Amendment ;
-    dct:issued "2016-10-27"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20161027> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20170413> a aao:Amendment ;
-    dct:issued "2017-04-13"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20170413> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20171130> a aao:Amendment ;
-    dct:issued "2017-11-30"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20171130> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20171220> a aao:Amendment ;
-    dct:issued "2017-12-20"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20171220> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20180419> a aao:AAO ;
-    dct:issued "2018-04-19"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2018-05-23.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180419> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20180510> a aao:Amendment ;
-    dct:issued "2018-05-10"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2018-05-23.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180510> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/20180828> a aao:Amendment ;
-    dct:issued "2018-08-28"^^xsd:date ;
-    ns1:seeAlso <https://www.pmc.gov.au/resource-centre/government/aao-amendment-28-august-2018> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180828> .
-
-<http://test.linked.data.gov.au/dataset/aaos/aao/﻿20071203> a aao:AAO ;
-    dct:issued "2007-12-03"^^xsd:date ;
-    ns1:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2007-12-03.aspx> ;
-    time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/﻿20071203> .
-
+<file:///C:/Users/cox075/dev/aao-ont/data/aaos.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <https://linked.data.gov.au/ont/aao> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20080125>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2008-01-25.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20080125> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20080501>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2008-05-01"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2008-01-25.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20080501> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20100308>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2010-03-08"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-03-08.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100308> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20100506>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2010-05-06"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-05-06.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100506> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20100629>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2010-06-29"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-05-06.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20100629> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20101014>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2010-10-14"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20101014> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20111019>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2011-10-19"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111019> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20111207>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2011-12-07"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111207> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20111214>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2011-12-14"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2011-12-14.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20111214> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20120209>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2012-02-09"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2012-02-09.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20120209> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20130325>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2013-03-25"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2012-02-09.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130325> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20130516>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2013-05-16"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-05-16.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130516> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20130918>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2013-09-18"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-09-18.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20130918> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20131003>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2013-10-03"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2013-09-18.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20131003> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20141223>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2014-12-23"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2014-12-23.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20141223> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20150709>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2015-07-09"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2015-07-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20150709> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20150930>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2015-09-30"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2015-07-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20150930> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20160901>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20160901> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20161027>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2016-10-27"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20161027> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20170413>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2017-04-13"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20170413> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20171130>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2017-11-30"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20171130> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20171220>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2017-12-20"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2016-09-01.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20171220> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20180419>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2018-04-19"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2018-05-23.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180419> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20180510>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2018-05-10"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2018-05-23.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180510> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/20180828>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/Amendment> ;
+  dct:issued "2018-08-28"^^xsd:date ;
+  owl:seeAlso <https://www.pmc.gov.au/resource-centre/government/aao-amendment-28-august-2018> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180828> ;
+.
+test:C2010Q00191
+  rdf:type aao:AAO ;
+  dct:created "2010-09-14" ;
+  dct:isReplacedBy <http://test.linked.data.gov.au/dataset/aaos/aao/20101014> ;
+  dct:issued "2010-09-16" ;
+  rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
+  aao:aaoCode "C2010Q00191" ;
+  aao:dateOfRepeal "2010-10-13"^^xsd:date ;
+  aao:hasPart test:C2010Q00191-1 ;
+  aao:hasPart test:C2010Q00191-2 ;
+  aao:hasPart test:C2010Q00191-3 ;
+  aao:inForce "false"^^xsd:boolean ;
+.
+test:C2010Q00191-1
+  rdf:type aao:Part ;
+  rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
+  aao:administeredLegislation act:AFF-1 ;
+  aao:administeredLegislation act:AFF-2 ;
+  aao:matterDealtWith matter:AFF-A ;
+  aao:matterDealtWith matter:AFF-B ;
+  aao:matterDealtWith matter:AFF-C ;
+  aao:matterDealtWith matter:AFF-D ;
+  aao:matterDealtWith matter:AFF-E ;
+  aao:matterDealtWith matter:AFF-F ;
+  aao:matterDealtWith matter:AFF-G ;
+  aao:matterDealtWith matter:AFF-H ;
+  aao:matterDealtWith matter:AFF-I ;
+  aao:matterDealtWith matter:AFF-J ;
+  aao:relatedDepartment dept:AFF ;
+.
+test:C2010Q00191-2
+  rdf:type aao:Part ;
+  rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
+  aao:administeredLegislation act:AG-A ;
+  aao:administeredLegislation act:AG-B ;
+  aao:matterDealtWith matter:AG-1 ;
+  aao:matterDealtWith matter:AG-10 ;
+  aao:matterDealtWith matter:AG-2 ;
+  aao:matterDealtWith matter:AG-3 ;
+  aao:matterDealtWith matter:AG-4 ;
+  aao:matterDealtWith matter:AG-5 ;
+  aao:matterDealtWith matter:AG-6 ;
+  aao:matterDealtWith matter:AG-7 ;
+  aao:matterDealtWith matter:AG-8 ;
+  aao:matterDealtWith matter:AG-9 ;
+  aao:relatedDepartment dept:AG ;
+.
+test:C2010Q00191-3
+  rdf:type aao:Part ;
+  rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
+.
+<http://test.linked.data.gov.au/dataset/aaos/aao/﻿20071203>
+  rdf:type <http://test.linked.data.gov.au/def/aaos/AAO> ;
+  dct:issued "2007-12-03"^^xsd:date ;
+  owl:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2007-12-03.aspx> ;
+  time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/﻿20071203> ;
+.
+act:AFF-1
+  rdf:type aao:Legislation ;
+  rdfs:label "Agricultural and Veterinary Chemical Products (Collection of Levy) Act 1994" ;
+.
+act:AFF-2
+  rdf:type aao:Legislation ;
+  rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
+.
+act:AG-A
+  rdf:type aao:Legislation ;
+  rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
+.
+act:AG-B
+  rdf:type aao:Legislation ;
+  rdfs:label "Acts Citation Act 1976" ;
+.
+dept:AFF
+  rdf:type aao:Department ;
+  rdfs:label "THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
+.
+dept:AG
+  rdf:type aao:Department ;
+  rdfs:label "THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
+.
+matter:AFF-A
+  rdf:type aao:Matter ;
+  rdfs:label "Agricultural, pastoral, fishing, food and forest industries" ;
+.
+matter:AFF-B
+  rdf:type aao:Matter ;
+  rdfs:label "Soils and other natural resources" ;
+.
+matter:AFF-C
+  rdf:type aao:Matter ;
+  rdfs:label "Rural adjustment and drought issues" ;
+.
+matter:AFF-D
+  rdf:type aao:Matter ;
+  rdfs:label "Rural industries inspection and quarantine" ;
+.
+matter:AFF-E
+  rdf:type aao:Matter ;
+  rdfs:label "Primary industries research including economic research" ;
+.
+matter:AFF-F
+  rdf:type aao:Matter ;
+  rdfs:label "Commodity marketing, including export promotion and agribusiness" ;
+.
+matter:AFF-G
+  rdf:type aao:Matter ;
+  rdfs:label "Commodity-specific international organisations and activities" ;
+.
+matter:AFF-H
+  rdf:type aao:Matter ;
+  rdfs:label "Administration of international commodity agreements" ;
+.
+matter:AFF-I
+  rdf:type aao:Matter ;
+  rdfs:label "Administration of export controls on agricultural, fisheries and forestry industries products" ;
+.
+matter:AFF-J
+  rdf:type aao:Matter ;
+  rdfs:label "Food security policy and programs" ;
+.
+matter:AG-1
+  rdf:type aao:Matter ;
+  rdfs:label "Law and justice" ;
+.
+matter:AG-10
+  rdf:type aao:Matter ;
+  rdfs:label "Critical infrastructure protection co-ordination" ;
+.
+matter:AG-2
+  rdf:type aao:Matter ;
+  rdfs:label "Legal services to the Commonwealth" ;
+.
+matter:AG-3
+  rdf:type aao:Matter ;
+  rdfs:label "Criminal law and law enforcement" ;
+.
+matter:AG-4
+  rdf:type aao:Matter ;
+  rdfs:label "Customs and border control other than quarantine and inspection, and immigration" ;
+.
+matter:AG-5
+  rdf:type aao:Matter ;
+  rdfs:label "National security, protective security policy and co-ordination" ;
+.
+matter:AG-6
+  rdf:type aao:Matter ;
+  rdfs:label "Protective services at Commonwealth establishments and diplomatic and consular premises in Australia" ;
+.
+matter:AG-7
+  rdf:type aao:Matter ;
+  rdfs:label "Commonwealth emergency management" ;
+.
+matter:AG-8
+  rdf:type aao:Matter ;
+  rdfs:label "Natural disaster relief and mitigation in the form of financial assistance to the States and Territories" ;
+.
+matter:AG-9
+  rdf:type aao:Matter ;
+  rdfs:label "Administrative support for Royal Commissions and certain other inquiries" ;
+.
