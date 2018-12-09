@@ -107,6 +107,7 @@ aao:AAO_Amendment
 aao:Department
   rdf:type owl:Class ;
   rdfs:label "Department of State" ;
+  rdfs:subClassOf prov:Agent ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
@@ -116,10 +117,12 @@ aao:Department
 aao:Legislation
   rdf:type owl:Class ;
   rdfs:label "An item of Legistlation administered by a Minister" ;
+  rdfs:subClassOf prov:Entity ;
 .
 aao:Matter
   rdf:type owl:Class ;
   rdfs:label "A matter dealt with by a department" ;
+  rdfs:subClassOf prov:Activity ;
 .
 aao:Part
   rdf:type owl:Class ;
@@ -141,7 +144,13 @@ aao:Portfolio
 .
 aao:administeredLegislation
   rdf:type owl:ObjectProperty ;
-  rdfs:domain aao:Part ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:Part
+          aao:Department
+        ) ;
+    ] ;
   rdfs:range aao:Legislation ;
 .
 aao:amendedBy
@@ -178,7 +187,13 @@ aao:inForce
 .
 aao:matterDealtWith
   rdf:type owl:ObjectProperty ;
-  rdfs:domain aao:Part ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:Part
+          aao:Department
+        ) ;
+    ] ;
   rdfs:range aao:Matter ;
 .
 aao:partOfPortfolio
