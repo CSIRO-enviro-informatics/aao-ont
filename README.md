@@ -12,8 +12,8 @@ An `AAO` is composed of a set of numbered `Parts`, each relating to a single `De
 ![](aao.png)
 
 Figure 1: A top-level diagram of the AAO ontology's main classes and properties.
-
-The `aao:Part` serves as an `Association Class` which links the department to the matters and legislation that it is responsible for while this AAO is in force, as indicated by the date range `dct:issued` &rarr; `aao:dateOfRepeal`.
+**
+`aao:Part` thus serves as an **Association Class** which links the **department** to the **matters** and **legislation** that it is responsible for **while this AAO is in force** in the date range `dct:issued &rarr; aao:dateOfRepeal`.
 
 ## Ontology components
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
