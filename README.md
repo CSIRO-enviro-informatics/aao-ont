@@ -51,7 +51,7 @@ How can we align **Matters** to **Functions**?
 ### PROV-O
 PROV-O provides a standard formalization of the relationships between Entities (e.g. Legislation), Agents (e.g. Departments and Agencies) and Activities.
 
-![PROV Ontology](starting-points.svg)
+![PROV Ontology](image/starting-points.svg)
 
 The main classes in the AAO ontology can be aligned to the W3C PROV Ontology as shown in the following diagram:
 
@@ -78,7 +78,7 @@ The time interval during which an AAO is in force will be related to other time 
 
 The relationships between these may be described following the relationships defined by Allen:
 
-![Allen's interval relations](IntervalRelations.png)
+![Allen's interval relations](image/IntervalRelations.png)
 
 ## License
 This ontology and all other content in this repository are licensed under the
