@@ -31,7 +31,7 @@ An `aao:AAO_Part` serves as an **Association Class** which links the **departmen
 
 ## Instance data
 See [aaos.ttl](data/aaos.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF. Identifiers for AAOs and for Legislation are taken from the [Federal Register of Legislation](https://www.legislation.gov.au), e.g.
-- [C2010Q00191](data/aaos.ttl) [AAO for 2nd Rudd Government](https://www.legislation.gov.au/Details/C2010Q00191)
+- [C2010Q00191](data/aaos.ttl) [AAO for 2nd Gillard Administration](https://www.legislation.gov.au/Details/C2010Q00191)
 - C2004A01468 [Acts Citation Act 1976](https://www.legislation.gov.au/Details/C2004A01468)
 - C2004A04340 [A.C.T. Supreme Court (Transfer) Act 1992](https://www.legislation.gov.au/Details/C2004A04340)
 - C2004A04749 [Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994](https://www.legislation.gov.au/Details/C2004A04749)
