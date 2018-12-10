@@ -57,6 +57,16 @@ The main classes in the AAO ontology can be aligned to the W3C Organization Onto
 
 Figure: provisional alignment of the principal classes from the AAO Ontology with ORG.
 
+### OWL-time
+The time interval during which an AAO is in force will be related to other time intervals describing aspects of government, such as
+- parliaments
+- governments
+- ministries
+
+The relationships between these may be described following the relationships defined by Allen:
+
+![Allen's interval relations](IntervalRelations.png)
+
 ## License
 This ontology and all other content in this repository are licensed under the
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)

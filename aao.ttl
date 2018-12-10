@@ -1,6 +1,7 @@
 # baseURI: https://linked.data.gov.au/ont/aao
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://purl.org/pav/
+# imports: http://www.w3.org/2006/time
 # imports: http://www.w3.org/ns/org
 # imports: http://www.w3.org/ns/prov-o#
 # imports: http://xmlns.com/foaf/0.1/
@@ -16,12 +17,14 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://linked.data.gov.au/ont/aao>
   rdf:type owl:Ontology ;
   owl:imports <http://purl.org/dc/elements/1.1/> ;
   owl:imports <http://purl.org/pav/> ;
+  owl:imports <http://www.w3.org/2006/time> ;
   owl:imports <http://www.w3.org/ns/org> ;
   owl:imports <http://www.w3.org/ns/prov-o#> ;
   owl:imports foaf: ;
@@ -29,6 +32,7 @@
 aao:AAO
   rdf:type owl:Class ;
   rdfs:label "Administrative Arrangements Order" ;
+  rdfs:subClassOf time:ProperInterval ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
