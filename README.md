@@ -16,7 +16,7 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 ## Classes
 An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `Matters dealt with` and the `Legislation administered` by the department. Thus, the ontology includes classes for each of these concepts, as shown in this diagram:
 
-![](aao.png)
+![](image/aao.png)
 
 Figure: A top-level diagram of the AAO ontology's main classes and properties.
 
@@ -32,28 +32,41 @@ An `aao:AAO_Part` serves as an **Association Class** which
 * [aao.profile.ttl](aao.profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology (TBD)
 
 ## Instance data
-See [aaos.ttl](data/aaos.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF. Identifiers for AAOs and for Legislation are taken from the [Federal Register of Legislation](https://www.legislation.gov.au), e.g.
+See [aaos.ttl](data/aaos.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF.
+
+### Identifiers
+Identifiers for **AAOs** and for **Legislation** are taken from the [Federal Register of Legislation](https://www.legislation.gov.au), e.g.
 - [C2010Q00191](data/aaos.ttl) [AAO for 2nd Gillard Administration](https://www.legislation.gov.au/Details/C2010Q00191)
 - C2004A01468 [Acts Citation Act 1976](https://www.legislation.gov.au/Details/C2004A01468)
 - C2004A04340 [A.C.T. Supreme Court (Transfer) Act 1992](https://www.legislation.gov.au/Details/C2004A04340)
 - C2004A04749 [Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994](https://www.legislation.gov.au/Details/C2004A04749)
 
-_What are the best identifiers for (a) Departments (b) matters?_
+What are the best identifiers for
+- **Departments** (AGOR is only good for current state)
+- **Matters** (text ...)?
+
+How can we align **Matters** to **Functions**?
 
 ## Alignments
 ### PROV-O
 PROV-O provides a standard formalization of the relationships between Entities (e.g. Legislation), Agents (e.g. Departments and Agencies) and Activities.
+
+![PROV Ontology](starting-points.svg)
+
 The main classes in the AAO ontology can be aligned to the W3C PROV Ontology as shown in the following diagram:
 
-![](prov-alignment.png)
+![AAO-Org](image/prov-alignment.png)
 
 Figure: provisional alignment of the principal classes from the AAO Ontology with PROV-O.
 
 ### ORG
 ORG provides a standard formalization of organizational structures, organizational change events, and the relationships between persons and organizations.
+
+![Organization ontology](image/OrgOntology20130502.png)
+
 The main classes in the AAO ontology can be aligned to the W3C Organization Ontology as shown in the following diagram:
 
-![](org-alignment.png)
+![AAO-Prov](image/org-alignment.png)
 
 Figure: provisional alignment of the principal classes from the AAO Ontology with ORG.
 
