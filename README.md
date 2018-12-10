@@ -8,7 +8,7 @@ a [Platforms for Open Data](https://pmc.gov.au/public-data/open-data/platforms-o
 Australia](http://naa.gov.au/) and other interested agencies.
 
 ## Source
-This ontology is based on the current structure of an AAO instance as listed at the [Federal Register of Legislation](https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/), e.g. [AAO for 2nd Rudd Government](https://www.legislation.gov.au/Details/C2010Q00191)
+This ontology is based on the current structure of an AAO instance as listed at the [Federal Register of Legislation](https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/), e.g. [AAO for "2nd Gillard Adminstration"](https://www.legislation.gov.au/Details/C2010Q00191)
 .
 A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/information-governance/aao/index.aspx) is also available from the
 [National Archives of Australia](http://www.naa.gov.au).
