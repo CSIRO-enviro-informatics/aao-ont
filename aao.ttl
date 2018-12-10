@@ -1,12 +1,15 @@
 # baseURI: https://linked.data.gov.au/ont/aao
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://purl.org/pav/
+# imports: http://www.w3.org/ns/org
 # imports: http://www.w3.org/ns/prov-o#
 # imports: http://xmlns.com/foaf/0.1/
 
 @prefix aao: <https://linked.data.gov.au/ont/aao/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organization: <http://ontology.eil.utoronto.ca/organization.owl> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -19,6 +22,7 @@
   rdf:type owl:Ontology ;
   owl:imports <http://purl.org/dc/elements/1.1/> ;
   owl:imports <http://purl.org/pav/> ;
+  owl:imports <http://www.w3.org/ns/org> ;
   owl:imports <http://www.w3.org/ns/prov-o#> ;
   owl:imports foaf: ;
 .
@@ -147,6 +151,7 @@ aao:AAO_Part
 aao:Department
   rdf:type owl:Class ;
   rdfs:label "Department of State" ;
+  rdfs:subClassOf org:Organization ;
   rdfs:subClassOf prov:Agent ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
