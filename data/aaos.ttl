@@ -170,14 +170,14 @@
 .
 aaos:C2010Q00191
   rdf:type aao:AAO ;
-  dct:created "2010-09-14" ;
   dct:hasPart aaos:C2010Q00191-1 ;
   dct:hasPart aaos:C2010Q00191-2 ;
   dct:hasPart aaos:C2010Q00191-3 ;
   dct:isReplacedBy <http://test.linked.data.gov.au/dataset/aaos/aao/20101014> ;
-  dct:issued "2010-09-16" ;
+  dct:issued "2010-09-14"^^xsd:date ;
   rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
+  aao:dateOfRegistration "2010-09-16"^^xsd:date ;
   aao:dateOfRepeal "2010-10-13"^^xsd:date ;
   aao:inForce "false"^^xsd:boolean ;
   aao:regID "C2010Q00191" ;

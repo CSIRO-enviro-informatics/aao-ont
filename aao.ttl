@@ -36,7 +36,17 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
+      owl:onProperty dcterms:issued ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
       owl:onProperty dcterms:modified ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty aao:dateOfRegistration ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -52,6 +62,17 @@ aao:AAO
       rdf:type owl:Restriction ;
       owl:allValuesFrom aao:AAO_Part ;
       owl:onProperty dcterms:hasPart ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty dcterms:issued ;
+      skos:scopeNote "In the context of an AAO, use dct:issued for the date the Governor General signs - i.e. the date it formally comes into effect" ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:dateOfRegistration ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -77,18 +98,6 @@ aao:AAO
       rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty dcterms:hasPart ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass xsd:date ;
-      owl:onProperty dcterms:created ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass xsd:date ;
-      owl:onProperty dcterms:issued ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
 .
 aao:AAO_Amendment
@@ -198,6 +207,11 @@ aao:amends
   rdfs:domain aao:AAO_Amendment ;
   rdfs:range aao:AAO ;
   owl:inverseOf aao:amendedBy ;
+.
+aao:dateOfRegistration
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "Date when the AAO was added to the registry at legislation.gov.au" ;
+  rdfs:subPropertyOf dcterms:date ;
 .
 aao:dateOfRepeal
   rdf:type owl:DatatypeProperty ;
