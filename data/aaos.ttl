@@ -1,4 +1,5 @@
 # baseURI: file:/C:/Users/cox075/dev/aao-ont/data/aaos.ttl
+# imports: https://linked.data.gov.au/ont/aao
 
 @prefix aao: <https://linked.data.gov.au/ont/aao/> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aaos/aao/> .
@@ -15,6 +16,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <file:///C:/Users/cox075/dev/aao-ont/data/aaos.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <https://linked.data.gov.au/ont/aao> ;
+.
+<file:/C:/Users/cox075/dev/aao-ont/data/aaos.ttl>
   rdf:type owl:Ontology ;
   owl:imports <https://linked.data.gov.au/ont/aao> ;
 .
@@ -173,8 +178,8 @@ aaos:C2010Q00191
   dct:hasPart aaos:C2010Q00191-1 ;
   dct:hasPart aaos:C2010Q00191-2 ;
   dct:hasPart aaos:C2010Q00191-3 ;
-  dct:isReplacedBy <http://test.linked.data.gov.au/dataset/aaos/aao/20101014> ;
   dct:issued "2010-09-14"^^xsd:date ;
+  dct:replaces aaos:C2008Q00023 ;
   rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
   aao:dateOfRegistration "2010-09-16"^^xsd:date ;

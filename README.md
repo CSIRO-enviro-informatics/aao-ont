@@ -14,15 +14,23 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 [National Archives of Australia](http://www.naa.gov.au).
 
 ## Classes
-An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `Matters dealt with` and the `Legislation administered` by the department. Thus, the ontology includes classes for each of these concepts, as shown in this diagram:
+An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `matters dealt with` and the `legislation administered` by the department. Each `Matter` is expressed as a text phrase. Each item of `Legislation` is either (i) one dated `Act` optionally excluding one or more `parts`, or (ii) one or more parts of an Act.  Thus, the ontology includes classes for each of these concepts, as shown in this diagram:
 
 ![](image/aao.png)
 
 Figure: A top-level diagram of the AAO ontology's main classes and properties.
 
-An `aao:AAO_Part` serves as an **Association Class** which
+`aao:AAO` is an Administrative Arrangements Order. When issued, it replaces the previous AAO. The time interval that it is in force ends when it is replaced. It is subject to amendment by a `aao:AAO-Amendment`
+
+`aao:AAO-Part` is an **Association Class** which
 - links the **department** to the **matters** and **legislation** that it is responsible for **while this AAO is in force** in the date range `dct:isPartOf/dct:issued` &rarr; `dct:isPartOf/aao:dateOfRepeal`
 - asserts the existence of a **matter** specified using the given wording, while this AAO is in force, in the date range `dct:isPartOf/dct:issued` &rarr; `dct:isPartOf/aao:dateOfRepeal`.
+
+Administered legislation refers to an `aao:Act`, optionally with excluded parts that are administered by another department. 
+
+`aao:Legislation` is the superclass of acts, legislative-, notifiable-, and prerogative-instruments, which are listed in the [Federal Register of Legislation](https://www.legislation.gov.au/Home).
+
+`aao:Qualified-Legislation` is an association class which refers to either an `aao:Act` minus some excluded `aao:Act-Part`, else a group of `aao:Act-Parts` excluded from the administrative responsibility of another department.
 
 ## Ontology representations
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
