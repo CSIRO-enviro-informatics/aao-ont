@@ -180,6 +180,7 @@ aaos:C2010Q00191
   aao:dateOfRegistration "2010-09-16"^^xsd:date ;
   aao:dateOfRepeal "2010-10-13"^^xsd:date ;
   aao:inForce "false"^^xsd:boolean ;
+  aao:intervalInForce aaos:C2010Q00191-T ;
   aao:regID "C2010Q00191" ;
 .
 aaos:C2010Q00191-1
@@ -223,6 +224,17 @@ aaos:C2010Q00191-3
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
 .
+aaos:C2010Q00191-T
+  rdf:type time:ProperInterval ;
+  time:hasBeginning [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-09-14"^^xsd:date ;
+    ] ;
+  time:hasEnd [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-10-13"^^xsd:date ;
+    ] ;
+.
 <http://test.linked.data.gov.au/dataset/aaos/aao/﻿20071203>
   rdf:type aao:AAO ;
   dct:issued "2007-12-03"^^xsd:date ;
@@ -230,19 +242,19 @@ aaos:C2010Q00191-3
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/﻿20071203> ;
 .
 act:C2004A01468
-  rdf:type aao:Legislation ;
+  rdf:type aao:Act ;
   rdfs:label "Acts Citation Act 1976" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A01468> ;
   aao:regID "C2004A01468" ;
 .
 act:C2004A04340
-  rdf:type aao:Legislation ;
+  rdf:type aao:Act ;
   rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04340> ;
   aao:regID "C2004A04340" ;
 .
 act:C2004A04749
-  rdf:type aao:Legislation ;
+  rdf:type aao:Act ;
   rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04749> ;
   aao:regID "C2004A04749" ;
@@ -340,4 +352,11 @@ matter:AG-8
 matter:AG-9
   rdf:type aao:Matter ;
   rdfs:label "Administrative support for Royal Commissions and certain other inquiries" ;
+.
+aao:Legislation
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom aao:Act_Part ;
+      owl:onProperty aao:exceptionToLegislation ;
+    ] ;
 .

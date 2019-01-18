@@ -32,12 +32,6 @@
 aao:AAO
   rdf:type owl:Class ;
   rdfs:label "Administrative Arrangements Order" ;
-  rdfs:subClassOf time:ProperInterval ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:allValuesFrom xsd:date ;
-      owl:onProperty dcterms:issued ;
-    ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
@@ -47,11 +41,6 @@ aao:AAO
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
       owl:onProperty aao:dateOfRegistration ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:allValuesFrom xsd:date ;
-      owl:onProperty aao:dateOfRepeal ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -66,8 +55,7 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty dcterms:issued ;
-      skos:scopeNote "In the context of an AAO, use dct:issued for the date the Governor General signs - i.e. the date it formally comes into effect" ;
+      owl:onProperty aao:currentlyInForce ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -77,7 +65,10 @@ aao:AAO
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:inForce ;
+      owl:onProperty aao:intervalInForce ;
+      skos:scopeNote """Interval in force: 
+- begins on the date this AAO is signed by the G-G - aka date-issued
+- ends one the day before the beginning of the AAO which replaces this one - aka date repealed""" ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -91,11 +82,6 @@ aao:AAO
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
-      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:dateOfRepeal ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty dcterms:hasPart ;
     ] ;
@@ -106,7 +92,12 @@ aao:AAO_Amendment
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:allValuesFrom xsd:date ;
-      owl:onProperty dcterms:modified ;
+      owl:onProperty dcterms:issued ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:date ;
+      owl:onProperty aao:dateOfRegistration ;
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -115,20 +106,18 @@ aao:AAO_Amendment
     ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty dcterms:issued ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:dateOfRegistration ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty dcterms:hasPart ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass xsd:date ;
-      owl:onProperty dcterms:created ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass xsd:date ;
-      owl:onProperty dcterms:issued ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
 .
 aao:AAO_Part
@@ -161,6 +150,15 @@ aao:AAO_Part
       owl:onProperty aao:matterDealtWith ;
     ] ;
 .
+aao:Act
+  rdf:type owl:Class ;
+  rdfs:label "Act of Parliament" ;
+  rdfs:subClassOf owl:Thing ;
+.
+aao:Act_Part
+  rdf:type owl:Class ;
+  rdfs:label "Part of an Act of Parlianment" ;
+.
 aao:Department
   rdf:type owl:Class ;
   rdfs:label "Department of State" ;
@@ -174,8 +172,14 @@ aao:Department
 .
 aao:Legislation
   rdf:type owl:Class ;
-  rdfs:label "An item of Legistlation administered by a Minister" ;
+  rdfs:label "Legislation" ;
   rdfs:subClassOf prov:Entity ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:includedLegislation ;
+    ] ;
+  skos:scopeNote "Association class used to specify an item of Legislation administered by a Minister, optionally with exceptions as noted" ;
 .
 aao:Matter
   rdf:type owl:Class ;
@@ -185,6 +189,10 @@ aao:Matter
 aao:Portfolio
   rdf:type owl:Class ;
   rdfs:label "Portfolio of government" ;
+.
+aao:Regulation
+  rdf:type owl:Class ;
+  rdfs:label "Regulation" ;
 .
 aao:administeredLegislation
   rdf:type owl:ObjectProperty ;
@@ -208,20 +216,44 @@ aao:amends
   rdfs:range aao:AAO ;
   owl:inverseOf aao:amendedBy ;
 .
+aao:currentlyInForce
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain aao:AAO ;
+  rdfs:label "Status of this AAO" ;
+  rdfs:range xsd:boolean ;
+.
 aao:dateOfRegistration
   rdf:type owl:DatatypeProperty ;
   rdfs:comment "Date when the AAO was added to the registry at legislation.gov.au" ;
   rdfs:subPropertyOf dcterms:date ;
 .
-aao:dateOfRepeal
-  rdf:type owl:DatatypeProperty ;
-  rdfs:subPropertyOf dcterms:date ;
+aao:exceptionToLegislation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Legislation ;
+  rdfs:range aao:Act_Part ;
 .
-aao:inForce
-  rdf:type owl:DatatypeProperty ;
-  rdfs:domain aao:AAO ;
-  rdfs:label "Status of this AAO" ;
-  rdfs:range xsd:boolean ;
+aao:includedLegislation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Legislation ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:Act
+          aao:Act_Part
+        ) ;
+    ] ;
+.
+aao:intervalInForce
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:AAO
+          aao:AAO_Amendment
+        ) ;
+    ] ;
+  rdfs:label "Time interval when the AAO was in force" ;
+  rdfs:range time:ProperInterval ;
 .
 aao:matterDealtWith
   rdf:type owl:ObjectProperty ;
