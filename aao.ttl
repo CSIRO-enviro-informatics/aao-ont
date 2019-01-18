@@ -19,6 +19,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 <https://linked.data.gov.au/ont/aao>
   rdf:type owl:Ontology ;
@@ -28,6 +29,8 @@
   owl:imports <http://www.w3.org/ns/org> ;
   owl:imports <http://www.w3.org/ns/prov-o#> ;
   owl:imports foaf: ;
+  dcterms:publisher <http://catalogue.linked.data.gov.au/org/O-000886> ;
+  dc:publisher "CSIRO" .
 .
 aao:AAO
   rdf:type owl:Class ;
