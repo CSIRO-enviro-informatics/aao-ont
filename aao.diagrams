@@ -6,7 +6,32 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <cd:Diagram>
-    <cd:selectedResource rdf:resource="https://linked.data.gov.au/ont/aao/AAO"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >92</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >475</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >128</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >585</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >52</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >190</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >640</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >274</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Legislation"/>
+      </cd:URINode>
+    </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -20,18 +45,31 @@
         <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Act"/>
       </cd:URINode>
     </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >52</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >190</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >716</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >744</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Act_Part"/>
+      </cd:URINode>
+    </cd:nodes>
     <rdfs:label>aao:AAO Diagram</rdfs:label>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >172</cd:height>
+        >72</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >339</cd:width>
+        >488</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >21</cd:y>
+        >522</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >8</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/AAO"/>
+        >434</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Qualified-Act"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -50,27 +88,14 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >72</cd:height>
+        >112</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >488</cd:width>
+        >263</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >522</cd:y>
+        >412</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >434</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Qualified-Act"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >92</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >475</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >128</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >585</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
+        >38</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/AAO-Amendment"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -86,6 +111,7 @@
         <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/AAO-Part"/>
       </cd:URINode>
     </cd:nodes>
+    <cd:selectedResource rdf:resource="https://linked.data.gov.au/ont/aao/AAO"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -102,40 +128,14 @@
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >112</cd:height>
+        >172</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >263</cd:width>
+        >339</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >412</cd:y>
+        >21</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >38</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/AAO-Amendment"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >52</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >190</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >716</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >744</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Act_Part"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >52</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >190</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >640</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >274</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Legislation"/>
+        >8</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/AAO"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>
@@ -214,52 +214,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >142</cd:width>
+        >148</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >296</cd:y>
+        >320</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >39</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Legislation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >130</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >41</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >626</cd:x>
-        <cd:class rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-      </cd:URINode>
-    </cd:nodes>
-    <rdfs:label>aao:Department-PROV Diagram</rdfs:label>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >120</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >37</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >54</cd:x>
-        <cd:class rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >36</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >131</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >416</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >442</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Portfolio"/>
+        >337</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -275,7 +235,6 @@
         <cd:class rdf:resource="http://www.w3.org/ns/prov#Agent"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:selectedResource rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -289,17 +248,58 @@
         <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Matter"/>
       </cd:URINode>
     </cd:nodes>
+    <cd:selectedResource rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >36</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >148</cd:width>
+        >142</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >320</cd:y>
+        >296</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >337</cd:x>
-        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Department"/>
+        >39</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Legislation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >131</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >416</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >442</cd:x>
+        <cd:class rdf:resource="https://linked.data.gov.au/ont/aao/Portfolio"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>aao:Department-PROV Diagram</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >130</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >41</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >626</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >36</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >120</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >37</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >54</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/ns/prov#Entity"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>
