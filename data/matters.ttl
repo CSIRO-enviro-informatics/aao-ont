@@ -300,33 +300,33 @@
 <http://test.linked.data.gov.au/dataset/matter/136>
   rdf:type aao:Matter ;
   aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
-  rdfs:label """External Affairs, including -
-relations and communications with overseas governments and United Nations agencies;
-treaties, including trade agreements;
-bilateral, regional and multilateral trade policy;
-international trade and commodity negotiations;
-market development, including market access;
-trade and international business development;
-investment promotion;
-international development cooperation;
-diplomatic and consular missions;
-international security issues, including disarmament, arms control and nuclear non proliferation;
-public diplomacy, including information and cultural programs""" ;
+  rdfs:label """External Affairs, including -
+  relations and communications with overseas governments and United Nations agencies;
+  treaties, including trade agreements;
+  bilateral, regional and multilateral trade policy;
+  international trade and commodity negotiations;
+  market development, including market access;
+  trade and international business development;
+  investment promotion;
+  international development cooperation;
+  diplomatic and consular missions;
+  international security issues, including disarmament, arms control and nuclear non proliferation;
+  public diplomacy, including information and cultural programs""" ;
 .
 <http://test.linked.data.gov.au/dataset/matter/137>
   rdf:type aao:Matter ;
   aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
   rdfs:label """External Affairs, including -
-relations and communications with overseas governments and United Nations agencies;
-treaties, including trade agreements;
-bilateral, regional and multilateral trade policy;
-international trade and commodity negotiations;
-market development, including market access;
-trade promotion and international business development;
-international development co-operation;
-diplomatic and consular missions;
-international security issues, including disarmament, arms control and nuclear non-proliferation;
-public diplomacy, including information and cultural programs""" ;
+  relations and communications with overseas governments and United Nations agencies;
+  treaties, including trade agreements;
+  bilateral, regional and multilateral trade policy;
+  international trade and commodity negotiations;
+  market development, including market access;
+  trade promotion and international business development;
+  international development co-operation;
+  diplomatic and consular missions;
+  international security issues, including disarmament, arms control and nuclear non-proliferation;
+  public diplomacy, including information and cultural programs""" ;
 .
 <http://test.linked.data.gov.au/dataset/matter/138>
   rdf:type aao:Matter ;
@@ -466,7 +466,7 @@ public diplomacy, including information and cultural programs""" ;
   aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
   rdfs:label """External Affairs, including -
   relations and communications with overseas governments and United Nations agencies;
-  treaties including trade agreements;
+  treaties, including trade agreements;
   bilateral, regional and multilateral trade policy;
   international trade and commodity negotiations;
   market development, including market access;
@@ -480,7 +480,7 @@ public diplomacy, including information and cultural programs""" ;
   rdf:type aao:Matter ;
   aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
   rdfs:label """External Affairs, including -
-  relations and communications with overseas governments and United Nations agencies; 
+  relations and communications with overseas governments and United Nations agencies;
   treaties, including trade agreements;
   bilateral, regional and multilateral trade policy;
   international trade and commodity negotiations;
