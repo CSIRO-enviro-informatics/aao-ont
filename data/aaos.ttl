@@ -1,27 +1,445 @@
-# baseURI: file:/C:/Users/cox075/dev/aao-ont/data/aaos.ttl
-# imports: https://linked.data.gov.au/ont/aao
+# baseURI: http://test.linked.data.gov.au/dataset/aao
+# imports: http://linked.data.gov.au/def/aao
+# imports: http://test.linked.data.gov.au/dataset/act
+# imports: http://test.linked.data.gov.au/dataset/department
+# imports: http://test.linked.data.gov.au/dataset/matter
 
-@prefix aao: <https://linked.data.gov.au/ont/aao/> .
-@prefix aaos: <http://test.linked.data.gov.au/dataset/aaos/aao/> .
+@prefix aao: <http://linked.data.gov.au/def/aao#> .
+@prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
 @prefix act: <http://test.linked.data.gov.au/dataset/act/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
 @prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix reg: <http://test.linked.data.gov.au/dataset/reg/> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///C:/Users/cox075/dev/aao-ont/data/aaos.ttl>
+<http://test.linked.data.gov.au/dataset/aao>
   rdf:type owl:Ontology ;
-  owl:imports <https://linked.data.gov.au/ont/aao> ;
+  rdfs:comment "Some AAOs from the Registry (e.g. https://www.legislation.gov.au/Details/C2010Q00191 appear to be missing from the list harvested from NAA." ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/act> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/department> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/matter> ;
 .
-<file:/C:/Users/cox075/dev/aao-ont/data/aaos.ttl>
-  rdf:type owl:Ontology ;
-  owl:imports <https://linked.data.gov.au/ont/aao> ;
+aaos:C2010Q00191
+  rdf:type aao:AAO ;
+  leg:dateOfRegistration "2010-09-16"^^xsd:date ;
+  leg:regID "C2010Q00191" ;
+  dct:hasPart aaos:C2010Q00191-1 ;
+  dct:hasPart aaos:C2010Q00191-2 ;
+  dct:hasPart aaos:C2010Q00191-3 ;
+  dct:issued "2010-09-14"^^xsd:date ;
+  dct:replaces aaos:C2008Q00023 ;
+  dct:temporal aaos:C2010Q00191-T ;
+  rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
+.
+aaos:C2010Q00191-1
+  rdf:type aao:AAO_Part ;
+  aao:administeredLegislation act:C2004A04749 ;
+  aao:administeredLegislation act:C2005C00188 ;
+  aao:matterDealtWith matter:AFF-A ;
+  aao:matterDealtWith matter:AFF-B ;
+  aao:matterDealtWith matter:AFF-C ;
+  aao:matterDealtWith matter:AFF-D ;
+  aao:matterDealtWith matter:AFF-E ;
+  aao:matterDealtWith matter:AFF-F ;
+  aao:matterDealtWith matter:AFF-G ;
+  aao:matterDealtWith matter:AFF-H ;
+  aao:matterDealtWith matter:AFF-I ;
+  aao:matterDealtWith matter:AFF-J ;
+  aao:relatedDepartment dept:AFF ;
+  dct:isPartOf aaos:C2010Q00191 ;
+  rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
+.
+aaos:C2010Q00191-2
+  rdf:type aao:AAO_Part ;
+  aao:administeredLegislation act:C2004A01468 ;
+  aao:administeredLegislation act:C2004A04340 ;
+  aao:matterDealtWith matter:AG-1 ;
+  aao:matterDealtWith matter:AG-10 ;
+  aao:matterDealtWith matter:AG-2 ;
+  aao:matterDealtWith matter:AG-3 ;
+  aao:matterDealtWith matter:AG-4 ;
+  aao:matterDealtWith matter:AG-5 ;
+  aao:matterDealtWith matter:AG-6 ;
+  aao:matterDealtWith matter:AG-7 ;
+  aao:matterDealtWith matter:AG-8 ;
+  aao:matterDealtWith matter:AG-9 ;
+  aao:relatedDepartment dept:AG ;
+  dct:isPartOf aaos:C2010Q00191 ;
+  rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
+.
+aaos:C2010Q00191-3
+  rdf:type aao:AAO_Part ;
+  dct:isPartOf aaos:C2010Q00191 ;
+  rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
+.
+aaos:C2010Q00191-T
+  rdf:type time:ProperInterval ;
+  time:hasBeginning [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-09-14"^^xsd:date ;
+    ] ;
+  time:hasEnd [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-10-13"^^xsd:date ;
+    ] ;
+.
+aaos:C2010Q00232-1
+  rdf:type aao:AAO-Part ;
+  aao:administeredLegislation act:C2004A04749 ;
+  aao:administeredLegislation act:C2005C00188 ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/15> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/158> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/2> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/300> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/329> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/330> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/352> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/4> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/55> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/56> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/1> ;
+  rdfs:label "PART 1       THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
+.
+aaos:C2010Q00232-10
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/0> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/164> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/177> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/178> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/182> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/183> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/187> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/193> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/246> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/248> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/258> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/275> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/282> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/289> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/298> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/30> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/302> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/315> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/321> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/341> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/353> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/9> ;
+  rdfs:label "PART 10     THE DEPARTMENT OF HEALTH AND AGEING" ;
+.
+aaos:C2010Q00232-11
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/111> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/255> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/10> ;
+  rdfs:label "PART 11       THE DEPARTMENT OF HUMAN SERVICES" ;
+.
+aaos:C2010Q00232-12
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/126> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/132> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/20> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/257> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/31> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/45> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/11> ;
+  rdfs:label "PART 12     THE DEPARTMENT OF IMMIGRATION AND CITIZENSHIP" ;
+.
+aaos:C2010Q00232-13
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/125> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/151> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/155> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/17> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/185> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/198> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/200> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/205> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/206> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/241> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/243> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/29> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/291> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/303> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/306> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/328> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/338> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/347> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/361> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/367> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/368> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/377> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/38> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/47> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/54> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/70> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/80> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/88> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/89> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/24> ;
+  rdfs:label "PART 13     THE DEPARTMENT OF INDUSTRY, INNOVATION, SCIENCE, RESEARCH AND TERTIARY EDUCATION" ;
+.
+aaos:C2010Q00232-14
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/209> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/225> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/236> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/242> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/371> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/372> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/46> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/21> ;
+  rdfs:label "PART 14       THE DEPARTMENT OF INFRASTRUCTURE AND TRANSPORT" ;
+.
+aaos:C2010Q00232-15
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/13> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/168> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/211> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/23> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/25> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/26> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/265> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/351> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/388> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/77> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/87> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/97> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/16> ;
+  rdfs:label "PART Y         THE DEPARTMENT OF THE PRIME MINISTER AND CABINET" ;
+.
+aaos:C2010Q00232-16
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/102> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/238> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/245> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/279> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/283> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/318> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/319> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/355> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/362> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/68> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/69> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/9> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/92> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/25> ;
+  rdfs:label "PART 16       THE DEPARTMENT OF REGIONAL AUSTRALIA, LOCAL GOVERNMENT, ARTS AND SPORT" ;
+.
+aaos:C2010Q00232-17
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/121> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/122> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/167> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/203> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/234> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/251> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/253> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/259> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/3> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/316> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/326> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/364> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/14> ;
+  rdfs:label "PART 17       THE DEPARTMENT OF RESOURCES, ENERGY AND TOURISM" ;
+.
+aaos:C2010Q00232-18
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/127> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/129> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/16> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/218> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/224> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/249> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/261> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/270> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/293> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/373> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/376> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/7> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/83> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/23> ;
+  rdfs:label "PART 18     THE DEPARTMENT OF SUSTAINABILITY, ENVIRONMENT, WATER, POPULATION AND COMMUNITIES" ;
+.
+aaos:C2010Q00232-19
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/114> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/134> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/154> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/159> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/160> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/191> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/215> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/297> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/32> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/358> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/363> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/374> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/40> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/41> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/60> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/67> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/72> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/85> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/86> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/94> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/17> ;
+  rdfs:label "PART 19     THE DEPARTMENT OF THE TREASURY" ;
+.
+aaos:C2010Q00232-2
+  rdf:type aao:AAO-Part ;
+  aao:administeredLegislation act:C2004A01468 ;
+  aao:administeredLegislation act:C2004A04340 ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/10> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/163> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/228> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/233> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/266> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/269> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/301> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/309> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/58> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/90> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/91> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/96> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/0> ;
+  rdfs:label "PART 2       THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
+.
+aaos:C2010Q00232-20
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/327> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/375> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/52> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/98> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/18> ;
+  rdfs:label "PART 20     THE DEPARTMENT OF VETERANS' AFFAIRS" ;
+.
+aaos:C2010Q00232-3
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/262> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/294> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/34> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/35> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/354> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/73> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/2> ;
+  rdfs:label "PART 3       THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
+.
+aaos:C2010Q00232-4
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/104> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/107> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/119> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/174> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/175> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/212> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/240> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/322> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/50> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/61> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/74> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/20> ;
+  rdfs:label "PART 4       THE DEPARTMENT OF CLIMATE CHANGE AND ENERGY EFFICIENCY" ;
+.
+aaos:C2010Q00232-5
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/101> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/19> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/4> ;
+  rdfs:label "PART 5       THE DEPARTMENT OF DEFENCE" ;
+.
+aaos:C2010Q00232-6
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/113> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/115> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/118> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/131> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/220> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/222> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/276> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/304> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/335> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/343> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/389> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/391> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/392> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/393> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/76> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/79> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/5> ;
+  rdfs:label "PART 6       THE DEPARTMENT OF EDUCATION, EMPLOYMENT AND WORKPLACE RELATIONS" ;
+.
+aaos:C2010Q00232-7
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/153> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/189> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/196> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/202> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/339> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/350> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/387> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/63> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/64> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/66> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/6> ;
+  rdfs:label "PART 7       THE DEPARTMENT OF FAMILIES, HOUSING, COMMUNITY SERVICES AND INDIGENOUS AFFAIRS" ;
+.
+aaos:C2010Q00232-8
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/117> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/165> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/171> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/173> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/21> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/278> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/285> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/317> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/344> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/359> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/36> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/5> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/59> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/78> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/8> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/7> ;
+  rdfs:label "PART 8       THE DEPARTMENT OF FINANCE AND DEREGULATION" ;
+.
+aaos:C2010Q00232-9
+  rdf:type aao:AAO-Part ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/136> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/138> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/139> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/140> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/141> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/142> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/143> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/148> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/150> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/214> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/280> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/311> ;
+  aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/312> ;
+  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
+  rdfs:label "PART 9       THE DEPARTMENT OF FOREIGN AFFAIRS AND TRADE" ;
+.
+aaos:C2010Q00232-T
+  rdf:type time:ProperInterval ;
+  time:hasBeginning [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-10-14"^^xsd:date ;
+    ] ;
+  time:hasEnd [
+      rdf:type time:Instant ;
+      time:inXSDDate "2010-12-13"^^xsd:date ;
+    ] ;
 .
 <http://test.linked.data.gov.au/dataset/aaos/aao/20080125>
   rdf:type aao:AAO ;
@@ -55,8 +473,35 @@
 .
 <http://test.linked.data.gov.au/dataset/aaos/aao/20101014>
   rdf:type aao:AAO ;
+  leg:dateOfRegistration "2010-11-18"^^xsd:date ;
+  leg:regID "C2010Q00232" ;
+  dct:hasPart aaos:C2010Q00232-1 ;
+  dct:hasPart aaos:C2010Q00232-10 ;
+  dct:hasPart aaos:C2010Q00232-11 ;
+  dct:hasPart aaos:C2010Q00232-12 ;
+  dct:hasPart aaos:C2010Q00232-13 ;
+  dct:hasPart aaos:C2010Q00232-14 ;
+  dct:hasPart aaos:C2010Q00232-15 ;
+  dct:hasPart aaos:C2010Q00232-16 ;
+  dct:hasPart aaos:C2010Q00232-17 ;
+  dct:hasPart aaos:C2010Q00232-18 ;
+  dct:hasPart aaos:C2010Q00232-19 ;
+  dct:hasPart aaos:C2010Q00232-2 ;
+  dct:hasPart aaos:C2010Q00232-20 ;
+  dct:hasPart aaos:C2010Q00232-3 ;
+  dct:hasPart aaos:C2010Q00232-4 ;
+  dct:hasPart aaos:C2010Q00232-5 ;
+  dct:hasPart aaos:C2010Q00232-6 ;
+  dct:hasPart aaos:C2010Q00232-7 ;
+  dct:hasPart aaos:C2010Q00232-8 ;
+  dct:hasPart aaos:C2010Q00232-9 ;
+  dct:isReplacedBy aaos:C2011Q00073 ;
   dct:issued "2010-10-14"^^xsd:date ;
+  dct:replaces aaos:C2010Q00191 ;
+  dct:temporal aaos:C2010Q00232-T ;
+  rdfs:label "Administrative Arrangements Order - C2010Q00232" ;
   rdfs:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2010-10-14.aspx> ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00232> ;
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20101014> ;
 .
 <http://test.linked.data.gov.au/dataset/aaos/aao/20111019>
@@ -173,195 +618,9 @@
   rdfs:seeAlso <https://www.pmc.gov.au/resource-centre/government/aao-amendment-28-august-2018> ;
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/20180828> ;
 .
-aaos:C2010Q00191
-  rdf:type aao:AAO ;
-  dct:hasPart aaos:C2010Q00191-1 ;
-  dct:hasPart aaos:C2010Q00191-2 ;
-  dct:hasPart aaos:C2010Q00191-3 ;
-  dct:issued "2010-09-14"^^xsd:date ;
-  dct:replaces aaos:C2008Q00023 ;
-  rdfs:label "Administrative Arrangements Order - C2010Q00191" ;
-  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
-  aao:dateOfRegistration "2010-09-16"^^xsd:date ;
-  aao:dateOfRepeal "2010-10-13"^^xsd:date ;
-  aao:inForce "false"^^xsd:boolean ;
-  aao:intervalInForce aaos:C2010Q00191-T ;
-  aao:regID "C2010Q00191" ;
-.
-aaos:C2010Q00191-1
-  rdf:type aao:AAO_Part ;
-  dct:isPartOf aaos:C2010Q00191 ;
-  rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
-  aao:administeredLegislation act:C2004A04749 ;
-  aao:administeredLegislation act:C2005C00188 ;
-  aao:matterDealtWith matter:AFF-A ;
-  aao:matterDealtWith matter:AFF-B ;
-  aao:matterDealtWith matter:AFF-C ;
-  aao:matterDealtWith matter:AFF-D ;
-  aao:matterDealtWith matter:AFF-E ;
-  aao:matterDealtWith matter:AFF-F ;
-  aao:matterDealtWith matter:AFF-G ;
-  aao:matterDealtWith matter:AFF-H ;
-  aao:matterDealtWith matter:AFF-I ;
-  aao:matterDealtWith matter:AFF-J ;
-  aao:relatedDepartment dept:AFF ;
-.
-aaos:C2010Q00191-2
-  rdf:type aao:AAO_Part ;
-  dct:isPartOf aaos:C2010Q00191 ;
-  rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
-  aao:administeredLegislation act:C2004A01468 ;
-  aao:administeredLegislation act:C2004A04340 ;
-  aao:matterDealtWith matter:AG-1 ;
-  aao:matterDealtWith matter:AG-10 ;
-  aao:matterDealtWith matter:AG-2 ;
-  aao:matterDealtWith matter:AG-3 ;
-  aao:matterDealtWith matter:AG-4 ;
-  aao:matterDealtWith matter:AG-5 ;
-  aao:matterDealtWith matter:AG-6 ;
-  aao:matterDealtWith matter:AG-7 ;
-  aao:matterDealtWith matter:AG-8 ;
-  aao:matterDealtWith matter:AG-9 ;
-  aao:relatedDepartment dept:AG ;
-.
-aaos:C2010Q00191-3
-  rdf:type aao:AAO_Part ;
-  dct:isPartOf aaos:C2010Q00191 ;
-  rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
-.
-aaos:C2010Q00191-T
-  rdf:type time:ProperInterval ;
-  time:hasBeginning [
-      rdf:type time:Instant ;
-      time:inXSDDate "2010-09-14"^^xsd:date ;
-    ] ;
-  time:hasEnd [
-      rdf:type time:Instant ;
-      time:inXSDDate "2010-10-13"^^xsd:date ;
-    ] ;
-.
 <http://test.linked.data.gov.au/dataset/aaos/aao/﻿20071203>
   rdf:type aao:AAO ;
   dct:issued "2007-12-03"^^xsd:date ;
   rdfs:seeAlso <http://www.naa.gov.au/information-management/information-governance/aao/2007-12-03.aspx> ;
   time:hasTime <http://linked.data.gov.au/dataset/epochs/trs/aao/﻿20071203> ;
-.
-act:C2004A01468
-  rdf:type aao:Act ;
-  rdfs:label "Acts Citation Act 1976" ;
-  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A01468> ;
-  aao:regID "C2004A01468" ;
-.
-act:C2004A04340
-  rdf:type aao:Act ;
-  rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
-  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04340> ;
-  aao:regID "C2004A04340" ;
-.
-act:C2004A04749
-  rdf:type aao:Act ;
-  rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
-  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04749> ;
-  aao:regID "C2004A04749" ;
-.
-act:C2005C00188
-  rdf:type aao:Legislation ;
-  rdfs:label "Agricultural and Veterinary Chemical Products (Collection of Levy) Act 1994" ;
-  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005C00188> ;
-  aao:regID "C2005C00188" ;
-.
-dept:AFF
-  rdf:type aao:Department ;
-  rdfs:label "THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
-.
-dept:AG
-  rdf:type aao:Department ;
-  rdfs:label "THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
-.
-matter:AFF-A
-  rdf:type aao:Matter ;
-  rdfs:label "Agricultural, pastoral, fishing, food and forest industries" ;
-.
-matter:AFF-B
-  rdf:type aao:Matter ;
-  rdfs:label "Soils and other natural resources" ;
-.
-matter:AFF-C
-  rdf:type aao:Matter ;
-  rdfs:label "Rural adjustment and drought issues" ;
-.
-matter:AFF-D
-  rdf:type aao:Matter ;
-  rdfs:label "Rural industries inspection and quarantine" ;
-.
-matter:AFF-E
-  rdf:type aao:Matter ;
-  rdfs:label "Primary industries research including economic research" ;
-.
-matter:AFF-F
-  rdf:type aao:Matter ;
-  rdfs:label "Commodity marketing, including export promotion and agribusiness" ;
-.
-matter:AFF-G
-  rdf:type aao:Matter ;
-  rdfs:label "Commodity-specific international organisations and activities" ;
-.
-matter:AFF-H
-  rdf:type aao:Matter ;
-  rdfs:label "Administration of international commodity agreements" ;
-.
-matter:AFF-I
-  rdf:type aao:Matter ;
-  rdfs:label "Administration of export controls on agricultural, fisheries and forestry industries products" ;
-.
-matter:AFF-J
-  rdf:type aao:Matter ;
-  rdfs:label "Food security policy and programs" ;
-.
-matter:AG-1
-  rdf:type aao:Matter ;
-  rdfs:label "Law and justice" ;
-.
-matter:AG-10
-  rdf:type aao:Matter ;
-  rdfs:label "Critical infrastructure protection co-ordination" ;
-.
-matter:AG-2
-  rdf:type aao:Matter ;
-  rdfs:label "Legal services to the Commonwealth" ;
-.
-matter:AG-3
-  rdf:type aao:Matter ;
-  rdfs:label "Criminal law and law enforcement" ;
-.
-matter:AG-4
-  rdf:type aao:Matter ;
-  rdfs:label "Customs and border control other than quarantine and inspection, and immigration" ;
-.
-matter:AG-5
-  rdf:type aao:Matter ;
-  rdfs:label "National security, protective security policy and co-ordination" ;
-.
-matter:AG-6
-  rdf:type aao:Matter ;
-  rdfs:label "Protective services at Commonwealth establishments and diplomatic and consular premises in Australia" ;
-.
-matter:AG-7
-  rdf:type aao:Matter ;
-  rdfs:label "Commonwealth emergency management" ;
-.
-matter:AG-8
-  rdf:type aao:Matter ;
-  rdfs:label "Natural disaster relief and mitigation in the form of financial assistance to the States and Territories" ;
-.
-matter:AG-9
-  rdf:type aao:Matter ;
-  rdfs:label "Administrative support for Royal Commissions and certain other inquiries" ;
-.
-aao:Legislation
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:allValuesFrom aao:Act_Part ;
-      owl:onProperty aao:exceptionToLegislation ;
-    ] ;
 .

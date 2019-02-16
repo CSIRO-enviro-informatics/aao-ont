@@ -1,0 +1,51 @@
+# baseURI: http://test.linked.data.gov.au/dataset/act
+# imports: http://linked.data.gov.au/def/aao
+
+@prefix aao: <http://linked.data.gov.au/def/aao#> .
+@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://test.linked.data.gov.au/dataset/act>
+  rdf:type owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+.
+act:C2004A01468
+  rdf:type leg:Act ;
+  leg:regID "C2004A01468" ;
+  dct:date "1976"^^xsd:gYear ;
+  dct:title "Acts Citation Act" ;
+  rdfs:label "Acts Citation Act 1976" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A01468> ;
+.
+act:C2004A04340
+  rdf:type leg:Act ;
+  leg:regID "C2004A04340" ;
+  dct:date "1992"^^xsd:gYear ;
+  dct:title "A.C.T. Supreme Court (Transfer) Act" ;
+  rdfs:label "A.C.T. Supreme Court (Transfer) Act 1992" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04340> ;
+.
+act:C2004A04749
+  rdf:type leg:Act ;
+  leg:regID "C2004A04749" ;
+  dct:date "1994"^^xsd:gYear ;
+  dct:title "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act" ;
+  rdfs:label "Agricultural and Veterinary Chemical Products Levy Imposition (Customs) Act 1994" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004A04749> ;
+.
+act:C2005C00188
+  rdf:type leg:Act ;
+  leg:regID "C2005C00188" ;
+  dct:date "1994"^^xsd:gYear ;
+  dct:title "Agricultural and Veterinary Chemical Products (Collection of Levy) Act" ;
+  rdfs:label "Agricultural and Veterinary Chemical Products (Collection of Levy) Act 1994" ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005C00188> ;
+.
