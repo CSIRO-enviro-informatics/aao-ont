@@ -15,6 +15,7 @@
 <http://test.linked.data.gov.au/dataset/department>
   rdf:type owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/auorg> ;
+  rdfs:comment "Defence is both #4 and #19?" ;
 .
 <http://test.linked.data.gov.au/dataset/department/0>
   rdf:type auorg:DepartmentOfState ;
