@@ -20,17 +20,21 @@ An `AAO` is composed of a set of numbered `Parts`, each relating to a single `De
 
 Figure: A top-level diagram of the AAO ontology's main classes and properties.
 
-`aao:AAO` is an Administrative Arrangements Order. When issued, it replaces the previous AAO. The time interval that it is in force ends when it is replaced. It is subject to amendment by a `aao:AAO-Amendment`
+`aao:AAO` is an Administrative Arrangements Order. When issued, it replaces the previous AAO. The time interval that it is in force is indicated using `dct:temporal` and ends when it is replaced. It is subject to amendment by a `aao:AAO-Amendment`
 
 `aao:AAO-Part` is an **Association Class** which
-- links the **department** to the **matters** and **legislation** that it is responsible for **while this AAO is in force** in the date range `dct:isPartOf/dct:issued` &rarr; `dct:isPartOf/aao:dateOfRepeal`
-- asserts the existence of a **matter** specified using the given wording, while this AAO is in force, in the date range `dct:isPartOf/dct:issued` &rarr; `dct:isPartOf/aao:dateOfRepeal`.
+- links the **department** to the **matters** and **legislation** that it is responsible for **while this AAO is in force**
+- asserts the existence of a **matter** specified using the given wording, while this AAO is in force
 
-Administered legislation refers to an `aao:Act`, optionally with excluded parts that are administered by another department. 
+Administered legislation refers to an `leg:Act`, optionally with excluded parts that are administered by another department. 
 
-`aao:Legislation` is the superclass of acts, legislative-, notifiable-, and prerogative-instruments, which are listed in the [Federal Register of Legislation](https://www.legislation.gov.au/Home).
+`leg:Legislation` is the superclass of acts, legislative-, notifiable-, and prerogative-instruments, which are listed in the [Federal Register of Legislation](https://www.legislation.gov.au/Home).
 
-`aao:Qualified-Legislation` is an association class which refers to either an `aao:Act` minus some excluded `aao:Act-Part`, else a group of `aao:Act-Parts` excluded from the administrative responsibility of another department.
+`leg:Act` is an Act of Parliament. The year that it was enacted is indicated by the `dct:date`. An Act is composed of one or more `leg:Act-Part`
+
+`aao:Qualified-Act` is an association class which refers to either an `leg:Act` possibly excluding some `leg:Act-Part`, else to a group of `leg:Act-Part` excluded from the administrative responsibility of another department. 
+
+THe description of a Department of State should be formalized using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
 
 ## Ontology representations
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
@@ -41,6 +45,10 @@ Administered legislation refers to an `aao:Act`, optionally with excluded parts 
 
 ## Instance data
 See [aaos.ttl](data/aaos.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF.
+These refer to: 
+- [acts.ttl](data/acts.ttl) (a small set of examples)
+- [matters.ttl](data/matters.ttl) (complete set for the last 10 years)
+- [departments.ttl](data/departments.ttl) (complete set for the last 10 years) 
 
 ### Identifiers
 Identifiers for **AAOs** and for **Legislation** are taken from the [Federal Register of Legislation](https://www.legislation.gov.au), e.g.
