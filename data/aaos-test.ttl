@@ -41,7 +41,7 @@ aaos:C2010Q00191
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
 .
 aaos:C2010Q00191-1
-  rdf:type aao:AAO_Part ;
+  rdf:type aao:AAO-Part ;
   aao:administeredLegislation act:C2004A04749 ;
   aao:administeredLegislation act:C2005C00188 ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/15> ;
@@ -54,12 +54,12 @@ aaos:C2010Q00191-1
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/4> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/55> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/56> ;
-  aao:responsibleDepartment dept:AFF ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/1> ;
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
 .
 aaos:C2010Q00191-2
-  rdf:type aao:AAO_Part ;
+  rdf:type aao:AAO-Part ;
   aao:administeredLegislation act:C2004A01468 ;
   aao:administeredLegislation act:C2004A04340 ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/228> ;
@@ -71,18 +71,19 @@ aaos:C2010Q00191-2
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/90> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/91> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/96> ;
-  aao:responsibleDepartment dept:AG ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/0> ;
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
 .
 aaos:C2010Q00191-3
-  rdf:type aao:AAO_Part ;
+  rdf:type aao:AAO-Part ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/262> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/294> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/34> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/35> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/354> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/73> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/2> ;
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 3        THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
 .
