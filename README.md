@@ -99,6 +99,25 @@ Each `aao:Matter`, `leg:Act` or `aao:Qualified-Act` has one or more `aao:qualifi
 
 Code example:
 
+SPARQL query
+```
+INSERT  { 
+?m aao:qualifiedResponsibility [
+	a aao:Responsibility ; 
+	aao:definedByAAO ?p ;
+	aao:responsibleDepartment ?d ;
+	dct:temporal ?t ; ] .
+}
+WHERE {
+	?p aao:matterDealtWith ?m . 
+	?p aao:responsibleDepartment ?d .
+	?a dct:hasPart ?p . 
+	?a dct:temporal ?t .
+}
+```
+
+supplements the initial information about a 'matter' to produce
+
 ```
 <http://test.linked.data.gov.au/dataset/matter/15>
   rdf:type aao:Matter ;
