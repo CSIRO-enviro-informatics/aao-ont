@@ -266,11 +266,3 @@
   dct:title "The Department Of Health And Ageing" ;
   rdfs:label "The Department Of Health And Ageing" ;
 .
-dept:AFF
-  rdf:type aao:DepartmentOfState ;
-  rdfs:label "THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
-.
-dept:AG
-  rdf:type aao:DepartmentOfState ;
-  rdfs:label "THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
-.
