@@ -194,6 +194,11 @@ aao:Matter
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty rdfs:label ;
     ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:qualifiedResponsibility ;
+    ] ;
 .
 aao:Qualified-Act
   rdf:type owl:Class ;
@@ -217,6 +222,26 @@ aao:Qualified-Act
     ] ;
   skos:scopeNote "Association class used to specify an Act of Legislation administered by a Minister with exceptions as noted" ;
 .
+aao:Responsibility
+  rdf:type owl:Class ;
+  rdfs:label "Responsibility association" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      rdfs:comment "This should corrspond to the dct:temporal on the associated AAO" ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty dcterms:temporal ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:definedByAAO ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:responsibleDepartment ;
+    ] ;
+.
 aao:administeredLegislation
   rdf:type owl:ObjectProperty ;
   rdfs:domain [
@@ -237,6 +262,12 @@ aao:administeredLegislation
 aao:amends
   rdf:type owl:ObjectProperty ;
   rdfs:range aao:AAO ;
+.
+aao:definedByAAO
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain aao:Responsibility ;
+  rdfs:label "defined by AAO" ;
+  rdfs:range aao:AAO-Part ;
 .
 aao:exceptionToLegislation
   rdf:type owl:ObjectProperty ;
@@ -265,6 +296,19 @@ aao:matterDealtWith
     ] ;
   rdfs:range aao:Matter ;
 .
+aao:qualifiedResponsibility
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:Matter
+          aao:Qualified-Act
+          leg:Act
+        ) ;
+    ] ;
+  rdfs:label "qualified responsibility " ;
+  rdfs:range aao:Responsibility ;
+.
 aao:responsibleDepartment
   rdf:type owl:InverseFunctionalProperty ;
   rdf:type owl:ObjectProperty ;
@@ -272,9 +316,7 @@ aao:responsibleDepartment
       rdf:type owl:Class ;
       owl:unionOf (
           aao:AAO-Part
-          aao:Matter
-          leg:Act
-          aao:Qualified-Act
+          aao:Responsibility
         ) ;
     ] ;
   rdfs:range auorg:DepartmentOfState ;
