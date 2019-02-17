@@ -128,9 +128,9 @@ See [aaos-test-processing.ttl](./data/aaos-test-processing.ttl).
 * [aao.profile.ttl](aao.profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology (TBD)
 
 ## Instance data
-See [aaos.ttl](data/aaos.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF.
+See [aaos-test.ttl](data/aaos-test.ttl) for examples of AAOs formalized using the AAO Ontology and presented in RDF.
 These refer to: 
-- [acts.ttl](data/acts.ttl) (a small set of examples)
+- [acts-test.ttl](data/acts-test.ttl) (a small set of examples)
 - [matters.ttl](data/matters.ttl) (complete set for the last 10 years)
 - [departments.ttl](data/departments.ttl) (complete set for the last 10 years) 
 
