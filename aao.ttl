@@ -178,14 +178,10 @@ aao:AAO-Part
       owl:onProperty aao:matterDealtWith ;
     ] ;
 .
-aao:Act_Part
-  rdf:type owl:Class ;
-  rdfs:label "Part of an Act of Parlianment" ;
-.
 aao:Legislation
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
-      owl:allValuesFrom aao:Act_Part ;
+      owl:allValuesFrom leg:Act-Part ;
       owl:onProperty aao:exceptionToLegislation ;
     ] ;
 .
@@ -245,7 +241,7 @@ aao:amends
 aao:exceptionToLegislation
   rdf:type owl:ObjectProperty ;
   rdfs:domain aao:Qualified-Act ;
-  rdfs:range aao:Act_Part ;
+  rdfs:range leg:Act-Part ;
 .
 aao:includedLegislation
   rdf:type owl:ObjectProperty ;
@@ -254,7 +250,7 @@ aao:includedLegislation
       rdf:type owl:Class ;
       owl:unionOf (
           leg:Act
-          aao:Act_Part
+          leg:Act-Part
         ) ;
     ] ;
 .
@@ -274,6 +270,7 @@ aao:relatedDepartment
   rdf:type owl:ObjectProperty ;
   rdfs:domain aao:AAO-Part ;
   rdfs:range auorg:DepartmentOfState ;
+  rdfs:subPropertyOf dcterms:relation ;
 .
 auorg:Entity
   rdfs:subClassOf [
@@ -286,6 +283,11 @@ leg:Act
   rdf:type owl:Class ;
   rdfs:label "Act of Parliament" ;
   rdfs:subClassOf leg:Legislation ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom leg:Act-Part ;
+      owl:onProperty dcterms:hasPart ;
+    ] ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
@@ -309,6 +311,15 @@ leg:Act
       owl:onProperty dcterms:date ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
       skos:scopeNote "This is the year the legislation was enacted, which is used in the common designation for the legislation - e.g. \"A.C.T. Supreme Court (Transfer) Act 1992\"" ;
+    ] ;
+.
+leg:Act-Part
+  rdf:type owl:Class ;
+  rdfs:label "Part of an Act of Parlianment" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom leg:Act ;
+      owl:onProperty dcterms:isPartOf ;
     ] ;
 .
 leg:Legislation
