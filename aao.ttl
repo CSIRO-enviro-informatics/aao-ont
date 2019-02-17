@@ -265,10 +265,18 @@ aao:matterDealtWith
     ] ;
   rdfs:range aao:Matter ;
 .
-aao:relatedDepartment
+aao:responsibleDepartment
   rdf:type owl:InverseFunctionalProperty ;
   rdf:type owl:ObjectProperty ;
-  rdfs:domain aao:AAO-Part ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          aao:AAO-Part
+          aao:Matter
+          leg:Act
+          aao:Qualified-Act
+        ) ;
+    ] ;
   rdfs:range auorg:DepartmentOfState ;
   rdfs:subPropertyOf dcterms:relation ;
 .

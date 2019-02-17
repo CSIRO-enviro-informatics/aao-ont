@@ -54,7 +54,7 @@ aaos:C2010Q00191-1
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/4> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/55> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/56> ;
-  aao:relatedDepartment dept:AFF ;
+  aao:responsibleDepartment dept:AFF ;
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 1        THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
 .
@@ -71,7 +71,7 @@ aaos:C2010Q00191-2
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/90> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/91> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/96> ;
-  aao:relatedDepartment dept:AG ;
+  aao:responsibleDepartment dept:AG ;
   dct:isPartOf aaos:C2010Q00191 ;
   rdfs:label "PART 2        THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
 .
@@ -111,7 +111,7 @@ aaos:C2010Q00232-1
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/4> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/55> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/56> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/1> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/1> ;
   rdfs:label "PART 1       THE DEPARTMENT OF AGRICULTURE, FISHERIES AND FORESTRY" ;
 .
 aaos:C2010Q00232-10
@@ -137,14 +137,14 @@ aaos:C2010Q00232-10
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/321> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/341> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/353> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/9> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/9> ;
   rdfs:label "PART 10     THE DEPARTMENT OF HEALTH AND AGEING" ;
 .
 aaos:C2010Q00232-11
   rdf:type aao:AAO-Part ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/111> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/255> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/10> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/10> ;
   rdfs:label "PART 11       THE DEPARTMENT OF HUMAN SERVICES" ;
 .
 aaos:C2010Q00232-12
@@ -155,7 +155,7 @@ aaos:C2010Q00232-12
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/257> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/31> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/45> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/11> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/11> ;
   rdfs:label "PART 12     THE DEPARTMENT OF IMMIGRATION AND CITIZENSHIP" ;
 .
 aaos:C2010Q00232-13
@@ -189,7 +189,7 @@ aaos:C2010Q00232-13
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/80> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/88> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/89> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/24> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/24> ;
   rdfs:label "PART 13     THE DEPARTMENT OF INDUSTRY, INNOVATION, SCIENCE, RESEARCH AND TERTIARY EDUCATION" ;
 .
 aaos:C2010Q00232-14
@@ -201,7 +201,7 @@ aaos:C2010Q00232-14
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/371> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/372> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/46> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/21> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/21> ;
   rdfs:label "PART 14       THE DEPARTMENT OF INFRASTRUCTURE AND TRANSPORT" ;
 .
 aaos:C2010Q00232-15
@@ -218,7 +218,7 @@ aaos:C2010Q00232-15
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/77> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/87> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/97> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/16> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/16> ;
   rdfs:label "PART Y         THE DEPARTMENT OF THE PRIME MINISTER AND CABINET" ;
 .
 aaos:C2010Q00232-16
@@ -236,7 +236,7 @@ aaos:C2010Q00232-16
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/69> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/9> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/92> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/25> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/25> ;
   rdfs:label "PART 16       THE DEPARTMENT OF REGIONAL AUSTRALIA, LOCAL GOVERNMENT, ARTS AND SPORT" ;
 .
 aaos:C2010Q00232-17
@@ -253,7 +253,7 @@ aaos:C2010Q00232-17
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/316> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/326> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/364> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/14> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/14> ;
   rdfs:label "PART 17       THE DEPARTMENT OF RESOURCES, ENERGY AND TOURISM" ;
 .
 aaos:C2010Q00232-18
@@ -271,7 +271,7 @@ aaos:C2010Q00232-18
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/376> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/7> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/83> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/23> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/23> ;
   rdfs:label "PART 18     THE DEPARTMENT OF SUSTAINABILITY, ENVIRONMENT, WATER, POPULATION AND COMMUNITIES" ;
 .
 aaos:C2010Q00232-19
@@ -296,7 +296,7 @@ aaos:C2010Q00232-19
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/85> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/86> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/94> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/17> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/17> ;
   rdfs:label "PART 19     THE DEPARTMENT OF THE TREASURY" ;
 .
 aaos:C2010Q00232-2
@@ -315,7 +315,7 @@ aaos:C2010Q00232-2
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/90> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/91> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/96> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/0> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/0> ;
   rdfs:label "PART 2       THE ATTORNEY‑GENERAL'S DEPARTMENT" ;
 .
 aaos:C2010Q00232-20
@@ -324,7 +324,7 @@ aaos:C2010Q00232-20
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/375> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/52> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/98> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/18> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/18> ;
   rdfs:label "PART 20     THE DEPARTMENT OF VETERANS' AFFAIRS" ;
 .
 aaos:C2010Q00232-3
@@ -335,7 +335,7 @@ aaos:C2010Q00232-3
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/35> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/354> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/73> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/2> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/2> ;
   rdfs:label "PART 3       THE DEPARTMENT OF BROADBAND, COMMUNICATIONS AND THE DIGITAL ECONOMY" ;
 .
 aaos:C2010Q00232-4
@@ -351,14 +351,14 @@ aaos:C2010Q00232-4
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/50> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/61> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/74> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/20> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/20> ;
   rdfs:label "PART 4       THE DEPARTMENT OF CLIMATE CHANGE AND ENERGY EFFICIENCY" ;
 .
 aaos:C2010Q00232-5
   rdf:type aao:AAO-Part ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/101> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/19> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/4> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/19> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/4> ;
   rdfs:label "PART 5       THE DEPARTMENT OF DEFENCE" ;
 .
 aaos:C2010Q00232-6
@@ -379,7 +379,7 @@ aaos:C2010Q00232-6
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/393> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/76> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/79> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/5> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/5> ;
   rdfs:label "PART 6       THE DEPARTMENT OF EDUCATION, EMPLOYMENT AND WORKPLACE RELATIONS" ;
 .
 aaos:C2010Q00232-7
@@ -394,7 +394,7 @@ aaos:C2010Q00232-7
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/63> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/64> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/66> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/6> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/6> ;
   rdfs:label "PART 7       THE DEPARTMENT OF FAMILIES, HOUSING, COMMUNITY SERVICES AND INDIGENOUS AFFAIRS" ;
 .
 aaos:C2010Q00232-8
@@ -414,7 +414,7 @@ aaos:C2010Q00232-8
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/59> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/78> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/8> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/7> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/7> ;
   rdfs:label "PART 8       THE DEPARTMENT OF FINANCE AND DEREGULATION" ;
 .
 aaos:C2010Q00232-9
@@ -432,7 +432,7 @@ aaos:C2010Q00232-9
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/280> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/311> ;
   aao:matterDealtWith <http://test.linked.data.gov.au/dataset/matter/312> ;
-  aao:relatedDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
+  aao:responsibleDepartment <http://test.linked.data.gov.au/dataset/department/8> ;
   rdfs:label "PART 9       THE DEPARTMENT OF FOREIGN AFFAIRS AND TRADE" ;
 .
 aaos:C2010Q00232-T
