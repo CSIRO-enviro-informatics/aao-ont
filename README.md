@@ -28,13 +28,13 @@ Figure: A top-level diagram of the AAO ontology's main classes and properties.
 
 Administered legislation refers to an `leg:Act`, optionally with excluded parts that are administered by another department. 
 
-`leg:Legislation` is the superclass of acts, legislative-, notifiable-, and prerogative-instruments, which are listed in the [Federal Register of Legislation](https://www.legislation.gov.au/Home).
-
 `leg:Act` is an Act of Parliament. The year that it was enacted is indicated by the `dct:date`. An Act is composed of one or more `leg:Act-Part`
 
 `aao:Qualified-Act` is an association class which refers to either an `leg:Act` possibly excluding some `leg:Act-Part`, else to a group of `leg:Act-Part` excluded from the administrative responsibility of another department. 
 
-THe description of a Department of State should be formalized using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
+`leg:Legislation` is the superclass of acts, legislative-, notifiable-, and prerogative-instruments, which are listed in the [Federal Register of Legislation](https://www.legislation.gov.au/Home).
+
+The description of a Department of State should be formalized using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
 
 ## Ontology representations
 * [aao.ttl](aao.ttl) - the formal RDF (turtle) ontology document
