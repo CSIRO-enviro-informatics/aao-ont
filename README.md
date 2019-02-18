@@ -95,7 +95,7 @@ A generic structure for expressing the sequence of responsibility which respects
 
 ![](image/responsibility.png)
 
-Each `aao:Matter`, `leg:Act` or `aao:Qualified-Act` has one or more `aao:qualifiedResponsibility` which indicate the `aao:responsibleDepartment`, the temporal interval over which this applies, and the Part of which Adminstrative Arrangements Order that establishes this. 
+Each `aao:Matter`, `leg:Act` or `aao:Qualified-Act` has one or more `aao:qualifiedResponsibility` whose value is a node of type `aao:Responsibility`. The latter indicates the associated Department of State using `aao:responsibleDepartment`, the temporal interval over which this applies using `dct:temporal`, and the Part of which Adminstrative Arrangements Order that establishes this using `aao:definedByAAO`. 
 
 Code example:
 
