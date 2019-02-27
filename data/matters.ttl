@@ -397,6 +397,7 @@
   diplomatic and consular missions;
   international security issues, including disarmament, arms control and nuclear non-proliferation;
   public diplomacy, including information and cultural programs;""" ;
+  owl:sameAs <http://test.linked.data.gov.au/dataset/matter/140> ;
 .
 <http://test.linked.data.gov.au/dataset/matter/142>
   rdf:type aao:Matter ;
@@ -460,6 +461,7 @@
   diplomatic and consular missions;
   international security issues, including disarmament, arms control and nuclear non-proliferation;
   public diplomacy, including information and cultural programs""" ;
+  owl:sameAs <http://test.linked.data.gov.au/dataset/matter/137> ;
 .
 <http://test.linked.data.gov.au/dataset/matter/146>
   rdf:type aao:Matter ;
@@ -490,6 +492,7 @@
   diplomatic and consular missions;
   international security issues, including disarmament, arms control and nuclear non-proliferation;
   public diplomacy, including information and cultural programs""" ;
+  owl:sameAs <http://test.linked.data.gov.au/dataset/matter/137> ;
 .
 <http://test.linked.data.gov.au/dataset/matter/148>
   rdf:type aao:Matter ;
@@ -522,6 +525,7 @@
   diplomatic and consular missions;
   international security issues, including disarmament, arms control, nuclear non-proliferation, counter terrorism and cyber affairs;
   public diplomacy, including information and cultural programs""" ;
+  owl:sameAs <http://test.linked.data.gov.au/dataset/matter/144> ;
 .
 <http://test.linked.data.gov.au/dataset/matter/15>
   rdf:type aao:Matter ;

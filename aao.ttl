@@ -1,9 +1,8 @@
 # baseURI: http://linked.data.gov.au/def/aao
 # imports: http://linked.data.gov.au/def/auorg
-# imports: http://purl.org/dc/elements/1.1/
 # imports: http://www.w3.org/2006/time
-# imports: http://www.w3.org/ns/org
-# imports: http://www.w3.org/ns/prov-o#
+# imports: http://www.w3.org/ns/org#
+# imports: http://www.w3.org/ns/time/gregorian
 # imports: http://xmlns.com/foaf/0.1/
 # prefix: aao
 
@@ -26,10 +25,9 @@
 <http://linked.data.gov.au/def/aao>
   rdf:type owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/auorg> ;
-  owl:imports <http://purl.org/dc/elements/1.1/> ;
   owl:imports <http://www.w3.org/2006/time> ;
-  owl:imports <http://www.w3.org/ns/org> ;
-  owl:imports <http://www.w3.org/ns/prov-o#> ;
+  owl:imports org: ;
+  owl:imports <http://www.w3.org/ns/time/gregorian> ;
   owl:imports foaf: ;
 .
 aao:AAO
