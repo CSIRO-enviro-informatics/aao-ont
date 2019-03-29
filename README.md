@@ -21,10 +21,6 @@ An `AAO` is composed of a set of numbered `Parts`, each relating to a single `De
 
 Figure: The AAO ontology's main classes and properties.
 
-![](image/responsibility.png)
-
-Figure: Classes supporting explicit links from Departments to Legislation and Matters, and vice versa. 
-
 `aao:AAO` is an Administrative Arrangements Order. When issued, it replaces the previous AAO. The time interval that it is in force is indicated using `dct:temporal` and ends when it is replaced. It is subject to amendment by a `aao:AAO-Amendment`
 
 `aao:AAO-Part` is an **Association Class** which
