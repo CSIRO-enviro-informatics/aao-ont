@@ -15,11 +15,15 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 
 ## Classes
 ### Administrative Arrangement Order structure
-An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `matters dealt with` and the `legislation administered` by the department. Each `Matter` is expressed as a text phrase. Each item of `Legislation` is either (i) one dated `Act` optionally excluding one or more `parts`, or (ii) one or more parts of an Act.  Thus, the ontology includes classes for each of these concepts, as shown in this diagram:
+An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `matters dealt with` and the `legislation administered` by the department. Each `Matter` is expressed as a text phrase. Each item of `Legislation` is either (i) one dated `Act` optionally excluding one or more `parts`, or (ii) one or more parts of an Act.  Thus, the ontology includes classes for each of these concepts:
 
 ![](image/aao.png)
 
-Figure: A top-level diagram of the AAO ontology's main classes and properties.
+Figure: The AAO ontology's main classes and properties.
+
+![](image/responsibility.png)
+
+Figure: Classes supporting explicit links from Departments to Legislation and Matters, and vice versa. 
 
 `aao:AAO` is an Administrative Arrangements Order. When issued, it replaces the previous AAO. The time interval that it is in force is indicated using `dct:temporal` and ends when it is replaced. It is subject to amendment by a `aao:AAO-Amendment`
 
