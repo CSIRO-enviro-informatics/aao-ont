@@ -187,18 +187,24 @@ aao:Action
   rdfs:subClassOf [
       a owl:Restriction ;
       rdfs:comment "This should corrspond to the dct:temporal on the associated AAO" ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass time:ProperInterval ;
       owl:onProperty dcterms:temporal ;
-    ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty aao:administeredLegislation ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty aao:definedByAAO ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:administeredLegislation ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty aao:matterDealtWith ;
     ] ;
 .
 aao:Legislation
@@ -251,8 +257,9 @@ aao:Responsibility
   rdfs:subClassOf [
       a owl:Restriction ;
       rdfs:comment "This should corrspond to the dct:temporal on the associated AAO" ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass time:ProperInterval ;
       owl:onProperty dcterms:temporal ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
