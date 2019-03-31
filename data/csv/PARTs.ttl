@@ -1,0 +1,5060 @@
+# baseURI: http://test.linked.data.gov.au/dataset/aaops
+# imports: http://linked.data.gov.au/def/aao
+# imports: http://linked.data.gov.au/def/auorg
+# imports: http://test.linked.data.gov.au/dataset/auorgds
+# imports: http://test.linked.data.gov.au/dataset/auorgps
+# imports: http://test.linked.data.gov.au/dataset/part-legs
+# imports: http://test.linked.data.gov.au/dataset/part-matters
+
+@prefix aao: <http://linked.data.gov.au/def/aao#> .
+@prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
+@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
+@prefix auorg: <http://linked.data.gov.au/def/auorg/> .
+@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorg/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aaos:P1
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P10
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P100
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P2 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P101
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D20 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P102
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P103
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P104
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P105
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P106
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P107
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P108
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P109
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P11
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P110
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P111
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P112
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P113
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P114
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D19 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P115
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P116
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P117
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P118
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P2 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P119
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D20 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P12
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D12 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P120
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P121
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P122
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P123
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P124
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A66 ;
+.
+aaos:P125
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P126
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P127
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P128
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P129
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P13
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P130
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P131
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D21 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P132
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D19 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P133
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P134
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P135
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P136
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P137
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P138
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P139
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P14
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P140
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P141
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P142
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A67 ;
+.
+aaos:P143
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P144
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P145
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P146
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D24 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P147
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P148
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P149
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P15
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P150
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P151
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P152
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P153
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P154
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P155
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P156
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P157
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P158
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P159
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P16
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P160
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P161
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A68 ;
+.
+aaos:P162
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P163
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P164
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P165
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D24 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P166
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P167
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P168
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P169
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P17
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P170
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P171
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P172
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P173
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P174
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P175
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P176
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P177
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P178
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P179
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P18
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P180
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A69 ;
+.
+aaos:P181
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P182
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P183
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P184
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D24 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P185
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P186
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P187
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P188
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P189
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P19
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P190
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P191
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P192
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P193
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P194
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P195
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P196
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P197
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P198
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P199
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A70 ;
+.
+aaos:P2
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P20
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P200
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P201
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P202
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P203
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P204
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P205
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P206
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P207
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P208
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P209
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P21
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P210
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P211
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P212
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P213
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P214
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P215
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P216
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P217
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P218
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A71 ;
+.
+aaos:P219
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P22
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P220
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P221
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P222
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P223
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P224
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P225
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P226
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P227
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P228
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P229
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P23
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P230
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P231
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P232
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P233
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P234
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P235
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P236
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P237
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A72 ;
+.
+aaos:P238
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P239
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P24
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P240
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P241
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P242
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P243
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P244
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D26 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P245
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P246
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P247
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P248
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P249
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P25
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D8 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P250
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P251
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D29 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P252
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P253
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P254
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P255
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P256
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A73 ;
+.
+aaos:P257
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P258
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P259
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P26
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P260
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P261
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P262
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P263
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P264
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P265
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P266
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P267
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P268
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P269
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P27
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P270
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P271
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P272
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D34 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P273
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P274
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P275
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P276
+  a aao:AAO-Part ;
+  aao:part-number 19 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A74 ;
+.
+aaos:P277
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P278
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P279
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P28
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P280
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P281
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P282
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P283
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P284
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P285
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P286
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P287
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P288
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P289
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P29
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D12 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P290
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P291
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P292
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D34 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P293
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P294
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P295
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P296
+  a aao:AAO-Part ;
+  aao:part-number 19 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A75 ;
+.
+aaos:P297
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P298
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P299
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P3
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P30
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P300
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P301
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P302
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P303
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P304
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P305
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P306
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P307
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P308
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P309
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P31
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P310
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P311
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P312
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D34 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P313
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P314
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P315
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P316
+  a aao:AAO-Part ;
+  aao:part-number 19 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A76 ;
+.
+aaos:P317
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P318
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P319
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P32
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P320
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P321
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P322
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P323
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P324
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P325
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P326
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P327
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P328
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P329
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P33
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P330
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D30 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P331
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P332
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D34 ;
+  auorg:isPartOfPortfolio auorgs:P3 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P333
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P334
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P335
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P336
+  a aao:AAO-Part ;
+  aao:part-number 19 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A77 ;
+.
+aaos:P337
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P338
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P339
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P34
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A61 ;
+.
+aaos:P340
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P341
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P342
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P343
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P344
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P345
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P346
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P347
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P348
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P349
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D36 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P35
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P350
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P351
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D37 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P352
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P353
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P354
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P355
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A78 ;
+.
+aaos:P356
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P357
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P358
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P359
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D32 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P36
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P360
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P361
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P362
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P363
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P364
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P365
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P366
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P367
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P368
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D36 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P369
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P37
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P370
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P371
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D37 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P372
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P373
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P374
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P375
+  a aao:AAO-Part ;
+  aao:part-number 19 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A79 ;
+.
+aaos:P376
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P377
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P378
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P379
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P38
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P380
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P381
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P382
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P383
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P384
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P385
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P386
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P387
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D38 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P388
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P389
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P39
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P390
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D37 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P391
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P392
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P393
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P394
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A80 ;
+.
+aaos:P395
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P396
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P397
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D23 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P398
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P399
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D25 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P4
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P40
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P400
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D27 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P401
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D28 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P402
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P403
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P404
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P405
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D22 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P406
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D38 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P407
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D33 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P408
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P409
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D37 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P41
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P410
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D31 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P411
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D35 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P412
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P413
+  a aao:AAO-Part ;
+  aao:part-number 18 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A81 ;
+.
+aaos:P414
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D39 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P415
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P416
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D40 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P417
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P418
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D41 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P419
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P42
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D8 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P420
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P421
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P422
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P423
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P424
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P425
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P426
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D47 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P427
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P428
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P429
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P43
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P430
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P431
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A82 ;
+.
+aaos:P432
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D39 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P433
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P434
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D40 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P435
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P436
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D41 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P437
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P438
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P439
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P44
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P440
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P441
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P442
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P443
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P444
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D47 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P445
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P446
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P447
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P448
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P449
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A83 ;
+.
+aaos:P45
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P450
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D39 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P451
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P452
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D40 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P453
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P454
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D41 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P455
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P456
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P457
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P458
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P459
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P46
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P2 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P460
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P461
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P462
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D47 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P463
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P464
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P465
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P466
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P467
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A84 ;
+.
+aaos:P468
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D39 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P469
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P47
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D12 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P470
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D40 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P471
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P472
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P473
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P474
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P475
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P476
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P477
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P478
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P479
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P48
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P480
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D51 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P481
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P482
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P483
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P484
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P485
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A85 ;
+.
+aaos:P486
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D39 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P487
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P488
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D40 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P489
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P49
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P490
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P491
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P492
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P493
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P494
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P495
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P496
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P497
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P498
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D51 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P499
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P5
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P50
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P500
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P501
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P502
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P503
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A86 ;
+.
+aaos:P504
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P505
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P506
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P507
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P508
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P509
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P51
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P510
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P511
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P512
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P513
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P514
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P515
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P516
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P517
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P518
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P519
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P52
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A62 ;
+.
+aaos:P520
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A87 ;
+.
+aaos:P521
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P522
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P523
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P524
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P525
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P526
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P527
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P528
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P529
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P53
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P530
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P531
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P532
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P533
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P534
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P535
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P536
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P537
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P538
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A88 ;
+.
+aaos:P539
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P54
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P540
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P541
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P542
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P543
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P544
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P545
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D43 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P546
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P547
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P548
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P549
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P55
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P550
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P551
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P552
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P553
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P554
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P555
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P556
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A89 ;
+.
+aaos:P557
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P558
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P559
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P56
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P560
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P561
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P562
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P563
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P564
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P565
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P566
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P567
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P568
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P569
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P57
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P570
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P571
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P572
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P573
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P574
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A90 ;
+.
+aaos:P575
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P576
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P577
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P578
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P579
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P58
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P580
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P581
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P582
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P583
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P584
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P585
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P586
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P587
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P588
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P589
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P59
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P590
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P591
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P592
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A91 ;
+.
+aaos:P593
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P594
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P595
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P596
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P597
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P598
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P599
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P6
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P60
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D8 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P600
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P601
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P602
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P603
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P604
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P605
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P606
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P607
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P608
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P609
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P61
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P610
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A92 ;
+.
+aaos:P611
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P612
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P613
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P614
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P615
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P616
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P617
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P618
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P619
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P62
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P620
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P621
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P622
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P623
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P624
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P625
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P626
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P627
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P628
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A93 ;
+.
+aaos:P629
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P63
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P630
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P631
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P632
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P633
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P634
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D42 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P635
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P636
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P637
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P638
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P639
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P64
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P2 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P640
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D46 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P641
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P642
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D48 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P643
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P644
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P645
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P646
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A94 ;
+.
+aaos:P647
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P648
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P649
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P65
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D12 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P650
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P651
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P652
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D56 ;
+  auorg:isPartOfPortfolio auorgs:P5 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P653
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P654
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P655
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P656
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P657
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P658
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D57 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P659
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P5 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P66
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P660
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D58 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P661
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P662
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P663
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P664
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A95 ;
+.
+aaos:P665
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P666
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P667
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P668
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P669
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P67
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P670
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P671
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P672
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P673
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P674
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D57 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P675
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P676
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P677
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D58 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P678
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D56 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P679
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P68
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P680
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P681
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P682
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A96 ;
+.
+aaos:P683
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P684
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P685
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P686
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P687
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P688
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P689
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P69
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P690
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P691
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P692
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D57 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P693
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P694
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P695
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D58 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P696
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D56 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P697
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P698
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P699
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P7
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P70
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A63 ;
+.
+aaos:P700
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A97 ;
+.
+aaos:P701
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D54 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P702
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P703
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D52 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P704
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P705
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D50 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P706
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D55 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P707
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D44 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P708
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P709
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D45 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P71
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P710
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D57 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P711
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P4 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P712
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D53 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P713
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D58 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P714
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D56 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P715
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P716
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D49 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P717
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P718
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A98 ;
+.
+aaos:P72
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P73
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P74
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P75
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P76
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P77
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P78
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D8 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P79
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P8
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D8 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P80
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P81
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P82
+  a aao:AAO-Part ;
+  aao:part-number 11 ;
+  aao:responsibleDepartment auorgs:D18 ;
+  auorg:isPartOfPortfolio auorgs:P2 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P83
+  a aao:AAO-Part ;
+  aao:part-number 12 ;
+  aao:responsibleDepartment auorgs:D12 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P84
+  a aao:AAO-Part ;
+  aao:part-number 13 ;
+  aao:responsibleDepartment auorgs:D13 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P85
+  a aao:AAO-Part ;
+  aao:part-number 14 ;
+  aao:responsibleDepartment auorgs:D14 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P86
+  a aao:AAO-Part ;
+  aao:part-number 15 ;
+  aao:responsibleDepartment auorgs:D15 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P87
+  a aao:AAO-Part ;
+  aao:part-number 16 ;
+  aao:responsibleDepartment auorgs:D16 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P88
+  a aao:AAO-Part ;
+  aao:part-number 17 ;
+  aao:responsibleDepartment auorgs:D17 ;
+  auorg:isPartOfPortfolio auorgs:P1 ;
+  dct:isPartOf aaos:A64 ;
+.
+aaos:P89
+  a aao:AAO-Part ;
+  aao:part-number 0 ;
+  aao:responsibleDepartment auorgs:D1 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P9
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A60 ;
+.
+aaos:P90
+  a aao:AAO-Part ;
+  aao:part-number 1 ;
+  aao:responsibleDepartment auorgs:D2 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P91
+  a aao:AAO-Part ;
+  aao:part-number 2 ;
+  aao:responsibleDepartment auorgs:D3 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P92
+  a aao:AAO-Part ;
+  aao:part-number 3 ;
+  aao:responsibleDepartment auorgs:D4 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P93
+  a aao:AAO-Part ;
+  aao:part-number 4 ;
+  aao:responsibleDepartment auorgs:D5 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P94
+  a aao:AAO-Part ;
+  aao:part-number 5 ;
+  aao:responsibleDepartment auorgs:D6 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P95
+  a aao:AAO-Part ;
+  aao:part-number 6 ;
+  aao:responsibleDepartment auorgs:D7 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P96
+  a aao:AAO-Part ;
+  aao:part-number 7 ;
+  aao:responsibleDepartment auorgs:D19 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P97
+  a aao:AAO-Part ;
+  aao:part-number 8 ;
+  aao:responsibleDepartment auorgs:D9 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P98
+  a aao:AAO-Part ;
+  aao:part-number 9 ;
+  aao:responsibleDepartment auorgs:D10 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+aaos:P99
+  a aao:AAO-Part ;
+  aao:part-number 10 ;
+  aao:responsibleDepartment auorgs:D11 ;
+  auorg:isPartOfPortfolio auorgs:P0 ;
+  dct:isPartOf aaos:A65 ;
+.
+<http://test.linked.data.gov.au/dataset/aaops>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+  owl:imports <http://linked.data.gov.au/def/auorg> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/auorgds> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/auorgps> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/part-legs> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/part-matters> ;
+.

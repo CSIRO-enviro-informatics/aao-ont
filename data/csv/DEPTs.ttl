@@ -1,0 +1,282 @@
+# baseURI: http://test.linked.data.gov.au/dataset/auorgds
+# imports: http://linked.data.gov.au/def/auorg
+
+@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
+@prefix auorg: <http://linked.data.gov.au/def/auorg/> .
+@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorg/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+auorgs:D1
+  a auorg:DepartmentOfState ;
+  dct:title "Agriculture, Fisheries and Forestry" ;
+.
+auorgs:D10
+  a auorg:DepartmentOfState ;
+  dct:title "Foreign Affairs and Trade" ;
+.
+auorgs:D11
+  a auorg:DepartmentOfState ;
+  dct:title "Health and Ageing" ;
+.
+auorgs:D12
+  a auorg:DepartmentOfState ;
+  dct:title "Immigration and Multicultural and Indigenous Affairs" ;
+.
+auorgs:D13
+  a auorg:DepartmentOfState ;
+  dct:title "Industry, Tourism and Resources" ;
+.
+auorgs:D14
+  a auorg:DepartmentOfState ;
+  dct:title "Prime Minister and Cabinet" ;
+.
+auorgs:D15
+  a auorg:DepartmentOfState ;
+  dct:title "Transport and Regional Services" ;
+.
+auorgs:D16
+  a auorg:DepartmentOfState ;
+  dct:title "Treasury" ;
+.
+auorgs:D17
+  a auorg:DepartmentOfState ;
+  dct:title "Veterans' Affairs" ;
+.
+auorgs:D18
+  a auorg:DepartmentOfState ;
+  dct:title "Human Services" ;
+.
+auorgs:D19
+  a auorg:DepartmentOfState ;
+  dct:title "Families, Community Services and Indigenous Affairs" ;
+.
+auorgs:D2
+  a auorg:DepartmentOfState ;
+  dct:title "Attorney-General's" ;
+.
+auorgs:D20
+  a auorg:DepartmentOfState ;
+  dct:title "Immigration and Multicultural Affairs" ;
+.
+auorgs:D21
+  a auorg:DepartmentOfState ;
+  dct:title "Environment and Water Resources" ;
+.
+auorgs:D22
+  a auorg:DepartmentOfState ;
+  dct:title "Immigration and Citizenship" ;
+.
+auorgs:D23
+  a auorg:DepartmentOfState ;
+  dct:title "Broadband, Communications and the Digital Economy" ;
+.
+auorgs:D24
+  a auorg:DepartmentOfState ;
+  dct:title "Climate Change" ;
+.
+auorgs:D25
+  a auorg:DepartmentOfState ;
+  dct:title "Education, Employment and Workplace Relations" ;
+.
+auorgs:D26
+  a auorg:DepartmentOfState ;
+  dct:title "Environment, Water, Heritage and the Arts" ;
+.
+auorgs:D27
+  a auorg:DepartmentOfState ;
+  dct:title "Families, Housing, Community Services and Indigenous Affairs" ;
+.
+auorgs:D28
+  a auorg:DepartmentOfState ;
+  dct:title "Finance and Deregulation" ;
+.
+auorgs:D29
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure, Transport, Regional Development and Local Government" ;
+.
+auorgs:D3
+  a auorg:DepartmentOfState ;
+  dct:title "Communications, Information Technology and the Arts" ;
+.
+auorgs:D30
+  a auorg:DepartmentOfState ;
+  dct:title "Innovation, Industry, Science and Research" ;
+.
+auorgs:D31
+  a auorg:DepartmentOfState ;
+  dct:title "Resources, Energy and Tourism" ;
+.
+auorgs:D32
+  a auorg:DepartmentOfState ;
+  dct:title "Climate Change and Energy Efficiency" ;
+.
+auorgs:D33
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure and Transport" ;
+.
+auorgs:D34
+  a auorg:DepartmentOfState ;
+  dct:title "Regional Australia, Regional Development and Local Government" ;
+.
+auorgs:D35
+  a auorg:DepartmentOfState ;
+  dct:title "Sustainability, Environment, Water, Population and Communities" ;
+.
+auorgs:D36
+  a auorg:DepartmentOfState ;
+  dct:title "Industry, Innovation, Science, Research and Tertiary Education" ;
+.
+auorgs:D37
+  a auorg:DepartmentOfState ;
+  dct:title "Regional Australia, Local Government, Arts and Sport" ;
+.
+auorgs:D38
+  a auorg:DepartmentOfState ;
+  dct:title "Industry, Innovation, Climate Change, Science, Research and Tertiary Education" ;
+.
+auorgs:D39
+  a auorg:DepartmentOfState ;
+  dct:title "Agriculture" ;
+.
+auorgs:D4
+  a auorg:DepartmentOfState ;
+  dct:title "Defence" ;
+.
+auorgs:D40
+  a auorg:DepartmentOfState ;
+  dct:title "Communications" ;
+.
+auorgs:D41
+  a auorg:DepartmentOfState ;
+  dct:title "Education" ;
+.
+auorgs:D42
+  a auorg:DepartmentOfState ;
+  dct:title "Employment" ;
+.
+auorgs:D43
+  a auorg:DepartmentOfState ;
+  dct:title "Environment" ;
+.
+auorgs:D44
+  a auorg:DepartmentOfState ;
+  dct:title "Finance" ;
+.
+auorgs:D45
+  a auorg:DepartmentOfState ;
+  dct:title "Health" ;
+.
+auorgs:D46
+  a auorg:DepartmentOfState ;
+  dct:title "Immigration and Border Protection" ;
+.
+auorgs:D47
+  a auorg:DepartmentOfState ;
+  dct:title "Industry" ;
+.
+auorgs:D48
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure and Regional Development" ;
+.
+auorgs:D49
+  a auorg:DepartmentOfState ;
+  dct:title "Social Services" ;
+.
+auorgs:D5
+  a auorg:DepartmentOfState ;
+  dct:title "Education, Science and Training" ;
+.
+auorgs:D50
+  a auorg:DepartmentOfState ;
+  dct:title "Education and Training" ;
+.
+auorgs:D51
+  a auorg:DepartmentOfState ;
+  dct:title "Industry and Science" ;
+.
+auorgs:D52
+  a auorg:DepartmentOfState ;
+  dct:title "Communications and the Arts" ;
+.
+auorgs:D53
+  a auorg:DepartmentOfState ;
+  dct:title "Industry, Innovation and Science" ;
+.
+auorgs:D54
+  a auorg:DepartmentOfState ;
+  dct:title "Agriculture and Water Resources" ;
+.
+auorgs:D55
+  a auorg:DepartmentOfState ;
+  dct:title "Environment and Energy" ;
+.
+auorgs:D56
+  a auorg:DepartmentOfState ;
+  dct:title "Jobs and Small Business" ;
+.
+auorgs:D57
+  a auorg:DepartmentOfState ;
+  dct:title "Home Affairs" ;
+.
+auorgs:D58
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure, Regional Development and Cities" ;
+.
+auorgs:D6
+  a auorg:DepartmentOfState ;
+  dct:title "Employment and Workplace Relations" ;
+.
+auorgs:D60
+  a auorg:DepartmentOfState ;
+  dct:title "Foreign Affairs" ;
+.
+auorgs:D61
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure" ;
+.
+auorgs:D62
+  a auorg:DepartmentOfState ;
+  dct:title "Parliamentary Departments" ;
+.
+auorgs:D63
+  a auorg:DepartmentOfState ;
+  dct:title "Prime Minister & Cabinet" ;
+.
+auorgs:D64
+  a auorg:DepartmentOfState ;
+  dct:title "Attorney General's" ;
+.
+auorgs:D65
+  a auorg:DepartmentOfState ;
+  dct:title "Infrastructure and Regional Development" ;
+.
+auorgs:D66
+  a auorg:DepartmentOfState ;
+  dct:title "Veteran's Affairs" ;
+.
+auorgs:D7
+  a auorg:DepartmentOfState ;
+  dct:title "Environment and Heritage" ;
+.
+auorgs:D8
+  a auorg:DepartmentOfState ;
+  dct:title "Family and Community Services" ;
+.
+auorgs:D9
+  a auorg:DepartmentOfState ;
+  dct:title "Finance and Administration" ;
+.
+<http://test.linked.data.gov.au/dataset/auorgds>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/auorg> ;
+.

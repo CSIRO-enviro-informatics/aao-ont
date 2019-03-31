@@ -1,0 +1,1588 @@
+# baseURI: http://test.linked.data.gov.au/dataset/aaos
+# imports: http://linked.data.gov.au/def/aao
+# imports: http://test.linked.data.gov.au/dataset/aaops
+
+@prefix aao: <http://linked.data.gov.au/def/aao#> .
+@prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
+@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aaos:A1
+  a aao:AAO ;
+  dct:issued "1901-01-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1901-01-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1905-02-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00001> ;
+.
+aaos:A10
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1923-03-14"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1925-06-23"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00010> ;
+.
+aaos:A11
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1925-06-24"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1928-12-10"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00011> ;
+.
+aaos:A12
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1928-12-11"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1932-04-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00012> ;
+.
+aaos:A13
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1932-04-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1936-08-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00013> ;
+.
+aaos:A14
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1936-08-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1939-04-03"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00014> ;
+.
+aaos:A15
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1939-04-04"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1939-11-28"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00015> ;
+.
+aaos:A16
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1939-11-29"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1947-03-11"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00016> ;
+.
+aaos:A17
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1947-03-12"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1947-03-31"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00017> ;
+.
+aaos:A18
+  a aao:AAO ;
+  dct:issued "1932-04-13"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1947-04-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1950-11-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00018> ;
+.
+aaos:A19
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1950-11-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1962-02-13"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00019> ;
+.
+aaos:A2
+  a aao:AAO ;
+  dct:issued "1901-01-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1905-02-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1906-05-31"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00002> ;
+.
+aaos:A20
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1962-02-14"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1964-01-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00024> ;
+.
+aaos:A21
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1964-01-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1964-03-18"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00025> ;
+.
+aaos:A22
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1964-03-19"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1965-01-07"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00026> ;
+.
+aaos:A23
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1965-01-08"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1965-11-03"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00027> ;
+.
+aaos:A24
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1965-11-04"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1967-03-08"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00028> ;
+.
+aaos:A25
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1967-03-09"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1968-05-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00029> ;
+.
+aaos:A26
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1968-05-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1970-04-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00030> ;
+.
+aaos:A27
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1970-04-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1971-01-17"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00031> ;
+.
+aaos:A28
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1971-01-18"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1972-03-05"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00032> ;
+.
+aaos:A29
+  a aao:AAO ;
+  dct:issued "1950-11-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1972-03-06"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1972-12-18"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00033> ;
+.
+aaos:A3
+  a aao:AAO ;
+  dct:issued "1901-01-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1906-06-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1906-07-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00003> ;
+.
+aaos:A30
+  a aao:AAO ;
+  dct:issued "1972-12-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1972-12-19"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1974-09-30"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00034> ;
+.
+aaos:A31
+  a aao:AAO ;
+  dct:issued "1972-12-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1974-10-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1975-02-07"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00035> ;
+.
+aaos:A32
+  a aao:AAO ;
+  dct:issued "1972-12-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1975-02-08"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1975-06-30"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00036> ;
+.
+aaos:A33
+  a aao:AAO ;
+  dct:issued "1972-12-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1975-07-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1975-12-21"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00037> ;
+.
+aaos:A34
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1975-12-22"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1976-10-04"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00038> ;
+.
+aaos:A35
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1976-10-05"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1977-09-04"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00039> ;
+.
+aaos:A36
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1977-09-05"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1977-12-19"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00040> ;
+.
+aaos:A37
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1977-12-20"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1978-09-27"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00041> ;
+.
+aaos:A38
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1978-09-28"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1979-02-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00042> ;
+.
+aaos:A39
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1979-02-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1979-09-10"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00043> ;
+.
+aaos:A4
+  a aao:AAO ;
+  dct:issued "1901-01-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1906-07-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1906-12-10"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00004> ;
+.
+aaos:A40
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1979-09-11"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1980-09-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00044> ;
+.
+aaos:A41
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1980-09-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1980-11-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00045> ;
+.
+aaos:A42
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1980-11-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1981-12-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00046> ;
+.
+aaos:A43
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1981-12-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1982-05-06"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00047> ;
+.
+aaos:A44
+  a aao:AAO ;
+  dct:issued "1975-12-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1982-05-07"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1983-03-10"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00048> ;
+.
+aaos:A45
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1983-03-11"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1985-07-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00049> ;
+.
+aaos:A46
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1985-07-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1986-01-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00054> ;
+.
+aaos:A47
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1986-01-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1987-01-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00055> ;
+.
+aaos:A48
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1987-01-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1987-07-23"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00056> ;
+.
+aaos:A49
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1987-07-24"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1988-03-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00057> ;
+.
+aaos:A5
+  a aao:AAO ;
+  dct:issued "1901-01-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1906-12-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1912-04-03"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00005> ;
+.
+aaos:A50
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1988-03-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1989-03-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00058> ;
+.
+aaos:A51
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1989-03-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1990-06-26"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00059> ;
+.
+aaos:A52
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1990-06-27"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1992-01-30"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00060> ;
+.
+aaos:A53
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1992-01-31"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1993-03-23"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00061> ;
+.
+aaos:A54
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1993-03-24"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1994-05-31"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00062> ;
+.
+aaos:A55
+  a aao:AAO ;
+  dct:issued "1983-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1994-06-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1996-03-10"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00063> ;
+.
+aaos:A56
+  a aao:AAO ;
+  dct:issued "1996-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1996-03-11"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1998-06-17"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00064> ;
+.
+aaos:A57
+  a aao:AAO ;
+  dct:issued "1996-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1998-06-18"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1998-10-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00065> ;
+.
+aaos:A58
+  a aao:AAO ;
+  dct:issued "1996-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1998-10-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2001-09-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00066> ;
+.
+aaos:A59
+  a aao:AAO ;
+  dct:issued "1996-03-11"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2001-09-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2001-11-25"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00067> ;
+.
+aaos:A6
+  a aao:AAO ;
+  dct:issued "1912-04-04"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1912-04-04"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1915-09-21"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00006> ;
+.
+aaos:A60
+  a aao:AAO ;
+  dct:issued "2001-11-26"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2001-11-26"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2003-12-17"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005Q00176> ;
+.
+aaos:A61
+  a aao:AAO ;
+  dct:issued "2003-12-18"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2003-12-18"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2004-10-25"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005Q00177> ;
+.
+aaos:A62
+  a aao:AAO ;
+  dct:issued "2004-10-26"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2004-10-26"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2004-12-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005Q00178> ;
+.
+aaos:A63
+  a aao:AAO ;
+  dct:issued "2004-12-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2004-12-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2005-07-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005Q00175> ;
+.
+aaos:A64
+  a aao:AAO ;
+  dct:issued "2004-12-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2005-07-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2006-01-26"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2005Q00187> ;
+.
+aaos:A65
+  a aao:AAO ;
+  dct:issued "2004-12-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2006-01-27"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2006-09-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2006Q00041> ;
+.
+aaos:A66
+  a aao:AAO ;
+  dct:issued "2006-09-21"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2006-09-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2007-01-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2006Q00131> ;
+.
+aaos:A67
+  a aao:AAO ;
+  dct:issued "2006-09-21"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2007-01-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2007-12-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2007Q00052> ;
+.
+aaos:A68
+  a aao:AAO ;
+  dct:issued "2007-12-03"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2007-12-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2008-01-24"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2007Q00174> ;
+.
+aaos:A69
+  a aao:AAO ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2008-01-25"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2008-04-30"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2008Q00023> ;
+.
+aaos:A7
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1915-09-22"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1916-12-19"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00007> ;
+.
+aaos:A70
+  a aao:AAO ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2008-05-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2010-03-07"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2008Q00124> ;
+.
+aaos:A71
+  a aao:AAO ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2010-03-08"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2010-05-05"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00087> ;
+.
+aaos:A72
+  a aao:AAO ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2010-05-06"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2010-06-28"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00099> ;
+.
+aaos:A73
+  a aao:AAO ;
+  dct:issued "2008-01-25"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2010-06-29"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2010-09-13"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00107> ;
+.
+aaos:A74
+  a aao:AAO ;
+  dct:issued "2010-09-14"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2010-09-14"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2010-10-13"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00191> ;
+.
+aaos:A75
+  a aao:AAO ;
+  dct:issued "2010-10-14"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2010-10-14"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2011-10-18"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2010Q00232> ;
+.
+aaos:A76
+  a aao:AAO ;
+  dct:issued "2010-10-14"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2011-10-19"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2011-12-06"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2011Q00072> ;
+.
+aaos:A77
+  a aao:AAO ;
+  dct:issued "2010-10-14"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2011-12-07"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2011-12-13"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00835> ;
+.
+aaos:A78
+  a aao:AAO ;
+  dct:issued "2011-12-14"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2011-12-14"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2012-02-08"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2011Q00073> ;
+.
+aaos:A79
+  a aao:AAO ;
+  dct:issued "2012-02-09"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2012-02-09"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2013-03-24"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2012Q00019> ;
+.
+aaos:A8
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1916-12-20"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1918-07-16"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00008> ;
+.
+aaos:A80
+  a aao:AAO ;
+  dct:issued "2012-02-09"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2013-03-25"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2013-05-15"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2013Q00003> ;
+.
+aaos:A81
+  a aao:AAO ;
+  dct:issued "2013-05-16"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2013-05-16"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2013-09-17"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2013Q00004> ;
+.
+aaos:A82
+  a aao:AAO ;
+  dct:issued "2013-09-18"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2013-09-18"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2013-10-02"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2013Q00006> ;
+.
+aaos:A83
+  a aao:AAO ;
+  dct:issued "2013-09-18"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2013-10-03"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2013-12-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2013Q00007> ;
+.
+aaos:A84
+  a aao:AAO ;
+  dct:issued "2013-12-12"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2013-12-12"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2014-12-22"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2014Q00003> ;
+.
+aaos:A85
+  a aao:AAO ;
+  dct:issued "2014-12-23"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2014-12-23"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2015-07-08"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2015Q00002> ;
+.
+aaos:A86
+  a aao:AAO ;
+  dct:issued "2015-07-09"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2015-07-09"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2015-09-20"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2015Q00005> ;
+.
+aaos:A87
+  a aao:AAO ;
+  dct:issued "2015-07-09"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2015-09-21"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2015-09-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2015Q00006> ;
+.
+aaos:A88
+  a aao:AAO ;
+  dct:issued "2015-09-30"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2015-09-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2016-02-17"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2016Q00008> ;
+.
+aaos:A89
+  a aao:AAO ;
+  dct:issued "2015-09-30"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2016-02-18"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2016-07-18"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2016Q00010> ;
+.
+aaos:A9
+  a aao:AAO ;
+  dct:issued "1915-09-22"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "1918-07-17"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "1923-03-13"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2004Q00009> ;
+.
+aaos:A90
+  a aao:AAO ;
+  dct:issued "2015-09-30"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2016-07-19"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2016-08-31"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2016Q00063> ;
+.
+aaos:A91
+  a aao:AAO ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2016-09-01"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2016-10-26"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2016Q00067> ;
+.
+aaos:A92
+  a aao:AAO ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2016-10-27"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2017-04-12"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2016Q00069> ;
+.
+aaos:A93
+  a aao:AAO ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2017-04-13"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2017-11-29"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2017Q00008> ;
+.
+aaos:A94
+  a aao:AAO ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2017-11-30"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2017-12-19"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00001> ;
+.
+aaos:A95
+  a aao:AAO ;
+  dct:issued "2016-09-01"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2017-12-20"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2018-04-18"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00002> ;
+.
+aaos:A96
+  a aao:AAO ;
+  dct:issued "2018-04-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2018-04-19"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2018-05-09"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00015> ;
+.
+aaos:A97
+  a aao:AAO ;
+  dct:issued "2018-04-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2018-05-10"^^xsd:date ;
+        ] ;
+      time:hasEnd [
+          a time:Instant ;
+          time:inXSDDate "2018-08-27"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00017> ;
+.
+aaos:A98
+  a aao:AAO ;
+  dct:issued "2018-04-19"^^xsd:date ;
+  dct:temporal [
+      a time:ProperInterval ;
+      time:hasBeginning [
+          a time:Instant ;
+          time:inXSDDate "2018-08-28"^^xsd:date ;
+        ] ;
+    ] ;
+  rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00021> ;
+.
+<http://test.linked.data.gov.au/dataset/aaos>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+  owl:imports <http://test.linked.data.gov.au/dataset/aaops> ;
+.
