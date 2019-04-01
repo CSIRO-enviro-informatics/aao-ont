@@ -41,8 +41,7 @@ Administered legislation refers to an `leg:Act`, optionally with excluded parts 
 
 The description of each Department of State should be formalized as an `auorg:DepartmentOfState` using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
 
-Code example:
-
+Examples from https://github.com/CSIRO-enviro-informatics/aao-ont/data/aao-time.ttl:
 ```
 aaos:A97
   rdf:type aao:AAO ;
@@ -154,7 +153,6 @@ aaos:M424
 .
 
 ```
-See [aaos-test.ttl](./data/aaos-test.ttl).
 
 ### Responsibility for legislation and matters
 Each `AAO` describes a set of responsibilities from an organizational viewpoint, sorted by each Department of State, over a specified time interval.
@@ -175,6 +173,9 @@ WHERE {
 }
 ORDER BY ?matter ASC(?begin)
 ```
+
+Extract from https://github.com/CSIRO-enviro-informatics/aao-ont/data/matter-sequence.tsv:
+
 | matter | dept | begin | end |
 | --- | --- | --- | --- |
 | ... | ... | ... | ... |
@@ -229,6 +230,8 @@ WHERE {
 }
 ORDER BY ?act ASC( ?begin )
 ```
+
+Extract from https://github.com/CSIRO-enviro-informatics/aao-ont/data/act-sequence.tsv:
 | act | dept | begin | end |
 | --- | --- | --- | --- |
 | ... | ... | ... | ... |
