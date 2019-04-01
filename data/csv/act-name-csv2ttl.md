@@ -1,13 +1,12 @@
-AAO.csv -> aaos.ttl recipe
+# ACT_NAME.csv -> ACT_NAMEs.ttl recipe
 
-1. Insert header
->>>
-# baseURI: http://test.linked.data.gov.au/dataset/aaos
+## Insert header
+```
+# baseURI: http://test.linked.data.gov.au/dataset/act-names
 # imports: http://linked.data.gov.au/def/aao
 
-@prefix aao: <http://linked.data.gov.au/def/aao#> .
-@prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
-@prefix act: <http://test.linked.data.gov.au/dataset/act/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix legs: <http://test.linked.data.gov.au/dataset/legislation/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
@@ -20,44 +19,34 @@ AAO.csv -> aaos.ttl recipe
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://test.linked.data.gov.au/dataset/aaos>
+<http://test.linked.data.gov.au/dataset/act-names>
   a owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/aao> ;
 .
-<<<
-2. end of lines
-Find
-(\d)"$
-Replace
-$1> ; \n.
+```
 
-3. successively replace last ","
+## end of lines
+Find
+```
+"$
+```
+Replace
+```
+" ; \n.
+```
+
+## successively replace last ","
 Find
 (.*)(",")
 
 Replace #1
-$1"^^xsd:date ; ] ;
-\t] ;
-\trdfs:seeAlso <
+$1 a auorg:DepartmentOfState ; \n\tdct:title "
 
-Replace #2
-$1"^^xsd:date ; ] ;
-\t\ttime:hasEnd [ a time:Instant ; time:inXSDDate "
-
-Replace #3
-$1"^^xsd:date ;
-\tdct:temporal [ a time:ProperInterval ;
-\t\ttime:hasBeginning [ a time:Instant ; time:inXSDDate "
-
-Replace #4
-$1
-\ta aao:AAO ;
-\tdct:issued "
 
 4. beginning of lines
 Find
 ^"(\d)
 Replace
-aaos:A$1
+legs:A$1
 
 5. Check for missing data from syntax errors
