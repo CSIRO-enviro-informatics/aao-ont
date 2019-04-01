@@ -1,6 +1,5 @@
 # baseURI: http://test.linked.data.gov.au/dataset/aaos
 # imports: http://linked.data.gov.au/def/aao
-# imports: http://test.linked.data.gov.au/dataset/aaops
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
@@ -1584,5 +1583,4 @@ aaos:A98
 <http://test.linked.data.gov.au/dataset/aaos>
   a owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/aao> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/aaops> ;
 .

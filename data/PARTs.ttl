@@ -1,10 +1,6 @@
 # baseURI: http://test.linked.data.gov.au/dataset/aaops
 # imports: http://linked.data.gov.au/def/aao
 # imports: http://linked.data.gov.au/def/auorg
-# imports: http://test.linked.data.gov.au/dataset/auorgds
-# imports: http://test.linked.data.gov.au/dataset/auorgps
-# imports: http://test.linked.data.gov.au/dataset/part-legs
-# imports: http://test.linked.data.gov.au/dataset/part-matters
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
@@ -5053,8 +5049,4 @@ aaos:P99
   a owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/aao> ;
   owl:imports <http://linked.data.gov.au/def/auorg> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/auorgds> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/auorgps> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/part-legs> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/part-matters> ;
 .

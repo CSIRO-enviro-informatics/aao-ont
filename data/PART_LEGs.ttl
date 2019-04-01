@@ -1,6 +1,5 @@
 # baseURI: http://test.linked.data.gov.au/dataset/part-legs
 # imports: http://linked.data.gov.au/def/aao
-# imports: http://test.linked.data.gov.au/dataset/act-names
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
@@ -45125,5 +45124,4 @@ aaos:P99
 <http://test.linked.data.gov.au/dataset/part-legs>
   a owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/aao> ;
-  owl:imports <http://test.linked.data.gov.au/dataset/act-names> ;
 .
