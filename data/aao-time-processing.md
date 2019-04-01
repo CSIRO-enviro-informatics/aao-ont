@@ -16,44 +16,6 @@ WHERE {
 }
 ```
 
-## Create history of each department's responsibility for legislation, matters
-```
-CONSTRUCT {
-	?d  aao:qualifiedAction [
-		a aao:Action ;
-		aao:administeredLegislation ?l ;
-		dct:temporal ?t ;
-		aao:definedByAAO ?p ;
-	] .
-}
-WHERE {
-	?d a auorg:DepartmentOfState .
-	?p a aao:AAO-Part .
-	?p aao:responsibleDepartment ?d .
-	?p aao:administeredLegislation ?l .
-	?p dct:isPartOf ?a .
-	?a dct:temporal ?t .
-}
-```
-
-```
-CONSTRUCT {
-	?d  aao:qualifiedAction [
-		a aao:Action ;
-		aao:matterDealtWith ?m ;
-		dct:temporal ?t ;
-		aao:definedByAAO ?p ;
-	] .
-}
-WHERE {
-	?d a auorg:DepartmentOfState .
-	?p a aao:AAO-Part .
-	?p aao:responsibleDepartment ?d .
-	?p aao:matterDealtWith ?m .
-	?p dct:isPartOf ?a .
-	?a dct:temporal ?t .
-}
-```
 ## Create a sequence of aaos
 ```
 SELECT ?aao ?begin ?end
@@ -120,4 +82,43 @@ WHERE {
 		dct:temporal/time:hasEnd/time:inXSDDate ?end .
 }
 ORDER BY ?act ASC( ?begin )
+```
+
+## Create history of each department's responsibility for legislation, matters
+```
+CONSTRUCT {
+	?d  aao:qualifiedAction [
+		a aao:Action ;
+		aao:administeredLegislation ?l ;
+		dct:temporal ?t ;
+		aao:definedByAAO ?p ;
+	] .
+}
+WHERE {
+	?d a auorg:DepartmentOfState .
+	?p a aao:AAO-Part .
+	?p aao:responsibleDepartment ?d .
+	?p aao:administeredLegislation ?l .
+	?p dct:isPartOf ?a .
+	?a dct:temporal ?t .
+}
+```
+
+```
+CONSTRUCT {
+	?d  aao:qualifiedAction [
+		a aao:Action ;
+		aao:matterDealtWith ?m ;
+		dct:temporal ?t ;
+		aao:definedByAAO ?p ;
+	] .
+}
+WHERE {
+	?d a auorg:DepartmentOfState .
+	?p a aao:AAO-Part .
+	?p aao:responsibleDepartment ?d .
+	?p aao:matterDealtWith ?m .
+	?p dct:isPartOf ?a .
+	?a dct:temporal ?t .
+}
 ```
