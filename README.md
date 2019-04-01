@@ -232,6 +232,7 @@ ORDER BY ?act ASC( ?begin )
 ```
 
 Extract from https://github.com/CSIRO-enviro-informatics/aao-ont/data/act-sequence.tsv:
+
 | act | dept | begin | end |
 | --- | --- | --- | --- |
 | ... | ... | ... | ... |
