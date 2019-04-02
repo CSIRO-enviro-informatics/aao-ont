@@ -1,4 +1,4 @@
-# Processing Longitudina AAO Data using SPARQL
+# Processing Longitudinal AAO Data using SPARQL
 
 Given a set of AAOs that have been literally converted using the aao-ont ontology, the following processing steps can get to a longitudinal record of responsibilities
 
@@ -14,7 +14,7 @@ WHERE {
 }
 ```
 
-Construct responsibility nodes for each matter: 
+Construct responsibility nodes for each matter:                      
 ```
 CONSTRUCT  {
 ?m aao:qualifiedResponsibility [

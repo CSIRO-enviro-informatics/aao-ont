@@ -1,18 +1,18 @@
-# Processing aaos.ttl to add explicit temporal order 
+# Process aaos.ttl to add explicit temporal order
 
 ## add Julian day for each calendar date
-Algorithm for YMD -> Julian Day by Henry F. Fliegel and Thomas C. Van Flandern from https://www.hermetic.ch/cal_stud/jdn.htm#comp 
 ```
-CONSTRUCT { 
-	?inst rdfs:comment "Modified Julian Day" ;
-		time:inTimePosition [ a time:TimePosition ;
-			time:numericPosition ?mjd ;
-		] ;
-	.
+CONSTRUCT {
+	?inst time:inTimePosition [
+		a time:TimePosition ;
+		rdfs:comment "Modified Julian Day" ;
+		time:numericPosition ?mjd ;
+	] ;
+.
 }
 WHERE {
 	?inst a time:Instant ;
-		time:inXSDDate ?date . 
+		time:inXSDDate ?date .
 	BIND ( YEAR(?date) as ?y )
 	BIND ( MONTH(?date) as ?m )
 	BIND ( DAY(?date) as ?d )
@@ -28,9 +28,9 @@ WHERE {
 
 ## Create a sequence of aaos
 ```
-CONSTRUCT { 
-	?aao2 dct:replaces ?aao1 ; 
-		time:intervalMetBy ?aao1 . 
+CONSTRUCT {
+	?aao2 dct:replaces ?aao1 ;
+		time:intervalMetBy ?aao1 .
 	?aao1 dct:isReplacedBy ?aao2 ;  
 		time:intervalMeets ?aao2 .
 }
@@ -42,4 +42,3 @@ WHERE {
 	FILTER (  ( ( ?begin2 - ?end1 ) >=0 ) && ( ( ?begin2 - ?end1 ) <= 4 )  )
 }
 ```
-

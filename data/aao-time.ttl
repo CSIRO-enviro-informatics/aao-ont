@@ -1,5 +1,4 @@
 # baseURI: http://test.linked.data.gov.au/dataset/aao-time
-# imports: http://test.linked.data.gov.au/dataset/aao-sequence
 # imports: http://test.linked.data.gov.au/dataset/aaops
 # imports: http://test.linked.data.gov.au/dataset/aaos
 # imports: http://test.linked.data.gov.au/dataset/act-names
@@ -32,8 +31,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://test.linked.data.gov.au/dataset/aao-time>
-  rdf:type owl:Ontology ;
-  owl:imports <http://test.linked.data.gov.au/dataset/aao-sequence> ;
+  a owl:Ontology ;
   owl:imports <http://test.linked.data.gov.au/dataset/aaops> ;
   owl:imports <http://test.linked.data.gov.au/dataset/aaos> ;
   owl:imports <http://test.linked.data.gov.au/dataset/act-names> ;
@@ -42,6 +40,340 @@
   owl:imports <http://test.linked.data.gov.au/dataset/matters> ;
   owl:imports <http://test.linked.data.gov.au/dataset/part-legs> ;
   owl:imports <http://test.linked.data.gov.au/dataset/part-matters> ;
+.
+aaos:A1
+  dct:isReplacedBy aaos:A2 ;
+  time:intervalMeets aaos:A2 ;
+.
+aaos:A10
+  dct:isReplacedBy aaos:A11 ;
+  dct:replaces aaos:A9 ;
+  time:intervalMeets aaos:A11 ;
+  time:intervalMetBy aaos:A9 ;
+.
+aaos:A11
+  dct:isReplacedBy aaos:A12 ;
+  dct:replaces aaos:A10 ;
+  time:intervalMeets aaos:A12 ;
+  time:intervalMetBy aaos:A10 ;
+.
+aaos:A12
+  dct:isReplacedBy aaos:A13 ;
+  dct:replaces aaos:A11 ;
+  time:intervalMeets aaos:A13 ;
+  time:intervalMetBy aaos:A11 ;
+.
+aaos:A13
+  dct:isReplacedBy aaos:A14 ;
+  dct:replaces aaos:A12 ;
+  time:intervalMeets aaos:A14 ;
+  time:intervalMetBy aaos:A12 ;
+.
+aaos:A14
+  dct:isReplacedBy aaos:A15 ;
+  dct:replaces aaos:A13 ;
+  time:intervalMeets aaos:A15 ;
+  time:intervalMetBy aaos:A13 ;
+.
+aaos:A15
+  dct:isReplacedBy aaos:A16 ;
+  dct:replaces aaos:A14 ;
+  time:intervalMeets aaos:A16 ;
+  time:intervalMetBy aaos:A14 ;
+.
+aaos:A16
+  dct:isReplacedBy aaos:A17 ;
+  dct:replaces aaos:A15 ;
+  time:intervalMeets aaos:A17 ;
+  time:intervalMetBy aaos:A15 ;
+.
+aaos:A17
+  dct:isReplacedBy aaos:A18 ;
+  dct:replaces aaos:A16 ;
+  time:intervalMeets aaos:A18 ;
+  time:intervalMetBy aaos:A16 ;
+.
+aaos:A18
+  dct:isReplacedBy aaos:A19 ;
+  dct:replaces aaos:A17 ;
+  time:intervalMeets aaos:A19 ;
+  time:intervalMetBy aaos:A17 ;
+.
+aaos:A19
+  dct:isReplacedBy aaos:A20 ;
+  dct:replaces aaos:A18 ;
+  time:intervalMeets aaos:A20 ;
+  time:intervalMetBy aaos:A18 ;
+.
+aaos:A2
+  dct:isReplacedBy aaos:A3 ;
+  dct:replaces aaos:A1 ;
+  time:intervalMeets aaos:A3 ;
+  time:intervalMetBy aaos:A1 ;
+.
+aaos:A20
+  dct:isReplacedBy aaos:A21 ;
+  dct:replaces aaos:A19 ;
+  time:intervalMeets aaos:A21 ;
+  time:intervalMetBy aaos:A19 ;
+.
+aaos:A21
+  dct:isReplacedBy aaos:A22 ;
+  dct:replaces aaos:A20 ;
+  time:intervalMeets aaos:A22 ;
+  time:intervalMetBy aaos:A20 ;
+.
+aaos:A22
+  dct:isReplacedBy aaos:A23 ;
+  dct:replaces aaos:A21 ;
+  time:intervalMeets aaos:A23 ;
+  time:intervalMetBy aaos:A21 ;
+.
+aaos:A23
+  dct:isReplacedBy aaos:A24 ;
+  dct:replaces aaos:A22 ;
+  time:intervalMeets aaos:A24 ;
+  time:intervalMetBy aaos:A22 ;
+.
+aaos:A24
+  dct:isReplacedBy aaos:A25 ;
+  dct:replaces aaos:A23 ;
+  time:intervalMeets aaos:A25 ;
+  time:intervalMetBy aaos:A23 ;
+.
+aaos:A25
+  dct:isReplacedBy aaos:A26 ;
+  dct:replaces aaos:A24 ;
+  time:intervalMeets aaos:A26 ;
+  time:intervalMetBy aaos:A24 ;
+.
+aaos:A26
+  dct:isReplacedBy aaos:A27 ;
+  dct:replaces aaos:A25 ;
+  time:intervalMeets aaos:A27 ;
+  time:intervalMetBy aaos:A25 ;
+.
+aaos:A27
+  dct:isReplacedBy aaos:A28 ;
+  dct:replaces aaos:A26 ;
+  time:intervalMeets aaos:A28 ;
+  time:intervalMetBy aaos:A26 ;
+.
+aaos:A28
+  dct:isReplacedBy aaos:A29 ;
+  dct:replaces aaos:A27 ;
+  time:intervalMeets aaos:A29 ;
+  time:intervalMetBy aaos:A27 ;
+.
+aaos:A29
+  dct:isReplacedBy aaos:A30 ;
+  dct:replaces aaos:A28 ;
+  time:intervalMeets aaos:A30 ;
+  time:intervalMetBy aaos:A28 ;
+.
+aaos:A3
+  dct:isReplacedBy aaos:A4 ;
+  dct:replaces aaos:A2 ;
+  time:intervalMeets aaos:A4 ;
+  time:intervalMetBy aaos:A2 ;
+.
+aaos:A30
+  dct:isReplacedBy aaos:A31 ;
+  dct:replaces aaos:A29 ;
+  time:intervalMeets aaos:A31 ;
+  time:intervalMetBy aaos:A29 ;
+.
+aaos:A31
+  dct:isReplacedBy aaos:A32 ;
+  dct:replaces aaos:A30 ;
+  time:intervalMeets aaos:A32 ;
+  time:intervalMetBy aaos:A30 ;
+.
+aaos:A32
+  dct:isReplacedBy aaos:A33 ;
+  dct:replaces aaos:A31 ;
+  time:intervalMeets aaos:A33 ;
+  time:intervalMetBy aaos:A31 ;
+.
+aaos:A33
+  dct:isReplacedBy aaos:A34 ;
+  dct:replaces aaos:A32 ;
+  time:intervalMeets aaos:A34 ;
+  time:intervalMetBy aaos:A32 ;
+.
+aaos:A34
+  dct:isReplacedBy aaos:A35 ;
+  dct:replaces aaos:A33 ;
+  time:intervalMeets aaos:A35 ;
+  time:intervalMetBy aaos:A33 ;
+.
+aaos:A35
+  dct:isReplacedBy aaos:A36 ;
+  dct:replaces aaos:A34 ;
+  time:intervalMeets aaos:A36 ;
+  time:intervalMetBy aaos:A34 ;
+.
+aaos:A36
+  dct:isReplacedBy aaos:A37 ;
+  dct:replaces aaos:A35 ;
+  time:intervalMeets aaos:A37 ;
+  time:intervalMetBy aaos:A35 ;
+.
+aaos:A37
+  dct:isReplacedBy aaos:A38 ;
+  dct:replaces aaos:A36 ;
+  time:intervalMeets aaos:A38 ;
+  time:intervalMetBy aaos:A36 ;
+.
+aaos:A38
+  dct:isReplacedBy aaos:A39 ;
+  dct:replaces aaos:A37 ;
+  time:intervalMeets aaos:A39 ;
+  time:intervalMetBy aaos:A37 ;
+.
+aaos:A39
+  dct:isReplacedBy aaos:A40 ;
+  dct:replaces aaos:A38 ;
+  time:intervalMeets aaos:A40 ;
+  time:intervalMetBy aaos:A38 ;
+.
+aaos:A4
+  dct:isReplacedBy aaos:A5 ;
+  dct:replaces aaos:A3 ;
+  time:intervalMeets aaos:A5 ;
+  time:intervalMetBy aaos:A3 ;
+.
+aaos:A40
+  dct:isReplacedBy aaos:A41 ;
+  dct:replaces aaos:A39 ;
+  time:intervalMeets aaos:A41 ;
+  time:intervalMetBy aaos:A39 ;
+.
+aaos:A41
+  dct:isReplacedBy aaos:A42 ;
+  dct:replaces aaos:A40 ;
+  time:intervalMeets aaos:A42 ;
+  time:intervalMetBy aaos:A40 ;
+.
+aaos:A42
+  dct:isReplacedBy aaos:A43 ;
+  dct:replaces aaos:A41 ;
+  time:intervalMeets aaos:A43 ;
+  time:intervalMetBy aaos:A41 ;
+.
+aaos:A43
+  dct:isReplacedBy aaos:A44 ;
+  dct:replaces aaos:A42 ;
+  time:intervalMeets aaos:A44 ;
+  time:intervalMetBy aaos:A42 ;
+.
+aaos:A44
+  dct:isReplacedBy aaos:A45 ;
+  dct:replaces aaos:A43 ;
+  time:intervalMeets aaos:A45 ;
+  time:intervalMetBy aaos:A43 ;
+.
+aaos:A45
+  dct:isReplacedBy aaos:A46 ;
+  dct:replaces aaos:A44 ;
+  time:intervalMeets aaos:A46 ;
+  time:intervalMetBy aaos:A44 ;
+.
+aaos:A46
+  dct:isReplacedBy aaos:A47 ;
+  dct:replaces aaos:A45 ;
+  time:intervalMeets aaos:A47 ;
+  time:intervalMetBy aaos:A45 ;
+.
+aaos:A47
+  dct:isReplacedBy aaos:A48 ;
+  dct:replaces aaos:A46 ;
+  time:intervalMeets aaos:A48 ;
+  time:intervalMetBy aaos:A46 ;
+.
+aaos:A48
+  dct:isReplacedBy aaos:A49 ;
+  dct:replaces aaos:A47 ;
+  time:intervalMeets aaos:A49 ;
+  time:intervalMetBy aaos:A47 ;
+.
+aaos:A49
+  dct:isReplacedBy aaos:A50 ;
+  dct:replaces aaos:A48 ;
+  time:intervalMeets aaos:A50 ;
+  time:intervalMetBy aaos:A48 ;
+.
+aaos:A5
+  dct:isReplacedBy aaos:A6 ;
+  dct:replaces aaos:A4 ;
+  time:intervalMeets aaos:A6 ;
+  time:intervalMetBy aaos:A4 ;
+.
+aaos:A50
+  dct:isReplacedBy aaos:A51 ;
+  dct:replaces aaos:A49 ;
+  time:intervalMeets aaos:A51 ;
+  time:intervalMetBy aaos:A49 ;
+.
+aaos:A51
+  dct:isReplacedBy aaos:A52 ;
+  dct:replaces aaos:A50 ;
+  time:intervalMeets aaos:A52 ;
+  time:intervalMetBy aaos:A50 ;
+.
+aaos:A52
+  dct:isReplacedBy aaos:A53 ;
+  dct:replaces aaos:A51 ;
+  time:intervalMeets aaos:A53 ;
+  time:intervalMetBy aaos:A51 ;
+.
+aaos:A53
+  dct:isReplacedBy aaos:A54 ;
+  dct:replaces aaos:A52 ;
+  time:intervalMeets aaos:A54 ;
+  time:intervalMetBy aaos:A52 ;
+.
+aaos:A54
+  dct:isReplacedBy aaos:A55 ;
+  dct:replaces aaos:A53 ;
+  time:intervalMeets aaos:A55 ;
+  time:intervalMetBy aaos:A53 ;
+.
+aaos:A55
+  dct:isReplacedBy aaos:A56 ;
+  dct:replaces aaos:A54 ;
+  time:intervalMeets aaos:A56 ;
+  time:intervalMetBy aaos:A54 ;
+.
+aaos:A56
+  dct:isReplacedBy aaos:A57 ;
+  dct:replaces aaos:A55 ;
+  time:intervalMeets aaos:A57 ;
+  time:intervalMetBy aaos:A55 ;
+.
+aaos:A57
+  dct:isReplacedBy aaos:A58 ;
+  dct:replaces aaos:A56 ;
+  time:intervalMeets aaos:A58 ;
+  time:intervalMetBy aaos:A56 ;
+.
+aaos:A58
+  dct:isReplacedBy aaos:A59 ;
+  dct:replaces aaos:A57 ;
+  time:intervalMeets aaos:A59 ;
+  time:intervalMetBy aaos:A57 ;
+.
+aaos:A59
+  dct:isReplacedBy aaos:A60 ;
+  dct:replaces aaos:A58 ;
+  time:intervalMeets aaos:A60 ;
+  time:intervalMetBy aaos:A58 ;
+.
+aaos:A6
+  dct:isReplacedBy aaos:A7 ;
+  dct:replaces aaos:A5 ;
+  time:intervalMeets aaos:A7 ;
+  time:intervalMetBy aaos:A5 ;
 .
 aaos:A60
   dct:hasPart aaos:P1 ;
@@ -61,6 +393,10 @@ aaos:A60
   dct:hasPart aaos:P7 ;
   dct:hasPart aaos:P8 ;
   dct:hasPart aaos:P9 ;
+  dct:isReplacedBy aaos:A61 ;
+  dct:replaces aaos:A59 ;
+  time:intervalMeets aaos:A61 ;
+  time:intervalMetBy aaos:A59 ;
 .
 aaos:A61
   dct:hasPart aaos:P18 ;
@@ -80,6 +416,10 @@ aaos:A61
   dct:hasPart aaos:P32 ;
   dct:hasPart aaos:P33 ;
   dct:hasPart aaos:P34 ;
+  dct:isReplacedBy aaos:A62 ;
+  dct:replaces aaos:A60 ;
+  time:intervalMeets aaos:A62 ;
+  time:intervalMetBy aaos:A60 ;
 .
 aaos:A62
   dct:hasPart aaos:P35 ;
@@ -100,6 +440,10 @@ aaos:A62
   dct:hasPart aaos:P50 ;
   dct:hasPart aaos:P51 ;
   dct:hasPart aaos:P52 ;
+  dct:isReplacedBy aaos:A63 ;
+  dct:replaces aaos:A61 ;
+  time:intervalMeets aaos:A63 ;
+  time:intervalMetBy aaos:A61 ;
 .
 aaos:A63
   dct:hasPart aaos:P53 ;
@@ -120,6 +464,10 @@ aaos:A63
   dct:hasPart aaos:P68 ;
   dct:hasPart aaos:P69 ;
   dct:hasPart aaos:P70 ;
+  dct:isReplacedBy aaos:A64 ;
+  dct:replaces aaos:A62 ;
+  time:intervalMeets aaos:A64 ;
+  time:intervalMetBy aaos:A62 ;
 .
 aaos:A64
   dct:hasPart aaos:P71 ;
@@ -140,6 +488,10 @@ aaos:A64
   dct:hasPart aaos:P86 ;
   dct:hasPart aaos:P87 ;
   dct:hasPart aaos:P88 ;
+  dct:isReplacedBy aaos:A65 ;
+  dct:replaces aaos:A63 ;
+  time:intervalMeets aaos:A65 ;
+  time:intervalMetBy aaos:A63 ;
 .
 aaos:A65
   dct:hasPart aaos:P100 ;
@@ -160,6 +512,10 @@ aaos:A65
   dct:hasPart aaos:P97 ;
   dct:hasPart aaos:P98 ;
   dct:hasPart aaos:P99 ;
+  dct:isReplacedBy aaos:A66 ;
+  dct:replaces aaos:A64 ;
+  time:intervalMeets aaos:A66 ;
+  time:intervalMetBy aaos:A64 ;
 .
 aaos:A66
   dct:hasPart aaos:P107 ;
@@ -180,6 +536,10 @@ aaos:A66
   dct:hasPart aaos:P122 ;
   dct:hasPart aaos:P123 ;
   dct:hasPart aaos:P124 ;
+  dct:isReplacedBy aaos:A67 ;
+  dct:replaces aaos:A65 ;
+  time:intervalMeets aaos:A67 ;
+  time:intervalMetBy aaos:A65 ;
 .
 aaos:A67
   dct:hasPart aaos:P125 ;
@@ -200,6 +560,10 @@ aaos:A67
   dct:hasPart aaos:P140 ;
   dct:hasPart aaos:P141 ;
   dct:hasPart aaos:P142 ;
+  dct:isReplacedBy aaos:A68 ;
+  dct:replaces aaos:A66 ;
+  time:intervalMeets aaos:A68 ;
+  time:intervalMetBy aaos:A66 ;
 .
 aaos:A68
   dct:hasPart aaos:P143 ;
@@ -221,6 +585,10 @@ aaos:A68
   dct:hasPart aaos:P159 ;
   dct:hasPart aaos:P160 ;
   dct:hasPart aaos:P161 ;
+  dct:isReplacedBy aaos:A69 ;
+  dct:replaces aaos:A67 ;
+  time:intervalMeets aaos:A69 ;
+  time:intervalMetBy aaos:A67 ;
 .
 aaos:A69
   dct:hasPart aaos:P162 ;
@@ -242,6 +610,16 @@ aaos:A69
   dct:hasPart aaos:P178 ;
   dct:hasPart aaos:P179 ;
   dct:hasPart aaos:P180 ;
+  dct:isReplacedBy aaos:A70 ;
+  dct:replaces aaos:A68 ;
+  time:intervalMeets aaos:A70 ;
+  time:intervalMetBy aaos:A68 ;
+.
+aaos:A7
+  dct:isReplacedBy aaos:A8 ;
+  dct:replaces aaos:A6 ;
+  time:intervalMeets aaos:A8 ;
+  time:intervalMetBy aaos:A6 ;
 .
 aaos:A70
   dct:hasPart aaos:P181 ;
@@ -263,6 +641,10 @@ aaos:A70
   dct:hasPart aaos:P197 ;
   dct:hasPart aaos:P198 ;
   dct:hasPart aaos:P199 ;
+  dct:isReplacedBy aaos:A71 ;
+  dct:replaces aaos:A69 ;
+  time:intervalMeets aaos:A71 ;
+  time:intervalMetBy aaos:A69 ;
 .
 aaos:A71
   dct:hasPart aaos:P200 ;
@@ -284,6 +666,10 @@ aaos:A71
   dct:hasPart aaos:P216 ;
   dct:hasPart aaos:P217 ;
   dct:hasPart aaos:P218 ;
+  dct:isReplacedBy aaos:A72 ;
+  dct:replaces aaos:A70 ;
+  time:intervalMeets aaos:A72 ;
+  time:intervalMetBy aaos:A70 ;
 .
 aaos:A72
   dct:hasPart aaos:P219 ;
@@ -305,6 +691,10 @@ aaos:A72
   dct:hasPart aaos:P235 ;
   dct:hasPart aaos:P236 ;
   dct:hasPart aaos:P237 ;
+  dct:isReplacedBy aaos:A73 ;
+  dct:replaces aaos:A71 ;
+  time:intervalMeets aaos:A73 ;
+  time:intervalMetBy aaos:A71 ;
 .
 aaos:A73
   dct:hasPart aaos:P238 ;
@@ -326,6 +716,10 @@ aaos:A73
   dct:hasPart aaos:P254 ;
   dct:hasPart aaos:P255 ;
   dct:hasPart aaos:P256 ;
+  dct:isReplacedBy aaos:A74 ;
+  dct:replaces aaos:A72 ;
+  time:intervalMeets aaos:A74 ;
+  time:intervalMetBy aaos:A72 ;
 .
 aaos:A74
   dct:hasPart aaos:P257 ;
@@ -348,6 +742,10 @@ aaos:A74
   dct:hasPart aaos:P274 ;
   dct:hasPart aaos:P275 ;
   dct:hasPart aaos:P276 ;
+  dct:isReplacedBy aaos:A75 ;
+  dct:replaces aaos:A73 ;
+  time:intervalMeets aaos:A75 ;
+  time:intervalMetBy aaos:A73 ;
 .
 aaos:A75
   dct:hasPart aaos:P277 ;
@@ -370,6 +768,10 @@ aaos:A75
   dct:hasPart aaos:P294 ;
   dct:hasPart aaos:P295 ;
   dct:hasPart aaos:P296 ;
+  dct:isReplacedBy aaos:A76 ;
+  dct:replaces aaos:A74 ;
+  time:intervalMeets aaos:A76 ;
+  time:intervalMetBy aaos:A74 ;
 .
 aaos:A76
   dct:hasPart aaos:P297 ;
@@ -392,6 +794,10 @@ aaos:A76
   dct:hasPart aaos:P314 ;
   dct:hasPart aaos:P315 ;
   dct:hasPart aaos:P316 ;
+  dct:isReplacedBy aaos:A77 ;
+  dct:replaces aaos:A75 ;
+  time:intervalMeets aaos:A77 ;
+  time:intervalMetBy aaos:A75 ;
 .
 aaos:A77
   dct:hasPart aaos:P317 ;
@@ -414,6 +820,10 @@ aaos:A77
   dct:hasPart aaos:P334 ;
   dct:hasPart aaos:P335 ;
   dct:hasPart aaos:P336 ;
+  dct:isReplacedBy aaos:A78 ;
+  dct:replaces aaos:A76 ;
+  time:intervalMeets aaos:A78 ;
+  time:intervalMetBy aaos:A76 ;
 .
 aaos:A78
   dct:hasPart aaos:P337 ;
@@ -435,6 +845,10 @@ aaos:A78
   dct:hasPart aaos:P353 ;
   dct:hasPart aaos:P354 ;
   dct:hasPart aaos:P355 ;
+  dct:isReplacedBy aaos:A79 ;
+  dct:replaces aaos:A77 ;
+  time:intervalMeets aaos:A79 ;
+  time:intervalMetBy aaos:A77 ;
 .
 aaos:A79
   dct:hasPart aaos:P356 ;
@@ -457,6 +871,16 @@ aaos:A79
   dct:hasPart aaos:P373 ;
   dct:hasPart aaos:P374 ;
   dct:hasPart aaos:P375 ;
+  dct:isReplacedBy aaos:A80 ;
+  dct:replaces aaos:A78 ;
+  time:intervalMeets aaos:A80 ;
+  time:intervalMetBy aaos:A78 ;
+.
+aaos:A8
+  dct:isReplacedBy aaos:A9 ;
+  dct:replaces aaos:A7 ;
+  time:intervalMeets aaos:A9 ;
+  time:intervalMetBy aaos:A7 ;
 .
 aaos:A80
   dct:hasPart aaos:P376 ;
@@ -478,6 +902,10 @@ aaos:A80
   dct:hasPart aaos:P392 ;
   dct:hasPart aaos:P393 ;
   dct:hasPart aaos:P394 ;
+  dct:isReplacedBy aaos:A81 ;
+  dct:replaces aaos:A79 ;
+  time:intervalMeets aaos:A81 ;
+  time:intervalMetBy aaos:A79 ;
 .
 aaos:A81
   dct:hasPart aaos:P395 ;
@@ -499,6 +927,10 @@ aaos:A81
   dct:hasPart aaos:P411 ;
   dct:hasPart aaos:P412 ;
   dct:hasPart aaos:P413 ;
+  dct:isReplacedBy aaos:A82 ;
+  dct:replaces aaos:A80 ;
+  time:intervalMeets aaos:A82 ;
+  time:intervalMetBy aaos:A80 ;
 .
 aaos:A82
   dct:hasPart aaos:P414 ;
@@ -519,6 +951,10 @@ aaos:A82
   dct:hasPart aaos:P429 ;
   dct:hasPart aaos:P430 ;
   dct:hasPart aaos:P431 ;
+  dct:isReplacedBy aaos:A83 ;
+  dct:replaces aaos:A81 ;
+  time:intervalMeets aaos:A83 ;
+  time:intervalMetBy aaos:A81 ;
 .
 aaos:A83
   dct:hasPart aaos:P432 ;
@@ -539,6 +975,10 @@ aaos:A83
   dct:hasPart aaos:P447 ;
   dct:hasPart aaos:P448 ;
   dct:hasPart aaos:P449 ;
+  dct:isReplacedBy aaos:A84 ;
+  dct:replaces aaos:A82 ;
+  time:intervalMeets aaos:A84 ;
+  time:intervalMetBy aaos:A82 ;
 .
 aaos:A84
   dct:hasPart aaos:P450 ;
@@ -559,6 +999,10 @@ aaos:A84
   dct:hasPart aaos:P465 ;
   dct:hasPart aaos:P466 ;
   dct:hasPart aaos:P467 ;
+  dct:isReplacedBy aaos:A85 ;
+  dct:replaces aaos:A83 ;
+  time:intervalMeets aaos:A85 ;
+  time:intervalMetBy aaos:A83 ;
 .
 aaos:A85
   dct:hasPart aaos:P468 ;
@@ -579,6 +1023,10 @@ aaos:A85
   dct:hasPart aaos:P483 ;
   dct:hasPart aaos:P484 ;
   dct:hasPart aaos:P485 ;
+  dct:isReplacedBy aaos:A86 ;
+  dct:replaces aaos:A84 ;
+  time:intervalMeets aaos:A86 ;
+  time:intervalMetBy aaos:A84 ;
 .
 aaos:A86
   dct:hasPart aaos:P486 ;
@@ -599,6 +1047,10 @@ aaos:A86
   dct:hasPart aaos:P501 ;
   dct:hasPart aaos:P502 ;
   dct:hasPart aaos:P503 ;
+  dct:isReplacedBy aaos:A87 ;
+  dct:replaces aaos:A85 ;
+  time:intervalMeets aaos:A87 ;
+  time:intervalMetBy aaos:A85 ;
 .
 aaos:A87
   dct:hasPart aaos:P504 ;
@@ -618,6 +1070,10 @@ aaos:A87
   dct:hasPart aaos:P518 ;
   dct:hasPart aaos:P519 ;
   dct:hasPart aaos:P520 ;
+  dct:isReplacedBy aaos:A88 ;
+  dct:replaces aaos:A86 ;
+  time:intervalMeets aaos:A88 ;
+  time:intervalMetBy aaos:A86 ;
 .
 aaos:A88
   dct:hasPart aaos:P521 ;
@@ -638,6 +1094,10 @@ aaos:A88
   dct:hasPart aaos:P536 ;
   dct:hasPart aaos:P537 ;
   dct:hasPart aaos:P538 ;
+  dct:isReplacedBy aaos:A89 ;
+  dct:replaces aaos:A87 ;
+  time:intervalMeets aaos:A89 ;
+  time:intervalMetBy aaos:A87 ;
 .
 aaos:A89
   dct:hasPart aaos:P539 ;
@@ -658,6 +1118,16 @@ aaos:A89
   dct:hasPart aaos:P554 ;
   dct:hasPart aaos:P555 ;
   dct:hasPart aaos:P556 ;
+  dct:isReplacedBy aaos:A90 ;
+  dct:replaces aaos:A88 ;
+  time:intervalMeets aaos:A90 ;
+  time:intervalMetBy aaos:A88 ;
+.
+aaos:A9
+  dct:isReplacedBy aaos:A10 ;
+  dct:replaces aaos:A8 ;
+  time:intervalMeets aaos:A10 ;
+  time:intervalMetBy aaos:A8 ;
 .
 aaos:A90
   dct:hasPart aaos:P557 ;
@@ -678,6 +1148,10 @@ aaos:A90
   dct:hasPart aaos:P572 ;
   dct:hasPart aaos:P573 ;
   dct:hasPart aaos:P574 ;
+  dct:isReplacedBy aaos:A91 ;
+  dct:replaces aaos:A89 ;
+  time:intervalMeets aaos:A91 ;
+  time:intervalMetBy aaos:A89 ;
 .
 aaos:A91
   dct:hasPart aaos:P575 ;
@@ -698,6 +1172,10 @@ aaos:A91
   dct:hasPart aaos:P590 ;
   dct:hasPart aaos:P591 ;
   dct:hasPart aaos:P592 ;
+  dct:isReplacedBy aaos:A92 ;
+  dct:replaces aaos:A90 ;
+  time:intervalMeets aaos:A92 ;
+  time:intervalMetBy aaos:A90 ;
 .
 aaos:A92
   dct:hasPart aaos:P593 ;
@@ -718,6 +1196,10 @@ aaos:A92
   dct:hasPart aaos:P608 ;
   dct:hasPart aaos:P609 ;
   dct:hasPart aaos:P610 ;
+  dct:isReplacedBy aaos:A93 ;
+  dct:replaces aaos:A91 ;
+  time:intervalMeets aaos:A93 ;
+  time:intervalMetBy aaos:A91 ;
 .
 aaos:A93
   dct:hasPart aaos:P611 ;
@@ -738,6 +1220,10 @@ aaos:A93
   dct:hasPart aaos:P626 ;
   dct:hasPart aaos:P627 ;
   dct:hasPart aaos:P628 ;
+  dct:isReplacedBy aaos:A94 ;
+  dct:replaces aaos:A92 ;
+  time:intervalMeets aaos:A94 ;
+  time:intervalMetBy aaos:A92 ;
 .
 aaos:A94
   dct:hasPart aaos:P629 ;
@@ -758,6 +1244,10 @@ aaos:A94
   dct:hasPart aaos:P644 ;
   dct:hasPart aaos:P645 ;
   dct:hasPart aaos:P646 ;
+  dct:isReplacedBy aaos:A95 ;
+  dct:replaces aaos:A93 ;
+  time:intervalMeets aaos:A95 ;
+  time:intervalMetBy aaos:A93 ;
 .
 aaos:A95
   dct:hasPart aaos:P647 ;
@@ -778,6 +1268,10 @@ aaos:A95
   dct:hasPart aaos:P662 ;
   dct:hasPart aaos:P663 ;
   dct:hasPart aaos:P664 ;
+  dct:isReplacedBy aaos:A96 ;
+  dct:replaces aaos:A94 ;
+  time:intervalMeets aaos:A96 ;
+  time:intervalMetBy aaos:A94 ;
 .
 aaos:A96
   dct:hasPart aaos:P665 ;
@@ -798,6 +1292,10 @@ aaos:A96
   dct:hasPart aaos:P680 ;
   dct:hasPart aaos:P681 ;
   dct:hasPart aaos:P682 ;
+  dct:isReplacedBy aaos:A97 ;
+  dct:replaces aaos:A95 ;
+  time:intervalMeets aaos:A97 ;
+  time:intervalMetBy aaos:A95 ;
 .
 aaos:A97
   dct:hasPart aaos:P683 ;
@@ -818,6 +1316,10 @@ aaos:A97
   dct:hasPart aaos:P698 ;
   dct:hasPart aaos:P699 ;
   dct:hasPart aaos:P700 ;
+  dct:isReplacedBy aaos:A98 ;
+  dct:replaces aaos:A96 ;
+  time:intervalMeets aaos:A98 ;
+  time:intervalMetBy aaos:A96 ;
 .
 aaos:A98
   dct:hasPart aaos:P701 ;
@@ -838,6 +1340,8 @@ aaos:A98
   dct:hasPart aaos:P716 ;
   dct:hasPart aaos:P717 ;
   dct:hasPart aaos:P718 ;
+  dct:replaces aaos:A97 ;
+  time:intervalMetBy aaos:A97 ;
 .
 aaos:M1
   rdfs:comment "Agricultural, pastoral, fishing, food and forest industries" ;
@@ -876,7 +1380,23 @@ aaos:M109
   rdfs:comment "Public health and medical research" ;
 .
 aaos:M11
-  rdfs:comment "Law and justice including -" ;
+  rdfs:comment """Law and justice including -
+Administrative law
+Alternative dispute resolution
+Bankruptcy
+Censorship
+Copyright
+Courts and tribunals
+Human rights
+International law
+Law reform
+Legal assistance
+Legislative drafting
+Marriage and family law
+Native Title
+Privacy
+Legal services to the Commonwealth
+Criminal law and law enforcement""" ;
 .
 aaos:M110
   rdfs:comment "Health promotion and disease prevention" ;
@@ -44627,3 +45147,1368 @@ legs:A9998
 legs:A9999
   rdfs:label "Hearing Services and Aghs Reform Act 1997" ;
 .
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "15386"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "16878"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "16879"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17364"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17364"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17405"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17406"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17556"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "17559"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "19497"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "19498"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "20762"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "20763"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "21217"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "21218"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "21792"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "21793"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "23494"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "23495"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "24326"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "24327"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "25591"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "25592"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "26810"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "26811"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "28393"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "28394"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "29358"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "29359"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "29596"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "29597"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "32258"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "32259"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "32278"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "32278"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "33601"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "33602"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "37708"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "37709"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38410"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38411"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38474"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38475"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38767"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "38768"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39067"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39068"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39559"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39560"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39993"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "39994"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "40693"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "40694"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "40969"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "40970"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "41383"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "41384"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "41670"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "41671"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42321"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42322"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42450"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42451"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42595"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42596"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42768"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "42769"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43056"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43057"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43390"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43391"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43497"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43498"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43779"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43780"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43924"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "43925"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44127"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44128"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44484"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44485"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44545"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44546"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44959"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "44960"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "45097"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "45098"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "45405"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "45406"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46277"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46278"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46459"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46460"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46824"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "46825"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47001"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47002"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47224"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47225"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47599"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "47600"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "48069"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "48070"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "48652"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "48653"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "49071"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "49072"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "49505"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "49505"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "50153"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "50154"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "50982"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "50983"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "51107"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "51108"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52164"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52165"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52238"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52239"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52991"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "52992"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53303"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53304"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53354"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53355"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53572"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53573"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53761"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53762"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "53999"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54000"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54129"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54130"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54437"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54438"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54490"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54491"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54587"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "54588"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55264"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55265"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55323"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55324"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55376"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55377"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55452"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55453"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55483"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55484"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55853"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55854"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55902"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55903"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55909"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55910"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55965"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "55966"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56377"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56378"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56428"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56429"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56552"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56553"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56568"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56569"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56639"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "56639"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57014"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57015"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57213"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57214"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57286"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57287"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57295"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57296"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57435"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57436"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57588"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57589"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57632"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57632"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57687"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57688"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57856"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "57857"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58086"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58087"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58106"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58107"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58227"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58228"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58249"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58250"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58358"^^xsd:decimal ;
+    ] ;
+].
+[
+  time:inTimePosition [
+      a time:TimePosition ;
+      rdfs:comment "Modified Julian Day" ;
+      time:numericPosition "58359"^^xsd:decimal ;
+    ] ;
+].
