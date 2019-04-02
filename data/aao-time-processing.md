@@ -1,4 +1,4 @@
-# Process aaos.ttl to add explicit temporal order
+# Add explicit temporal order
 
 ## add Julian day for each calendar date
 ```
