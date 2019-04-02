@@ -15,89 +15,49 @@ WHERE {
 	 ?p dct:isPartOf ?a .
 }
 ```
-## add Julian days for all dates
 
+## add Julian day for each calendar date
 ```
-INSERT { ?a dct:temporal [ a time:ProperInterval ; 
-								time:hasBeginning [ a time:Instant ;
-									rdfs:comment "Modified Julian Day" ;
-									time:inTimePosition [ a time:TimePosition ;
-										time:numericPosition ?mj0 ;
-									] ;
-								] ;
-								time:hasEnd [ a time:Instant ;
-									rdfs:comment "Modified Julian Day" ;
-									time:inTimePosition [ a time:TimePosition ;
-										time:numericPosition ?mj1 ;
-									] ;
-								] ;
-							] . 
+CONSTRUCT { 
+	?inst rdfs:comment "Modified Julian Day" ;
+		time:inTimePosition [ a time:TimePosition ;
+			time:numericPosition ?mjd ;
+		] ;
+	.
 }
 WHERE {
-    ?a a aao:AAO ;
-		dct:temporal/time:hasBeginning/time:inXSDDate ?begin ;
-		dct:temporal/time:hasEnd/time:inXSDDate ?end .
-	BIND ( YEAR(?begin) as ?y0 )
-	BIND ( MONTH(?begin) as ?m0 )
-	BIND ( DAY(?begin) as ?d0 )
+	?inst a time:Instant ;
+		time:inXSDDate ?date . 
+	BIND ( YEAR(?date) as ?y )
+	BIND ( MONTH(?date) as ?m )
+	BIND ( DAY(?date) as ?d )
 	BIND ( (
-	( 1461 * ( ?y0 + 4800 + ( ?m0 - 14 ) / 12 ) ) / 4 +
-          ( 367 * ( ?m0 - 2 - 12 * ( ( ?m0 - 14 ) / 12 ) ) ) / 12 -
-          ( 3 * ( ( ?y0 + 4900 + ( ?m0 - 14 ) / 12 ) / 100 ) ) / 4 +
-          ?d0 - 32075
-	) as ?j0 )
-	BIND ( FLOOR( ?j0 - 2400000.5 ) as ?mj0 )
-	BIND ( YEAR(?end) as ?y1 )
-	BIND ( MONTH(?end) as ?m1 )
-	BIND ( DAY(?end) as ?d1 )
-	BIND ( (
-	( 1461 * ( ?y1 + 4800 + ( ?m1 - 14 ) / 12 ) ) / 4 +
-          ( 367 * ( ?m1 - 2 - 12 * ( ( ?m1 - 14 ) / 12 ) ) ) / 12 -
-          ( 3 * ( ( ?y1 + 4900 + ( ?m1 - 14 ) / 12 ) / 100 ) ) / 4 +
-          ?d1 - 32075
-	) as ?j1 )
-	BIND ( FLOOR( ?j1 - 2400000.5 ) as ?mj1 )
+		( 1461 * ( ?y + 4800 + ( ?m - 14 ) / 12 ) ) / 4 +
+		( 367 * ( ?m - 2 - 12 * ( ( ?m - 14 ) / 12 ) ) ) / 12 -
+		( 3 * ( ( ?y + 4900 + ( ?m - 14 ) / 12 ) / 100 ) ) / 4 +
+		?d - 32075
+	) as ?jd )
+	BIND ( FLOOR( ?jd - 2400000.5 ) as ?mjd )
 }
 ```
-
 
 ## Create a sequence of aaos
 ```
-SELECT ?aao ?begin ?end
-WHERE {
-	?aao a aao:AAO ;
-		dct:temporal/time:hasBeginning/time:inXSDDate ?begin ;
-		dct:temporal/time:hasEnd/time:inXSDDate ?end .
+CONSTRUCT { 
+	?aao2 dct:replaces ?aao1 ; 
+		time:intervalMetBy ?aao1 . 
+	?aao1 dct:isReplacedBy ?aao2 ;  
+		time:intervalMeets ?aao2 .
 }
-ORDER BY ?begin
-```
-```
-CONSTRUCT { ?aao2 dct:replaces ?aao1 . ?aao1 dct:isReplacedBy ?aao2 }
 WHERE {
 	?aao1 a aao:AAO ;
-		dct:temporal/time:hasEnd/time:inXSDDate ?end1 .
+		dct:temporal/time:hasEnd/time:inTimePosition/time:numericPosition ?end1 .
 	?aao2 a aao:AAO ;
-		dct:temporal/time:hasBeginning/time:inXSDDate ?begin2 .
-	FILTER (  
-                     ( ( YEAR(?begin2) - YEAR(?end1) ) = 0 )   # same year
-                     &&  (
-                                 ( ( ( MONTH(?begin2) - MONTH(?end1) ) = 0 )  &&  (  ( DAY(?begin2) - DAY(?end1) )  < 4 ) )  # same month, less than 4-days gap
-                                 ||
-                                 ( ( ( MONTH(?begin2) - MONTH(?end1) ) = 1 )  &&  (  ( DAY(?begin2) - DAY(?end1) + 28 )  < 4 ) )  # next month, less than 4-days in
-                     )
-                )
-	FILTER ( ?aao1 != ?aao2 )
+		dct:temporal/time:hasBeginning/time:inTimePosition/time:numericPosition ?begin2 .
+	FILTER (  ( ( ?begin2 - ?end1 ) >=0 ) && ( ( ?begin2 - ?end1 ) <= 4 )  )
 }
 ```
-```
-CONSTRUCT {
-	?aao2 time:intervalMetBy ?aao1 .
-	?aao1 time:intervalMeets ?aao2 .
-}
-WHERE {
-	?aao2 dct:replaces ?aao1
-}
-```
+
 ## Create history of who is responsible for each Act or Matter
 ```
 SELECT ?matter ?dept ?begin ?end
