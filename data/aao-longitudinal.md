@@ -17,6 +17,9 @@ WHERE {
 ```
 
 ## Create history of who is responsible for each Act or Matter
+This approach gets an ordering sequence simply by ordering the beginning of each responsibility. 
+A more efficient/indexed approach would take advantage of the temporal topological relationships expressed using `time:intervalMeets` and `time:intervalMetBy`. 
+
 ```
 SELECT ?matter ?dept ?begin ?end
 WHERE {
