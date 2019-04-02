@@ -15,6 +15,51 @@ WHERE {
 	 ?p dct:isPartOf ?a .
 }
 ```
+## add Julian days for all dates
+
+```
+INSERT { ?a dct:temporal [ a time:ProperInterval ; 
+								time:hasBeginning [ a time:Instant ;
+									rdfs:comment "Modified Julian Day" ;
+									time:inTimePosition [ a time:TimePosition ;
+										time:numericPosition ?mj0 ;
+									] ;
+								] ;
+								time:hasEnd [ a time:Instant ;
+									rdfs:comment "Modified Julian Day" ;
+									time:inTimePosition [ a time:TimePosition ;
+										time:numericPosition ?mj1 ;
+									] ;
+								] ;
+							] . 
+}
+WHERE {
+    ?a a aao:AAO ;
+		dct:temporal/time:hasBeginning/time:inXSDDate ?begin ;
+		dct:temporal/time:hasEnd/time:inXSDDate ?end .
+	BIND ( YEAR(?begin) as ?y0 )
+	BIND ( MONTH(?begin) as ?m0 )
+	BIND ( DAY(?begin) as ?d0 )
+	BIND ( (
+	( 1461 * ( ?y0 + 4800 + ( ?m0 - 14 ) / 12 ) ) / 4 +
+          ( 367 * ( ?m0 - 2 - 12 * ( ( ?m0 - 14 ) / 12 ) ) ) / 12 -
+          ( 3 * ( ( ?y0 + 4900 + ( ?m0 - 14 ) / 12 ) / 100 ) ) / 4 +
+          ?d0 - 32075
+	) as ?j0 )
+	BIND ( FLOOR( ?j0 - 2400000.5 ) as ?mj0 )
+	BIND ( YEAR(?end) as ?y1 )
+	BIND ( MONTH(?end) as ?m1 )
+	BIND ( DAY(?end) as ?d1 )
+	BIND ( (
+	( 1461 * ( ?y1 + 4800 + ( ?m1 - 14 ) / 12 ) ) / 4 +
+          ( 367 * ( ?m1 - 2 - 12 * ( ( ?m1 - 14 ) / 12 ) ) ) / 12 -
+          ( 3 * ( ( ?y1 + 4900 + ( ?m1 - 14 ) / 12 ) / 100 ) ) / 4 +
+          ?d1 - 32075
+	) as ?j1 )
+	BIND ( FLOOR( ?j1 - 2400000.5 ) as ?mj1 )
+}
+```
+
 
 ## Create a sequence of aaos
 ```
