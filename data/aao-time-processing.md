@@ -1,6 +1,7 @@
 # Processing aaos.ttl to add explicit temporal order 
 
 ## add Julian day for each calendar date
+Algorithm for YMD -> Julian Day by Henry F. Fliegel and Thomas C. Van Flandern from https://www.hermetic.ch/cal_stud/jdn.htm#comp 
 ```
 CONSTRUCT { 
 	?inst rdfs:comment "Modified Julian Day" ;
