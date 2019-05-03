@@ -1,0 +1,2092 @@
+# baseURI: http://test.linked.data.gov.au/dataset/matters
+# imports: http://linked.data.gov.au/def/aao
+
+@prefix aao: <http://linked.data.gov.au/def/aao#> .
+@prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://linked.data.gov.au/def/reg/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aao:Matter
+  rdfs:subClassOf skos:Concept ;
+.
+aaos:M1
+  a aao:Matter ;
+  dct:description "Agricultural, pastoral, fishing, food and forest industries" ;
+.
+aaos:M10
+  a aao:Matter ;
+  dct:description "Food policy, processing and exports" ;
+.
+aaos:M100
+  a aao:Matter ;
+  dct:description "international development co-operation" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M101
+  a aao:Matter ;
+  dct:description "diplomatic and consular missions" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M102
+  a aao:Matter ;
+  dct:description "international security issues, including disarmament, arms control and nuclear non-proliferation" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M103
+  a aao:Matter ;
+  dct:description "public diplomacy, including information and cultural programs" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M104
+  a aao:Matter ;
+  dct:description "International expositions" ;
+.
+aaos:M105
+  a aao:Matter ;
+  dct:description "Provision to Australian citizens of secure travel identification" ;
+.
+aaos:M106
+  a aao:Matter ;
+  dct:description "Provision of consular services to Australian citizens abroad" ;
+.
+aaos:M107
+  a aao:Matter ;
+  dct:description "Overseas property management, including acquisition, ownership and disposal of real property" ;
+.
+aaos:M108
+  a aao:Matter ;
+  dct:description "Services for the aged, including carers" ;
+.
+aaos:M109
+  a aao:Matter ;
+  dct:description "Public health and medical research" ;
+.
+aaos:M11
+  a aao:Matter ;
+  dct:description """Law and justice including -
+Administrative law
+Alternative dispute resolution
+Bankruptcy
+Censorship
+Copyright
+Courts and tribunals
+Human rights
+International law
+Law reform
+Legal assistance
+Legislative drafting
+Marriage and family law
+Native Title
+Privacy
+Legal services to the Commonwealth
+Criminal law and law enforcement""" ;
+.
+aaos:M110
+  a aao:Matter ;
+  dct:description "Health promotion and disease prevention" ;
+.
+aaos:M111
+  a aao:Matter ;
+  dct:description "Primary health care of Aboriginal and Torres Strait Islander people" ;
+.
+aaos:M112
+  a aao:Matter ;
+  dct:description "Pharmaceutical benefits" ;
+.
+aaos:M113
+  a aao:Matter ;
+  dct:description "Health benefits schemes" ;
+.
+aaos:M114
+  a aao:Matter ;
+  dct:description "Specific health services, including human quarantine" ;
+.
+aaos:M115
+  a aao:Matter ;
+  dct:description "National drug abuse strategy" ;
+.
+aaos:M116
+  a aao:Matter ;
+  dct:description "Regulation of therapeutic goods" ;
+.
+aaos:M117
+  a aao:Matter ;
+  dct:description "Notification and assessment of industrial chemicals" ;
+.
+aaos:M118
+  a aao:Matter ;
+  dct:description "Gene technology regulation" ;
+.
+aaos:M119
+  a aao:Matter ;
+  dct:description "Entry, stay and departure arrangements for non-citizens" ;
+.
+aaos:M12
+  a aao:Matter ;
+  dct:description "Administrative law" ;
+.
+aaos:M120
+  a aao:Matter ;
+  dct:description "Border immigration control" ;
+.
+aaos:M121
+  a aao:Matter ;
+  dct:description "Arrangements for the settlement of migrants and humanitarian entrants, other than migrant child education" ;
+.
+aaos:M122
+  a aao:Matter ;
+  dct:description "Citizenship" ;
+.
+aaos:M123
+  a aao:Matter ;
+  dct:description "Ethnic affairs" ;
+.
+aaos:M124
+  a aao:Matter ;
+  dct:description "Multicultural affairs" ;
+.
+aaos:M125
+  a aao:Matter ;
+  dct:description "Indigenous affairs and reconciliation" ;
+.
+aaos:M126
+  a aao:Matter ;
+  dct:description "Manufacturing and commerce including industry and market development" ;
+.
+aaos:M127
+  a aao:Matter ;
+  dct:description "Industry innovation policy and technology diffusion" ;
+.
+aaos:M128
+  a aao:Matter ;
+  dct:description "Promotion of industrial research and development" ;
+.
+aaos:M129
+  a aao:Matter ;
+  dct:description "Mineral and energy industries, including oil and gas, and electricity" ;
+.
+aaos:M13
+  a aao:Matter ;
+  dct:description "Alternative dispute resolution" ;
+.
+aaos:M130
+  a aao:Matter ;
+  dct:description "Energy-specific international organisations and activities" ;
+.
+aaos:M131
+  a aao:Matter ;
+  dct:description "Biotechnology, excluding gene technology regulation" ;
+.
+aaos:M132
+  a aao:Matter ;
+  dct:description "Export services" ;
+.
+aaos:M133
+  a aao:Matter ;
+  dct:description "Energy and resources science and research" ;
+.
+aaos:M134
+  a aao:Matter ;
+  dct:description "Geoscience research and information services" ;
+.
+aaos:M135
+  a aao:Matter ;
+  dct:description "Marketing, including export promotion, of manufactures and services" ;
+.
+aaos:M136
+  a aao:Matter ;
+  dct:description "Investment promotion, attraction and facilitation" ;
+.
+aaos:M137
+  a aao:Matter ;
+  dct:description "Enterprise improvement" ;
+.
+aaos:M138
+  a aao:Matter ;
+  dct:description "Tourism industry" ;
+.
+aaos:M139
+  a aao:Matter ;
+  dct:description "Construction industry" ;
+.
+aaos:M14
+  a aao:Matter ;
+  dct:description "Bankruptcy" ;
+.
+aaos:M140
+  a aao:Matter ;
+  dct:description "Small business policy and implementation, including business entry point management" ;
+.
+aaos:M141
+  a aao:Matter ;
+  dct:description "Facilitation of the development of service industries generally" ;
+.
+aaos:M142
+  a aao:Matter ;
+  dct:description "Bounties on the production of goods" ;
+.
+aaos:M143
+  a aao:Matter ;
+  dct:description "Patents of inventions and designs, and trade marks" ;
+.
+aaos:M144
+  a aao:Matter ;
+  dct:description "Country of origin labelling" ;
+.
+aaos:M145
+  a aao:Matter ;
+  dct:description "Weights and measures standards" ;
+.
+aaos:M146
+  a aao:Matter ;
+  dct:description "Civil space issues" ;
+.
+aaos:M147
+  a aao:Matter ;
+  dct:description "Analytical laboratory services" ;
+.
+aaos:M148
+  a aao:Matter ;
+  dct:description "Geodesy, mapping, remote sensing and land information co-ordination" ;
+.
+aaos:M149
+  a aao:Matter ;
+  dct:description "Ionospheric prediction" ;
+.
+aaos:M15
+  a aao:Matter ;
+  dct:description "Censorship" ;
+.
+aaos:M150
+  a aao:Matter ;
+  dct:description "Administration of export controls on energy products" ;
+.
+aaos:M151
+  a aao:Matter ;
+  dct:description "Co-ordination of Government administration" ;
+.
+aaos:M152
+  a aao:Matter ;
+  dct:description "Assistance to Cabinet and its Committees" ;
+.
+aaos:M153
+  a aao:Matter ;
+  dct:description "Policy advice and administrative support to the Prime Minister" ;
+.
+aaos:M154
+  a aao:Matter ;
+  dct:description "Intergovernmental relations and communications with State and Territory Governments" ;
+.
+aaos:M155
+  a aao:Matter ;
+  dct:description "Australian honours and symbols policy" ;
+.
+aaos:M156
+  a aao:Matter ;
+  dct:description "Government ceremonial and hospitality" ;
+.
+aaos:M157
+  a aao:Matter ;
+  dct:description "Status of women" ;
+.
+aaos:M158
+  a aao:Matter ;
+  dct:description "Co-ordination of Government communications and advertising" ;
+.
+aaos:M159
+  a aao:Matter ;
+  dct:description "Counter terrorism policy co-ordination" ;
+.
+aaos:M16
+  a aao:Matter ;
+  dct:description "Constitutional law" ;
+.
+aaos:M160
+  a aao:Matter ;
+  dct:description "Transport safety, including investigations" ;
+.
+aaos:M161
+  a aao:Matter ;
+  dct:description "Land transport" ;
+.
+aaos:M162
+  a aao:Matter ;
+  dct:description "Civil aviation and airports, including aviation security" ;
+.
+aaos:M163
+  a aao:Matter ;
+  dct:description "Delivery of regional and rural specific services" ;
+.
+aaos:M164
+  a aao:Matter ;
+  dct:description "Maritime transport including shipping" ;
+.
+aaos:M165
+  a aao:Matter ;
+  dct:description "Regional development" ;
+.
+aaos:M166
+  a aao:Matter ;
+  dct:description "Matters relating to local government" ;
+.
+aaos:M167
+  a aao:Matter ;
+  dct:description "Planning and land management in the Australian Capital Territory" ;
+.
+aaos:M168
+  a aao:Matter ;
+  dct:description "Administration of the Jervis Bay Territory, the Territory of Cocos (Keeling) Islands, the Territory of Christmas Island, the Coral Sea Islands Territory, the Territory of Ashmore and Cartier Islands, and of Commonwealth responsibilities on Norfolk Island" ;
+.
+aaos:M169
+  a aao:Matter ;
+  dct:description "Constitutional development of the Australian Capital Territory" ;
+.
+aaos:M17
+  a aao:Matter ;
+  dct:description "Copyright" ;
+.
+aaos:M170
+  a aao:Matter ;
+  dct:description "Constitutional development of the Northern Territory of Australia" ;
+.
+aaos:M171
+  a aao:Matter ;
+  dct:description "Natural disaster relief in the form of financial assistance to the States and Territories" ;
+.
+aaos:M172
+  a aao:Matter ;
+  dct:description "Economic, fiscal and monetary policy" ;
+.
+aaos:M173
+  a aao:Matter ;
+  dct:description "Taxation" ;
+.
+aaos:M174
+  a aao:Matter ;
+  dct:description "Borrowing money on the public credit of the Commonwealth" ;
+.
+aaos:M175
+  a aao:Matter ;
+  dct:description "International finance" ;
+.
+aaos:M176
+  a aao:Matter ;
+  dct:description "Foreign exchange" ;
+.
+aaos:M177
+  a aao:Matter ;
+  dct:description "Financial sector policy" ;
+.
+aaos:M178
+  a aao:Matter ;
+  dct:description "Currency and legal tender" ;
+.
+aaos:M179
+  a aao:Matter ;
+  dct:description "Foreign investment in Australia" ;
+.
+aaos:M18
+  a aao:Matter ;
+  dct:description "Courts and tribunals" ;
+.
+aaos:M180
+  a aao:Matter ;
+  dct:description "National and occupational superannuation" ;
+.
+aaos:M181
+  a aao:Matter ;
+  dct:description "Business law and practice" ;
+.
+aaos:M182
+  a aao:Matter ;
+  dct:description "Corporate and securities law" ;
+.
+aaos:M183
+  a aao:Matter ;
+  dct:description "Corporate insolvency" ;
+.
+aaos:M184
+  a aao:Matter ;
+  dct:description "Competition policy" ;
+.
+aaos:M185
+  a aao:Matter ;
+  dct:description "Prices surveillance" ;
+.
+aaos:M186
+  a aao:Matter ;
+  dct:description "Excise" ;
+.
+aaos:M187
+  a aao:Matter ;
+  dct:description "Census and statistics" ;
+.
+aaos:M188
+  a aao:Matter ;
+  dct:description "Valuation services" ;
+.
+aaos:M189
+  a aao:Matter ;
+  dct:description "Consumer affairs" ;
+.
+aaos:M19
+  a aao:Matter ;
+  dct:description "Human rights" ;
+.
+aaos:M190
+  a aao:Matter ;
+  dct:description "Commonwealth-State financial relations" ;
+.
+aaos:M191
+  a aao:Matter ;
+  dct:description "Repatriation income support, compensation and health programmes for veterans, members of the Defence Force, certain mariners and their dependants" ;
+.
+aaos:M192
+  a aao:Matter ;
+  dct:description "War graves" ;
+.
+aaos:M193
+  a aao:Matter ;
+  dct:description "Defence Service Homes" ;
+.
+aaos:M194
+  a aao:Matter ;
+  dct:description "Environment protection and conservation of biodiversity" ;
+.
+aaos:M195
+  a aao:Matter ;
+  dct:description "Procurement policy and services (including competitive tendering and contracting, removals and disposals)" ;
+.
+aaos:M196
+  a aao:Matter ;
+  dct:description "Administration of the Commonwealth's self-managed general insurance fund (Comcover)" ;
+.
+aaos:M197
+  a aao:Matter ;
+  dct:description "Medical indemnity insurance issues" ;
+.
+aaos:M198
+  a aao:Matter ;
+  dct:description "Promotion of industrial research and development, and commercialisation" ;
+.
+aaos:M199
+  a aao:Matter ;
+  dct:description "National energy market" ;
+.
+aaos:M2
+  a aao:Matter ;
+  dct:description "Water, soils, and other natural resources" ;
+.
+aaos:M20
+  a aao:Matter ;
+  dct:description "International law" ;
+.
+aaos:M200
+  a aao:Matter ;
+  dct:description "Export services< /P>" ;
+.
+aaos:M201
+  a aao:Matter ;
+  dct:description "Small business policy and implementation Business entry point management" ;
+.
+aaos:M202
+  a aao:Matter ;
+  dct:description "Geoscience research and information services including geodesy, mapping, remote sensing and land information co-ordination" ;
+.
+aaos:M203
+  a aao:Matter ;
+  dct:description "Civil aviation and airports" ;
+.
+aaos:M204
+  a aao:Matter ;
+  dct:description "Transport security" ;
+.
+aaos:M205
+  a aao:Matter ;
+  dct:description "Natural disaster relief and mitigation in the form of financial assistance to the States and Territories" ;
+.
+aaos:M206
+  a aao:Matter ;
+  dct:description "Superannuation and retirement income policy" ;
+.
+aaos:M207
+  a aao:Matter ;
+  dct:description "Competition and consumer policy" ;
+.
+aaos:M208
+  a aao:Matter ;
+  dct:description "Application of information and communications technology, including broadband and electronic commerce" ;
+.
+aaos:M209
+  a aao:Matter ;
+  dct:description "Information and communications industries development" ;
+.
+aaos:M21
+  a aao:Matter ;
+  dct:description "Law reform" ;
+.
+aaos:M210
+  a aao:Matter ;
+  dct:description "Income support policies and programs for students and apprentices" ;
+.
+aaos:M211
+  a aao:Matter ;
+  dct:description "Labour market and income support policies and programs for people of working age" ;
+.
+aaos:M212
+  a aao:Matter ;
+  dct:description "Services to help people with disabilities obtain employment, other than supported employment" ;
+.
+aaos:M213
+  a aao:Matter ;
+  dct:description "Income security policies and programs for families with children, carers, the aged and people in hardship" ;
+.
+aaos:M214
+  a aao:Matter ;
+  dct:description "Services for families with children, people with disabilities and carers" ;
+.
+aaos:M215
+  a aao:Matter ;
+  dct:description "Community support services, excluding the Home and Community Care program" ;
+.
+aaos:M216
+  a aao:Matter ;
+  dct:description "Youth affairs, excluding income support policies and programs" ;
+.
+aaos:M217
+  a aao:Matter ;
+  dct:description "Womens' programs" ;
+.
+aaos:M218
+  a aao:Matter ;
+  dct:description "Strategic property management in Australia, including construction, acquisition, ownership and disposal of real property" ;
+.
+aaos:M219
+  a aao:Matter ;
+  dct:description "Evaluation and audit of indigenous programmes and operations" ;
+.
+aaos:M22
+  a aao:Matter ;
+  dct:description "Legal assistance" ;
+.
+aaos:M220
+  a aao:Matter ;
+  dct:description "Development, delivery and co-ordination of government services" ;
+.
+aaos:M221
+  a aao:Matter ;
+  dct:description "Monitoring and management of service delivery and purchaser/provider relationships involving Centrelink, the Health Insurance Commission, the Child Support Agency, Australian Hearing, Health Services Australia and CRS Australia" ;
+.
+aaos:M222
+  a aao:Matter ;
+  dct:description "Indigenous policy coordination and the promotion of reconciliation" ;
+.
+aaos:M223
+  a aao:Matter ;
+  dct:description "Small business policy and implementation" ;
+.
+aaos:M224
+  a aao:Matter ;
+  dct:description "Business entry point management" ;
+.
+aaos:M225
+  a aao:Matter ;
+  dct:description "Water policy co-ordination" ;
+.
+aaos:M226
+  a aao:Matter ;
+  dct:description "Superannuation and retirement savings policy" ;
+.
+aaos:M227
+  a aao:Matter ;
+  dct:description "Indigenous law and justice programmes" ;
+.
+aaos:M228
+  a aao:Matter ;
+  dct:description "Critical infrastructure protection co-ordination" ;
+.
+aaos:M229
+  a aao:Matter ;
+  dct:description "Education policy and programmes including schools, vocational, higher education and Indigenous education, but excluding migrant adult education" ;
+.
+aaos:M23
+  a aao:Matter ;
+  dct:description "Legislative drafting" ;
+.
+aaos:M230
+  a aao:Matter ;
+  dct:description "Education and training transitions policy and programmes" ;
+.
+aaos:M231
+  a aao:Matter ;
+  dct:description "Policy, coordination and support for education exports and services" ;
+.
+aaos:M232
+  a aao:Matter ;
+  dct:description "Income support policies and programmes for students and apprentices" ;
+.
+aaos:M233
+  a aao:Matter ;
+  dct:description "Science policy, science awareness programmes and co-ordination" ;
+.
+aaos:M234
+  a aao:Matter ;
+  dct:description "Commercialisation and utilisation of public sector research relating to portfolio programmes and agencies" ;
+.
+aaos:M235
+  a aao:Matter ;
+  dct:description "Labour market and income support policies and programmes for people of working age" ;
+.
+aaos:M236
+  a aao:Matter ;
+  dct:description "Environmental research" ;
+.
+aaos:M237
+  a aao:Matter ;
+  dct:description "Income security policies and programmes for families with children, carers, the aged and people in hardship" ;
+.
+aaos:M238
+  a aao:Matter ;
+  dct:description "Welfare housing and rent assistance" ;
+.
+aaos:M239
+  a aao:Matter ;
+  dct:description "Youth affairs, excluding income support policies and programmes" ;
+.
+aaos:M24
+  a aao:Matter ;
+  dct:description "Marriage and family law" ;
+.
+aaos:M240
+  a aao:Matter ;
+  dct:description "Womens' policies and programmes" ;
+.
+aaos:M241
+  a aao:Matter ;
+  dct:description "Budget policy advice and process, and review of governmental programmes" ;
+.
+aaos:M242
+  a aao:Matter ;
+  dct:description "Government financial accountability, governance and financial management frameworks, including procurement policy and services" ;
+.
+aaos:M243
+  a aao:Matter ;
+  dct:description "Shareholder advice on Government Business Enterprises and commercial entities treated as GBEs" ;
+.
+aaos:M244
+  a aao:Matter ;
+  dct:description "Superannuation related to former and current members of parliament and Australian Government employees" ;
+.
+aaos:M245
+  a aao:Matter ;
+  dct:description "Administration of the Australian Government's self-managed general insurance fund (Comcover)" ;
+.
+aaos:M246
+  a aao:Matter ;
+  dct:description "Evaluation and audit of Indigenous programmes and operations" ;
+.
+aaos:M247
+  a aao:Matter ;
+  dct:description "public diplomacy, including information and cultural programmes" ;
+.
+aaos:M248
+  a aao:Matter ;
+  dct:description "Minerals and energy resources research, science and technology" ;
+.
+aaos:M249
+  a aao:Matter ;
+  dct:description "Trade marks, plant breeder's rights and patents of inventions and designs" ;
+.
+aaos:M25
+  a aao:Matter ;
+  dct:description "Native Title" ;
+.
+aaos:M250
+  a aao:Matter ;
+  dct:description "Corporate, financial services and securities law" ;
+.
+aaos:M251
+  a aao:Matter ;
+  dct:description "Women's policies and programmes" ;
+.
+aaos:M252
+  a aao:Matter ;
+  dct:description "Training, including apprenticeships and training services" ;
+.
+aaos:M253
+  a aao:Matter ;
+  dct:description "Strategic management of non-Defence Commonwealth-owned property in Australia, including construction, major refurbishment, acquisition, ownership and disposal of real property" ;
+.
+aaos:M254
+  a aao:Matter ;
+  dct:description "Advice on the Future Fund" ;
+.
+aaos:M255
+  a aao:Matter ;
+  dct:description "Services for older Australians, including carers" ;
+.
+aaos:M256
+  a aao:Matter ;
+  dct:description "Policy for and promotion of active ageing, other than income security and employment policy" ;
+.
+aaos:M257
+  a aao:Matter ;
+  dct:description "Hearing services policy and funding" ;
+.
+aaos:M258
+  a aao:Matter ;
+  dct:description "National drug strategy" ;
+.
+aaos:M259
+  a aao:Matter ;
+  dct:description "Private health insurance" ;
+.
+aaos:M26
+  a aao:Matter ;
+  dct:description "Privacy" ;
+.
+aaos:M260
+  a aao:Matter ;
+  dct:description "Administration of export controls on rough diamonds, uranium and thorium" ;
+.
+aaos:M261
+  a aao:Matter ;
+  dct:description "Soils and other natural resources" ;
+.
+aaos:M262
+  a aao:Matter ;
+  dct:description "Water policy and resources" ;
+.
+aaos:M263
+  a aao:Matter ;
+  dct:description "Indigenous law and justice programs" ;
+.
+aaos:M264
+  a aao:Matter ;
+  dct:description "Constitutional development of the Northern Territory" ;
+.
+aaos:M265
+  a aao:Matter ;
+  dct:description "Broadband policy and programs" ;
+.
+aaos:M266
+  a aao:Matter ;
+  dct:description "Postal and telecommunications policies and programs" ;
+.
+aaos:M267
+  a aao:Matter ;
+  dct:description "Spectrum policy management" ;
+.
+aaos:M268
+  a aao:Matter ;
+  dct:description "Broadcasting policy" ;
+.
+aaos:M269
+  a aao:Matter ;
+  dct:description "National policy issues relating to the digital economy" ;
+.
+aaos:M27
+  a aao:Matter ;
+  dct:description "Legal services to the Commonwealth" ;
+.
+aaos:M270
+  a aao:Matter ;
+  dct:description "Content policy relating to the information economy" ;
+.
+aaos:M271
+  a aao:Matter ;
+  dct:description "Domestic and international climate change policy" ;
+.
+aaos:M272
+  a aao:Matter ;
+  dct:description "Design and implementation of emissions trading" ;
+.
+aaos:M273
+  a aao:Matter ;
+  dct:description "International climate change negotiations" ;
+.
+aaos:M274
+  a aao:Matter ;
+  dct:description "Renewable energy policy, regulation and co-ordination" ;
+.
+aaos:M275
+  a aao:Matter ;
+  dct:description "Greenhouse emissions and energy consumption reporting" ;
+.
+aaos:M276
+  a aao:Matter ;
+  dct:description "Greenhouse mitigation and adaptation" ;
+.
+aaos:M277
+  a aao:Matter ;
+  dct:description "Co-ordination of climate change science activities" ;
+.
+aaos:M278
+  a aao:Matter ;
+  dct:description "Energy efficiency policy and standards" ;
+.
+aaos:M279
+  a aao:Matter ;
+  dct:description "Education policy and programs including schools, vocational, higher education and Indigenous education, but excluding migrant adult education" ;
+.
+aaos:M28
+  a aao:Matter ;
+  dct:description "Criminal law and law enforcement" ;
+.
+aaos:M280
+  a aao:Matter ;
+  dct:description "Education and training transitions policy and programs" ;
+.
+aaos:M281
+  a aao:Matter ;
+  dct:description "Science awareness programs in schools" ;
+.
+aaos:M282
+  a aao:Matter ;
+  dct:description "Policy, co-ordination and support for education exports and services" ;
+.
+aaos:M283
+  a aao:Matter ;
+  dct:description "Co-ordination of labour market research" ;
+.
+aaos:M284
+  a aao:Matter ;
+  dct:description "Work and family programs" ;
+.
+aaos:M285
+  a aao:Matter ;
+  dct:description "Youth affairs and programs, excluding income support policies and programs" ;
+.
+aaos:M286
+  a aao:Matter ;
+  dct:description "Early childhood and childcare policy and programs" ;
+.
+aaos:M287
+  a aao:Matter ;
+  dct:description "Community and household renewable energy programs" ;
+.
+aaos:M288
+  a aao:Matter ;
+  dct:description "Housing policy co-ordination, welfare housing and rent assistance" ;
+.
+aaos:M289
+  a aao:Matter ;
+  dct:description "Women's policies and programs" ;
+.
+aaos:M29
+  a aao:Matter ;
+  dct:description "Customs and border control other than quarantine and inspection, and immigration" ;
+.
+aaos:M290
+  a aao:Matter ;
+  dct:description "Indigenous policy co-ordination and the promotion of reconciliation" ;
+.
+aaos:M291
+  a aao:Matter ;
+  dct:description "Community development employment projects" ;
+.
+aaos:M292
+  a aao:Matter ;
+  dct:description "Reducing the burden of government regulation General policy guidelines for Commonwealth statutory authorities" ;
+.
+aaos:M293
+  a aao:Matter ;
+  dct:description "Evaluation and audit of Indigenous programs and operations" ;
+.
+aaos:M294
+  a aao:Matter ;
+  dct:description "Central advertising system" ;
+.
+aaos:M295
+  a aao:Matter ;
+  dct:description "Monitoring and management of service delivery and purchaser/provider relationships involving Centrelink, Medicare Australia, the Child Support Agency, Australian Hearing, Health Services Australia and CRS Australia" ;
+.
+aaos:M296
+  a aao:Matter ;
+  dct:description "Infrastructure planning and co-ordination" ;
+.
+aaos:M297
+  a aao:Matter ;
+  dct:description "Major projects facilitation" ;
+.
+aaos:M298
+  a aao:Matter ;
+  dct:description "Investment promotion" ;
+.
+aaos:M299
+  a aao:Matter ;
+  dct:description "Trade marks, plant breeders' rights and patents of inventions and designs" ;
+.
+aaos:M3
+  a aao:Matter ;
+  dct:description "Rural adjustment and drought issues" ;
+.
+aaos:M30
+  a aao:Matter ;
+  dct:description "National security, protective security policy and co-ordination" ;
+.
+aaos:M300
+  a aao:Matter ;
+  dct:description "Commercialisation and utilisation of public sector research relating to portfolio programs and agencies" ;
+.
+aaos:M301
+  a aao:Matter ;
+  dct:description "Information and communications technology industry development" ;
+.
+aaos:M302
+  a aao:Matter ;
+  dct:description "National security policy co-ordination" ;
+.
+aaos:M303
+  a aao:Matter ;
+  dct:description "Work and family policy co-ordination" ;
+.
+aaos:M304
+  a aao:Matter ;
+  dct:description "Freedom of information" ;
+.
+aaos:M305
+  a aao:Matter ;
+  dct:description "Energy policy" ;
+.
+aaos:M306
+  a aao:Matter ;
+  dct:description "Renewable energy technology development" ;
+.
+aaos:M307
+  a aao:Matter ;
+  dct:description "Clean fossil fuel energy" ;
+.
+aaos:M308
+  a aao:Matter ;
+  dct:description "Industrial energy efficiency" ;
+.
+aaos:M309
+  a aao:Matter ;
+  dct:description "Repatriation income support, compensation and health programs for veterans, members of the Defence Force, certain mariners and their dependants" ;
+.
+aaos:M31
+  a aao:Matter ;
+  dct:description "Protective services at Commonwealth establishments and diplomatic and consular premises in Australia" ;
+.
+aaos:M310
+  a aao:Matter ;
+  dct:description "Development and co-ordination of domestic and international climate change policy" ;
+.
+aaos:M311
+  a aao:Matter ;
+  dct:description "Mandatory renewable energy target policy, regulation and co-ordination" ;
+.
+aaos:M312
+  a aao:Matter ;
+  dct:description "Climate change adaptation strategy and co-ordination" ;
+.
+aaos:M313
+  a aao:Matter ;
+  dct:description "Youth affairs and programs" ;
+.
+aaos:M314
+  a aao:Matter ;
+  dct:description "Renewable energy programs" ;
+.
+aaos:M315
+  a aao:Matter ;
+  dct:description "Energy efficiency" ;
+.
+aaos:M316
+  a aao:Matter ;
+  dct:description "Greenhouse gas abatement programs" ;
+.
+aaos:M317
+  a aao:Matter ;
+  dct:description "Community and household climate action" ;
+.
+aaos:M318
+  a aao:Matter ;
+  dct:description "Child support policy" ;
+.
+aaos:M319
+  a aao:Matter ;
+  dct:description "Reducing the burden of government regulation" ;
+.
+aaos:M32
+  a aao:Matter ;
+  dct:description "Commonwealth emergency management" ;
+.
+aaos:M320
+  a aao:Matter ;
+  dct:description "trade promotion and international business development" ;
+.
+aaos:M321
+  a aao:Matter ;
+  dct:description "Development, delivery and co-ordination of government services, and development of policy on service delivery" ;
+.
+aaos:M322
+  a aao:Matter ;
+  dct:description "Old Parliament House" ;
+.
+aaos:M323
+  a aao:Matter ;
+  dct:description "Personal property securities" ;
+.
+aaos:M324
+  a aao:Matter ;
+  dct:description "Government financial accountability, governance and financial management frameworks, including grants and procurement policy and services" ;
+.
+aaos:M325
+  a aao:Matter ;
+  dct:description "Superannuation arrangements for Australian Government civilian employees and members of parliament and retirement benefits for Federal Judges and Governors-General" ;
+.
+aaos:M326
+  a aao:Matter ;
+  dct:description "Strategic management of non-Defence Commonwealth property in Australia, including construction, major refurbishment, acquisition, sustainability, ownership and disposal of real property" ;
+.
+aaos:M327
+  a aao:Matter ;
+  dct:description "Policy advice on the Future Fund and Nation-building Funds" ;
+.
+aaos:M328
+  a aao:Matter ;
+  dct:description "Coordination of Government Advertising" ;
+.
+aaos:M329
+  a aao:Matter ;
+  dct:description "trade and international business development" ;
+.
+aaos:M33
+  a aao:Matter ;
+  dct:description "Administrative support for Royal Commissions and certain other inquiries" ;
+.
+aaos:M330
+  a aao:Matter ;
+  dct:description "investment promotion" ;
+.
+aaos:M331
+  a aao:Matter ;
+  dct:description "Primary health care" ;
+.
+aaos:M332
+  a aao:Matter ;
+  dct:description "Aboriginal and Torres Strait Islander health programs and policies" ;
+.
+aaos:M333
+  a aao:Matter ;
+  dct:description "Blood and organ policy and funding" ;
+.
+aaos:M334
+  a aao:Matter ;
+  dct:description "Health workforce capacity" ;
+.
+aaos:M335
+  a aao:Matter ;
+  dct:description "Mental health policy and primary mental health care" ;
+.
+aaos:M336
+  a aao:Matter ;
+  dct:description "Monitoring and management of service delivery arrangements involving Centrelink, Medicare Australia, the Child Support Agency, Australian Hearing, and CRS Australia" ;
+.
+aaos:M337
+  a aao:Matter ;
+  dct:description "Marketing of manufactures and services" ;
+.
+aaos:M338
+  a aao:Matter ;
+  dct:description "Creation and development of research infrastructure" ;
+.
+aaos:M339
+  a aao:Matter ;
+  dct:description "Consumer credit" ;
+.
+aaos:M34
+  a aao:Matter ;
+  dct:description "Postal and telecommunications services" ;
+.
+aaos:M340
+  a aao:Matter ;
+  dct:description "Australian Government employment workplace relations policy, including equal employment opportunity and administration of the framework for agreement making and remuneration and conditions" ;
+.
+aaos:M341
+  a aao:Matter ;
+  dct:description "Food security policy and programs" ;
+.
+aaos:M342
+  a aao:Matter ;
+  dct:description "Renewable energy" ;
+.
+aaos:M343
+  a aao:Matter ;
+  dct:description "defence capability plan acquisitions and sustainment" ;
+.
+aaos:M344
+  a aao:Matter ;
+  dct:description "Job Services Australia" ;
+.
+aaos:M345
+  a aao:Matter ;
+  dct:description "Co-ordination of early childhood development policy and responsibilities, including Indigenous early childhood development" ;
+.
+aaos:M346
+  a aao:Matter ;
+  dct:description "Income security policies and programs for families with children, carers, the aged, people with disabilites and people in hardship" ;
+.
+aaos:M347
+  a aao:Matter ;
+  dct:description "Co-ordination of Government Advertising" ;
+.
+aaos:M348
+  a aao:Matter ;
+  dct:description "Official Establishments, ownership and property management" ;
+.
+aaos:M349
+  a aao:Matter ;
+  dct:description "Hospitals funding, including relationship with primary health care" ;
+.
+aaos:M35
+  a aao:Matter ;
+  dct:description "Management of the electromagnetic spectrum" ;
+.
+aaos:M350
+  a aao:Matter ;
+  dct:description "Implementation of the National Health and Hospitals Network" ;
+.
+aaos:M351
+  a aao:Matter ;
+  dct:description "Health and ageing research" ;
+.
+aaos:M352
+  a aao:Matter ;
+  dct:description "Food industry policy" ;
+.
+aaos:M353
+  a aao:Matter ;
+  dct:description "Advice to the Prime Minister across Government on policy and implementation Assistance to the Prime Minster in managing the Cabinet program" ;
+.
+aaos:M354
+  a aao:Matter ;
+  dct:description "Cyber policy co-ordination" ;
+.
+aaos:M355
+  a aao:Matter ;
+  dct:description "Social inclusion, non-profit sector and volunteering" ;
+.
+aaos:M356
+  a aao:Matter ;
+  dct:description "Cultural affairs, including movable cultural heritage and support for the arts" ;
+.
+aaos:M357
+  a aao:Matter ;
+  dct:description "Regional Australia policy and co-ordination" ;
+.
+aaos:M358
+  a aao:Matter ;
+  dct:description "Support for ministers and parliamentary secretaries with regional responsibilities" ;
+.
+aaos:M359
+  a aao:Matter ;
+  dct:description "Natural, built and cultural heritage" ;
+.
+aaos:M36
+  a aao:Matter ;
+  dct:description "Broadcasting services" ;
+.
+aaos:M360
+  a aao:Matter ;
+  dct:description "Co-ordination of sustainable communities policy" ;
+.
+aaos:M361
+  a aao:Matter ;
+  dct:description "Population policy" ;
+.
+aaos:M362
+  a aao:Matter ;
+  dct:description "Housing affordability" ;
+.
+aaos:M363
+  a aao:Matter ;
+  dct:description "Built environment innovation" ;
+.
+aaos:M364
+  a aao:Matter ;
+  dct:description "Commemorations" ;
+.
+aaos:M365
+  a aao:Matter ;
+  dct:description "Natural disaster relief, recovery and mitigation policy and financial assistance including payments to the States and Territories and the Australian Government Disaster Recovery Payment" ;
+.
+aaos:M366
+  a aao:Matter ;
+  dct:description "defence procurement and purchasing" ;
+.
+aaos:M367
+  a aao:Matter ;
+  dct:description "Training, including apprenticeships and training and assessment services" ;
+.
+aaos:M368
+  a aao:Matter ;
+  dct:description "Policy, co-ordination and support for international education" ;
+.
+aaos:M369
+  a aao:Matter ;
+  dct:description "Support for introduction of a national occupation licensing system" ;
+.
+aaos:M37
+  a aao:Matter ;
+  dct:description "Management of government records" ;
+.
+aaos:M370
+  a aao:Matter ;
+  dct:description "Workforce development" ;
+.
+aaos:M371
+  a aao:Matter ;
+  dct:description "Community mental health" ;
+.
+aaos:M372
+  a aao:Matter ;
+  dct:description "Family relationship, Family and Children's Support Services" ;
+.
+aaos:M373
+  a aao:Matter ;
+  dct:description "Social housing, rent assistance and homelessness" ;
+.
+aaos:M374
+  a aao:Matter ;
+  dct:description "Women's policies, programs and the promotion of gender equality at work" ;
+.
+aaos:M375
+  a aao:Matter ;
+  dct:description "Indigenous policy co-ordination, programs and the promotion of reconciliation" ;
+.
+aaos:M376
+  a aao:Matter ;
+  dct:description "Commonwealth property policy framework, legislation and policy for the management of property leased or owned by the Commonwealth, including acquisition, disposal and management of property interests" ;
+.
+aaos:M377
+  a aao:Matter ;
+  dct:description "Official Establishments, ownership and property management of the Prime Minister's official residences" ;
+.
+aaos:M378
+  a aao:Matter ;
+  dct:description "Services for older people, including their carers" ;
+.
+aaos:M379
+  a aao:Matter ;
+  dct:description "Public health, including health protection, and medical research" ;
+.
+aaos:M38
+  a aao:Matter ;
+  dct:description "Cultural affairs, including support for the arts" ;
+.
+aaos:M380
+  a aao:Matter ;
+  dct:description "Hospitals funding and policy, including relationships and linkages within the continuum of health care" ;
+.
+aaos:M381
+  a aao:Matter ;
+  dct:description "Major projects office, including facilitation and implementation of all non-Defence development projects" ;
+.
+aaos:M382
+  a aao:Matter ;
+  dct:description "Advice to the Prime Minister across Government on policy and implementation Assistance to the Prime Minister in managing the Cabinet program" ;
+.
+aaos:M383
+  a aao:Matter ;
+  dct:description "Geoscience research and information services including geodesy, mapping, remote sensing, groundwater and spatial data co-ordination" ;
+.
+aaos:M384
+  a aao:Matter ;
+  dct:description "Low emissions fossil fuel energy" ;
+.
+aaos:M385
+  a aao:Matter ;
+  dct:description "Urban environment" ;
+.
+aaos:M386
+  a aao:Matter ;
+  dct:description "Freedom of Information" ;
+.
+aaos:M387
+  a aao:Matter ;
+  dct:description "Schools education policy and programs, including, Indigenous school education, but excluding migrant adult education" ;
+.
+aaos:M388
+  a aao:Matter ;
+  dct:description "Higher education, skills and vocational education policy and programs" ;
+.
+aaos:M389
+  a aao:Matter ;
+  dct:description "Indigenous higher education and vocational training" ;
+.
+aaos:M39
+  a aao:Matter ;
+  dct:description "National policy issues relating to the information economy" ;
+.
+aaos:M390
+  a aao:Matter ;
+  dct:description "Policy, coordination and support for international education" ;
+.
+aaos:M391
+  a aao:Matter ;
+  dct:description "Housing supply policy" ;
+.
+aaos:M392
+  a aao:Matter ;
+  dct:description "Indigenous law and justice" ;
+.
+aaos:M393
+  a aao:Matter ;
+  dct:description "Schools education policy and programs, including vocational education and training in schools, Indigenous school education, but excluding migrant adult education" ;
+.
+aaos:M394
+  a aao:Matter ;
+  dct:description "Schooling transitions policy and programs including career pathways" ;
+.
+aaos:M395
+  a aao:Matter ;
+  dct:description "Promotion of flexible workplace relations policies and practices, including workplace productivity" ;
+.
+aaos:M396
+  a aao:Matter ;
+  dct:description "Youth affairs and programs, including youth transitions" ;
+.
+aaos:M397
+  a aao:Matter ;
+  dct:description "Income security policies and programs for families with children, carers, the aged, people with disabilities and people in hardship" ;
+.
+aaos:M398
+  a aao:Matter ;
+  dct:description "Construction industry, excluding workplace relations" ;
+.
+aaos:M399
+  a aao:Matter ;
+  dct:description "Science engagement and awareness" ;
+.
+aaos:M4
+  a aao:Matter ;
+  dct:description "Rural industries inspection and quarantine" ;
+.
+aaos:M40
+  a aao:Matter ;
+  dct:description "Information and communications industries development, electronic commerce and business on-line" ;
+.
+aaos:M400
+  a aao:Matter ;
+  dct:description "Foundation skills for adults" ;
+.
+aaos:M401
+  a aao:Matter ;
+  dct:description "Training, including apprenticeships and training and skills assessment services" ;
+.
+aaos:M402
+  a aao:Matter ;
+  dct:description "Higher education, skills and vocational education policy, regulation and programs" ;
+.
+aaos:M403
+  a aao:Matter ;
+  dct:description "Delivery of regional and territory specific services and programs" ;
+.
+aaos:M404
+  a aao:Matter ;
+  dct:description "Regional policy and co-ordination" ;
+.
+aaos:M405
+  a aao:Matter ;
+  dct:description "Renewable energy target policy, regulation and co-ordination" ;
+.
+aaos:M406
+  a aao:Matter ;
+  dct:description "Management of non-Defence Commonwealth property in Australia, including construction, major refurbishment, sustainability, acquisition, ownership and disposal of real property" ;
+.
+aaos:M407
+  a aao:Matter ;
+  dct:description "Policy advice on the Future Fund and Nation-building Funds and authorisation of payments from the Nation-building Funds to Agencies" ;
+.
+aaos:M408
+  a aao:Matter ;
+  dct:description "Monitoring and management of service delivery arrangements involving social security, child support, students, families, aged care, health programs, disability employment services, superannuation release and Australian Hearing Services" ;
+.
+aaos:M409
+  a aao:Matter ;
+  dct:description "Provision of B2G and G2G authentication services" ;
+.
+aaos:M41
+  a aao:Matter ;
+  dct:description "Government on-line delivery and information technology and communications management" ;
+.
+aaos:M410
+  a aao:Matter ;
+  dct:description "Food processing industry policy" ;
+.
+aaos:M411
+  a aao:Matter ;
+  dct:description "Advice to the Prime Minister across Government on policy and implementation" ;
+.
+aaos:M412
+  a aao:Matter ;
+  dct:description "Assistance to the Prime Minister in managing the Cabinet program" ;
+.
+aaos:M413
+  a aao:Matter ;
+  dct:description "Environmental information and research" ;
+.
+aaos:M414
+  a aao:Matter ;
+  dct:description "Food security policy and programmes" ;
+.
+aaos:M415
+  a aao:Matter ;
+  dct:description "Broadband policy and programmes" ;
+.
+aaos:M416
+  a aao:Matter ;
+  dct:description "Postal and telecommunications policies and programmes" ;
+.
+aaos:M417
+  a aao:Matter ;
+  dct:description "Schools education policy and programmes, including vocational education and training in schools, but excluding migrant adult education" ;
+.
+aaos:M418
+  a aao:Matter ;
+  dct:description "Schooling transitions policy and programmes including career pathways" ;
+.
+aaos:M419
+  a aao:Matter ;
+  dct:description "Youth affairs and programmes, including youth transitions" ;
+.
+aaos:M42
+  a aao:Matter ;
+  dct:description "Government information" ;
+.
+aaos:M420
+  a aao:Matter ;
+  dct:description "Early childhood and childcare policy and programmes" ;
+.
+aaos:M421
+  a aao:Matter ;
+  dct:description "Co-ordination of early childhood development policy and responsibilities" ;
+.
+aaos:M422
+  a aao:Matter ;
+  dct:description "Higher education policy, regulation and programmes" ;
+.
+aaos:M423
+  a aao:Matter ;
+  dct:description "Labour market programmes for people of working age" ;
+.
+aaos:M424
+  a aao:Matter ;
+  dct:description "Work and family programmes" ;
+.
+aaos:M425
+  a aao:Matter ;
+  dct:description "Migrant adult education" ;
+.
+aaos:M426
+  a aao:Matter ;
+  dct:description "Development and co-ordination of domestic climate change policy" ;
+.
+aaos:M427
+  a aao:Matter ;
+  dct:description "Greenhouse gas abatement programmes" ;
+.
+aaos:M428
+  a aao:Matter ;
+  dct:description "Tourism industry (international)" ;
+.
+aaos:M429
+  a aao:Matter ;
+  dct:description "International development and aid" ;
+.
+aaos:M43
+  a aao:Matter ;
+  dct:description "Sport and recreation" ;
+.
+aaos:M430
+  a aao:Matter ;
+  dct:description "Development and co-ordination of international climate change policy" ;
+.
+aaos:M431
+  a aao:Matter ;
+  dct:description "Health research" ;
+.
+aaos:M432
+  a aao:Matter ;
+  dct:description "Monitoring and management of service delivery arrangements involving social security, child support, students, families, aged care, health programmes, disability employment services, superannuation release and Australian Hearing Services" ;
+.
+aaos:M433
+  a aao:Matter ;
+  dct:description "Customs and border control other than quarantine and inspection" ;
+.
+aaos:M434
+  a aao:Matter ;
+  dct:description "Small business programmes" ;
+.
+aaos:M435
+  a aao:Matter ;
+  dct:description "Skills and vocational education policy regulation and programmes" ;
+.
+aaos:M436
+  a aao:Matter ;
+  dct:description "Tourism industry (domestic)" ;
+.
+aaos:M437
+  a aao:Matter ;
+  dct:description "Anti-dumping" ;
+.
+aaos:M438
+  a aao:Matter ;
+  dct:description "Delivery of regional and territory specific services and programmes" ;
+.
+aaos:M439
+  a aao:Matter ;
+  dct:description "Assistance to the Prime Minister in managing the Cabinet programme" ;
+.
+aaos:M44
+  a aao:Matter ;
+  dct:description "Defence, including -" ;
+.
+aaos:M440
+  a aao:Matter ;
+  dct:description "Ageing research" ;
+.
+aaos:M441
+  a aao:Matter ;
+  dct:description "Income security and support policies and programmes for families with children, carers, the aged, people with disabilities and people in hardship" ;
+.
+aaos:M442
+  a aao:Matter ;
+  dct:description "Income support policies for students and apprentices" ;
+.
+aaos:M443
+  a aao:Matter ;
+  dct:description "Policy for and promotion of active ageing, other than employment policy" ;
+.
+aaos:M444
+  a aao:Matter ;
+  dct:description "Community support services" ;
+.
+aaos:M445
+  a aao:Matter ;
+  dct:description "Services to help people with disabilities obtain employment" ;
+.
+aaos:M446
+  a aao:Matter ;
+  dct:description "Arrangements for the settlement of migrants and humanitarian entrants, other than migrant child and migrant adult education" ;
+.
+aaos:M447
+  a aao:Matter ;
+  dct:description "Non-profit sector and volunteering" ;
+.
+aaos:M448
+  a aao:Matter ;
+  dct:description "Small business policy" ;
+.
+aaos:M449
+  a aao:Matter ;
+  dct:description "Native title" ;
+.
+aaos:M45
+  a aao:Matter ;
+  dct:description "international defence relations and defence co-operation" ;
+.
+aaos:M450
+  a aao:Matter ;
+  dct:description "Policy, coordination and support for international education and research engagement" ;
+.
+aaos:M451
+  a aao:Matter ;
+  dct:description "Co-ordination of research policy in relation to universities" ;
+.
+aaos:M452
+  a aao:Matter ;
+  dct:description "Co-ordination of science research policy" ;
+.
+aaos:M453
+  a aao:Matter ;
+  dct:description "International science engagement" ;
+.
+aaos:M454
+  a aao:Matter ;
+  dct:description "Work health and safety, rehabilitation and compensation" ;
+.
+aaos:M455
+  a aao:Matter ;
+  dct:description "Government financial accountability, efficiency, governance and financial management frameworks, including grants and procurement policy and services" ;
+.
+aaos:M456
+  a aao:Matter ;
+  dct:description "Whole of government information and communications technology strategy, policy, procurement and services, including Gov 2.0 and related matters" ;
+.
+aaos:M457
+  a aao:Matter ;
+  dct:description "Policy advice on the Future Fund, Nation-building Funds and the DisabilityCare Australia Fund; and authorisation of payments from the Nation-building Funds and the DisabilityCare Australia Fund recommended by relevant Agencies" ;
+.
+aaos:M458
+  a aao:Matter ;
+  dct:description "Industrial research and development, and commercialisation" ;
+.
+aaos:M459
+  a aao:Matter ;
+  dct:description "Collaborative research in science and technology" ;
+.
+aaos:M46
+  a aao:Matter ;
+  dct:description "defence scientific research and development" ;
+.
+aaos:M460
+  a aao:Matter ;
+  dct:description "Commercialisation and utilisation of public sector research" ;
+.
+aaos:M461
+  a aao:Matter ;
+  dct:description "Adult migrant education" ;
+.
+aaos:M462
+  a aao:Matter ;
+  dct:description "Income support and participation policy for people of working age" ;
+.
+aaos:M463
+  a aao:Matter ;
+  dct:description "Schools education policy and programmes, including vocational education and training in schools" ;
+.
+aaos:M464
+  a aao:Matter ;
+  dct:description "Youth affairs and programmes, including youth transitionsPre-school education policy and programmes" ;
+.
+aaos:M465
+  a aao:Matter ;
+  dct:description "Childcare policy and programmes" ;
+.
+aaos:M466
+  a aao:Matter ;
+  dct:description "Small business policy and programmes" ;
+.
+aaos:M467
+  a aao:Matter ;
+  dct:description "Whole of government service delivery policy" ;
+.
+aaos:M468
+  a aao:Matter ;
+  dct:description "Pre-school education policy and programmes" ;
+.
+aaos:M469
+  a aao:Matter ;
+  dct:description "Whole of government information and communications technology (including Gov 2.0 and related matters), other than that related to government service delivery;" ;
+.
+aaos:M47
+  a aao:Matter ;
+  dct:description "defence procurement and purchasing, including offsets for defence purposes" ;
+.
+aaos:M470
+  a aao:Matter ;
+  dct:description "Design, development, delivery, co-ordination and monitoring of government services, social security, child support, students, families, aged care and health programmes, superannuation release and Australian Hearing Services" ;
+.
+aaos:M471
+  a aao:Matter ;
+  dct:description "Classification" ;
+.
+aaos:M472
+  a aao:Matter ;
+  dct:description "Environmental water use and resources relating to the Commonwealth Environmental Water Holder" ;
+.
+aaos:M473
+  a aao:Matter ;
+  dct:description "Whole of government information and communications technology (excluding Gov 2.0 and related matters), other than that related to government service delivery" ;
+.
+aaos:M474
+  a aao:Matter ;
+  dct:description "Public data policy, including Gov 2.0 and related matters" ;
+.
+aaos:M475
+  a aao:Matter ;
+  dct:description "Whole of government information and communications technology, other than that related to government service delivery" ;
+.
+aaos:M476
+  a aao:Matter ;
+  dct:description "Medicare provider compliance" ;
+.
+aaos:M477
+  a aao:Matter ;
+  dct:description "Design, development, delivery, co-ordination and monitoring of government services, social security, child support, students, families, aged care and health programmes (excluding Medicare provider compliance), superannuation release and Australian Hearing Services" ;
+.
+aaos:M478
+  a aao:Matter ;
+  dct:description "Northern Australia policy and coordination" ;
+.
+aaos:M479
+  a aao:Matter ;
+  dct:description "Public data policy and related matters" ;
+.
+aaos:M48
+  a aao:Matter ;
+  dct:description "defence industry development and co-operation" ;
+.
+aaos:M480
+  a aao:Matter ;
+  dct:description "National policy on cities" ;
+.
+aaos:M481
+  a aao:Matter ;
+  dct:description "National energy market, including electricity and gas" ;
+.
+aaos:M482
+  a aao:Matter ;
+  dct:description "Mineral and energy industries, including oil and gas" ;
+.
+aaos:M483
+  a aao:Matter ;
+  dct:description "Biosecurity, in relation to animals and plants" ;
+.
+aaos:M484
+  a aao:Matter ;
+  dct:description "National energy market, including electricity, gas and liquid fuels" ;
+.
+aaos:M485
+  a aao:Matter ;
+  dct:description "Energy-specific international obligations and activities" ;
+.
+aaos:M486
+  a aao:Matter ;
+  dct:description "Health provider compliance" ;
+.
+aaos:M487
+  a aao:Matter ;
+  dct:description "Biosecurity, in relation to human health" ;
+.
+aaos:M488
+  a aao:Matter ;
+  dct:description "Design, development, delivery, co-ordination and monitoring of government services, social security, child support, students, families, aged care and health programmes (excluding Health provider compliance), superannuation release and Australian Hearing Services" ;
+.
+aaos:M489
+  a aao:Matter ;
+  dct:description "Business entry point management and business services coordination" ;
+.
+aaos:M49
+  a aao:Matter ;
+  dct:description "Education, other than migrant adult education" ;
+.
+aaos:M490
+  a aao:Matter ;
+  dct:description "Mineral and energy resources, including oil and gas, extraction and upstream processing" ;
+.
+aaos:M491
+  a aao:Matter ;
+  dct:description "Government financial accountability, efficiency, governance and financial management frameworks, including grants and procurement policy and services (excluding information and communications technology procurement policy and services)" ;
+.
+aaos:M492
+  a aao:Matter ;
+  dct:description "Information and communications technology procurement policy and services" ;
+.
+aaos:M493
+  a aao:Matter ;
+  dct:description "Whole of government information and communications technology" ;
+.
+aaos:M494
+  a aao:Matter ;
+  dct:description "Major projects, including implementation of all non-Defence development projects" ;
+.
+aaos:M495
+  a aao:Matter ;
+  dct:description "Infrastructure and project financing" ;
+.
+aaos:M496
+  a aao:Matter ;
+  dct:description "Fraud and anti-corruption policy" ;
+.
+aaos:M497
+  a aao:Matter ;
+  dct:description "Administration of criminal justice, including -" ;
+.
+aaos:M498
+  a aao:Matter ;
+  dct:description "Protective security policy" ;
+.
+aaos:M499
+  a aao:Matter ;
+  dct:description "National security policy and operations" ;
+.
+aaos:M5
+  a aao:Matter ;
+  dct:description "Primary industries research including economic research" ;
+.
+aaos:M50
+  a aao:Matter ;
+  dct:description "Science policy" ;
+.
+aaos:M500
+  a aao:Matter ;
+  dct:description "Law enforcement policy and operations" ;
+.
+aaos:M501
+  a aao:Matter ;
+  dct:description "Immigration and migration, including -" ;
+.
+aaos:M502
+  a aao:Matter ;
+  dct:description "Whole of government national security and intelligence policy co ordination" ;
+.
+aaos:M503
+  a aao:Matter ;
+  dct:description "Administration of Parliamentarians' work expenses" ;
+.
+aaos:M504
+  a aao:Matter ;
+  dct:description "Jobactive" ;
+.
+aaos:M505
+  a aao:Matter ;
+  dct:description "Whole of government national security and intelligence policy co-ordination" ;
+.
+aaos:M506
+  a aao:Matter ;
+  dct:description "Whole of government integrity policy and activities" ;
+.
+aaos:M51
+  a aao:Matter ;
+  dct:description "Promotion of collaborative research in science and technology" ;
+.
+aaos:M52
+  a aao:Matter ;
+  dct:description "Training, including New Apprenticeships and training services" ;
+.
+aaos:M53
+  a aao:Matter ;
+  dct:description "Co-ordination of research policy" ;
+.
+aaos:M54
+  a aao:Matter ;
+  dct:description "Research grants and fellowships" ;
+.
+aaos:M55
+  a aao:Matter ;
+  dct:description "Radioactive waste management" ;
+.
+aaos:M56
+  a aao:Matter ;
+  dct:description "Employment policy, including employment services" ;
+.
+aaos:M57
+  a aao:Matter ;
+  dct:description "Job Network" ;
+.
+aaos:M58
+  a aao:Matter ;
+  dct:description "Labour market programs, including the Work for the Dole scheme" ;
+.
+aaos:M59
+  a aao:Matter ;
+  dct:description "Workplace relations policy development, advocacy and implementation" ;
+.
+aaos:M6
+  a aao:Matter ;
+  dct:description "Commodity marketing, including export promotion and agribusiness" ;
+.
+aaos:M60
+  a aao:Matter ;
+  dct:description "Promotion of flexible workplace relations policies and practices" ;
+.
+aaos:M61
+  a aao:Matter ;
+  dct:description "Coordination of labour market research" ;
+.
+aaos:M62
+  a aao:Matter ;
+  dct:description "Australian government employment workplace relations policy, including administration of the framework for agreement making and remuneration and conditions" ;
+.
+aaos:M63
+  a aao:Matter ;
+  dct:description "Occupational health and safety, rehabilitation and compensation" ;
+.
+aaos:M64
+  a aao:Matter ;
+  dct:description "Equal employment opportunity" ;
+.
+aaos:M65
+  a aao:Matter ;
+  dct:description "Work and family issues" ;
+.
+aaos:M66
+  a aao:Matter ;
+  dct:description "Environment and conservation" ;
+.
+aaos:M67
+  a aao:Matter ;
+  dct:description "Meteorology" ;
+.
+aaos:M68
+  a aao:Matter ;
+  dct:description "Administration of the Australian Antarctic Territory, and the Territory of Heard Island and McDonald Islands" ;
+.
+aaos:M69
+  a aao:Matter ;
+  dct:description "Natural, built and movable cultural heritage" ;
+.
+aaos:M7
+  a aao:Matter ;
+  dct:description "Commodity-specific international organisations and activities" ;
+.
+aaos:M70
+  a aao:Matter ;
+  dct:description "Greenhouse policy coordination" ;
+.
+aaos:M71
+  a aao:Matter ;
+  dct:description "Environment protection and conservation of biodervisity" ;
+.
+aaos:M72
+  a aao:Matter ;
+  dct:description "Air quality" ;
+.
+aaos:M73
+  a aao:Matter ;
+  dct:description "National fuel quality standards" ;
+.
+aaos:M74
+  a aao:Matter ;
+  dct:description "Land contamination" ;
+.
+aaos:M75
+  a aao:Matter ;
+  dct:description "Income security policies and programs" ;
+.
+aaos:M76
+  a aao:Matter ;
+  dct:description "Services for people with disabilities and families with children" ;
+.
+aaos:M77
+  a aao:Matter ;
+  dct:description "Community support services, excluding the Home and Community Care programme" ;
+.
+aaos:M78
+  a aao:Matter ;
+  dct:description "Family relationship services" ;
+.
+aaos:M79
+  a aao:Matter ;
+  dct:description "Welfare housing" ;
+.
+aaos:M8
+  a aao:Matter ;
+  dct:description "Administration of international commodity agreements" ;
+.
+aaos:M80
+  a aao:Matter ;
+  dct:description "Youth affairs" ;
+.
+aaos:M81
+  a aao:Matter ;
+  dct:description "Budget policy advice and process, and review of governmental programs" ;
+.
+aaos:M82
+  a aao:Matter ;
+  dct:description "Government financial accountability, governance and financial management frameworks" ;
+.
+aaos:M83
+  a aao:Matter ;
+  dct:description "Shareholder advice on Government Business Enterprises" ;
+.
+aaos:M84
+  a aao:Matter ;
+  dct:description "General policy guidelines for Commonwealth statutory authorities" ;
+.
+aaos:M85
+  a aao:Matter ;
+  dct:description "Superannuation for Commonwealth employees" ;
+.
+aaos:M86
+  a aao:Matter ;
+  dct:description "Asset sales" ;
+.
+aaos:M87
+  a aao:Matter ;
+  dct:description "Strategic property management in Australia, including acquisition, ownership and disposal of real property" ;
+.
+aaos:M88
+  a aao:Matter ;
+  dct:description "Procurement policy and services (including contracting out, removals and disposals)" ;
+.
+aaos:M89
+  a aao:Matter ;
+  dct:description "Electoral matters" ;
+.
+aaos:M9
+  a aao:Matter ;
+  dct:description "Administration of export controls on agricultural, fisheries and forestry industries products" ;
+.
+aaos:M90
+  a aao:Matter ;
+  dct:description "Administration of Parliamentarians' entitlements" ;
+.
+aaos:M91
+  a aao:Matter ;
+  dct:description "Competitive tendering and contracting" ;
+.
+aaos:M92
+  a aao:Matter ;
+  dct:description "External Affairs, including -" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M92a
+  a aao:Matter ;
+  dct:description """External Affairs, including -
+relations and communications with overseas governments
+relations and communications with overseas governments and United Nations agencies
+market development, including market access
+treaties, including trade agreements
+bilateral, regional and multilateral trade policy
+international trade and commodity negotiations
+trade promotion
+international development co-operation
+diplomatic and consular missions
+international security issues, including disarmament, arms control and nuclear non-proliferation
+public diplomacy, including information and cultural programs""" ;
+.
+aaos:M93
+  a aao:Matter ;
+  dct:description "relations and communications with overseas governments" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M94
+  a aao:Matter ;
+  dct:description "relations and communications with overseas governments and United Nations agencies" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M95
+  a aao:Matter ;
+  dct:description "market development, including market access" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M96
+  a aao:Matter ;
+  dct:description "treaties, including trade agreements" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M97
+  a aao:Matter ;
+  dct:description "bilateral, regional and multilateral trade policy" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M98
+  a aao:Matter ;
+  dct:description "international trade and commodity negotiations" ;
+  skos:broader aaos:M92a ;
+.
+aaos:M99
+  a aao:Matter ;
+  dct:description "trade promotion" ;
+  skos:broader aaos:M92a ;
+.
+<http://test.linked.data.gov.au/dataset/matters>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+.
