@@ -4,7 +4,8 @@
 ```
 CONSTRUCT { ?s rdfs:label ?t . ?s rdfs:comment ?d }
 WHERE {
-	 { ?s dct:title ?t . } UNION  { ?s dct:description ?d . }
+	{ ?s a aao:Matter } UNION { ?s a leg:Act } UNION { ?s a auorg:DepartmentOfState } UNION { ?s a auorg:Portfolio }
+	{ ?s dct:title ?t . } UNION  { ?s dct:description ?d . }
 }
 ```
 
@@ -12,13 +13,15 @@ WHERE {
 ```
 CONSTRUCT { ?a dct:hasPart ?p }
 WHERE {
-	 ?p dct:isPartOf ?a .
+	?p a aao:AAO-Part .
+	?a a aao:AAO .
+	?p dct:isPartOf ?a .
 }
 ```
 
 ## Create history of who is responsible for each Act or Matter
-This approach gets an ordering sequence simply by ordering the beginning of each responsibility. 
-A more efficient/indexed approach would take advantage of the temporal topological relationships expressed using `time:intervalMeets` and `time:intervalMetBy` which are computed/added as explained in [Add explicit temporal order](./aao-time-processing.md). 
+This approach gets an ordering sequence simply by ordering the beginning of each responsibility.
+A more efficient/indexed approach would take advantage of the temporal topological relationships expressed using `time:intervalMeets` and `time:intervalMetBy` which are computed/added as explained in [Add explicit temporal order](./aao-time-processing.md).
 
 ```
 SELECT ?matter ?dept ?begin ?end
