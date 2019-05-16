@@ -73,12 +73,16 @@ aaos:M109
 .
 aaos:M11
   a aao:Matter ;
+  dct:description "Law and justice including -" ;
+  skos:broader aaos:M11a ;
+.
+aaos:M11a
+  a aao:Matter ;
   dct:description """Law and justice including -
 Administrative law
 Alternative dispute resolution
 Bankruptcy
-Censorship
-Copyright
+Constutional law
 Courts and tribunals
 Human rights
 International law
@@ -86,10 +90,7 @@ Law reform
 Legal assistance
 Legislative drafting
 Marriage and family law
-Native Title
-Privacy
-Legal services to the Commonwealth
-Criminal law and law enforcement""" ;
+Personal property securities""" ;
 .
 aaos:M110
   a aao:Matter ;
@@ -134,6 +135,7 @@ aaos:M119
 aaos:M12
   a aao:Matter ;
   dct:description "Administrative law" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M120
   a aao:Matter ;
@@ -178,6 +180,7 @@ aaos:M129
 aaos:M13
   a aao:Matter ;
   dct:description "Alternative dispute resolution" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M130
   a aao:Matter ;
@@ -222,6 +225,7 @@ aaos:M139
 aaos:M14
   a aao:Matter ;
   dct:description "Bankruptcy" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M140
   a aao:Matter ;
@@ -310,6 +314,7 @@ aaos:M159
 aaos:M16
   a aao:Matter ;
   dct:description "Constitutional law" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M160
   a aao:Matter ;
@@ -398,6 +403,7 @@ aaos:M179
 aaos:M18
   a aao:Matter ;
   dct:description "Courts and tribunals" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M180
   a aao:Matter ;
@@ -442,6 +448,7 @@ aaos:M189
 aaos:M19
   a aao:Matter ;
   dct:description "Human rights" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M190
   a aao:Matter ;
@@ -490,6 +497,7 @@ aaos:M2
 aaos:M20
   a aao:Matter ;
   dct:description "International law" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M200
   a aao:Matter ;
@@ -534,6 +542,7 @@ aaos:M209
 aaos:M21
   a aao:Matter ;
   dct:description "Law reform" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M210
   a aao:Matter ;
@@ -578,6 +587,7 @@ aaos:M219
 aaos:M22
   a aao:Matter ;
   dct:description "Legal assistance" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M220
   a aao:Matter ;
@@ -622,6 +632,7 @@ aaos:M229
 aaos:M23
   a aao:Matter ;
   dct:description "Legislative drafting" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M230
   a aao:Matter ;
@@ -666,6 +677,7 @@ aaos:M239
 aaos:M24
   a aao:Matter ;
   dct:description "Marriage and family law" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M240
   a aao:Matter ;
@@ -1038,6 +1050,7 @@ aaos:M322
 aaos:M323
   a aao:Matter ;
   dct:description "Personal property securities" ;
+  skos:broader aaos:M11a ;
 .
 aaos:M324
   a aao:Matter ;
@@ -1806,6 +1819,11 @@ aaos:M496
 aaos:M497
   a aao:Matter ;
   dct:description "Administration of criminal justice, including -" ;
+.
+aaos:M497a
+  a aao:Matter ;
+  dct:description """Administration of criminal justice, including -
+  """ ;
 .
 aaos:M498
   a aao:Matter ;
