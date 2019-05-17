@@ -2,10 +2,12 @@
 
 ## add Julian day for each calendar date
 ```
-CONSTRUCT {
+INSERT {
 	?inst time:inTimePosition [
 		a time:TimePosition ;
-		rdfs:comment "Modified Julian Day" ;
+		time:hasTRS [ a time:TRS ;
+			rdfs:label "Modified Julian Day" ;
+		] ;
 		time:numericPosition ?mjd ;
 	] ;
 .
@@ -28,17 +30,19 @@ WHERE {
 
 ## Create a sequence of aaos
 ```
-CONSTRUCT {
-	?aao2 dct:replaces ?aao1 ;
-		time:intervalMetBy ?aao1 .
-	?aao1 dct:isReplacedBy ?aao2 ;  
-		time:intervalMeets ?aao2 .
+INSERT {
+	?aao2 dct:replaces ?aao1 .
+	?aao2t	time:intervalMetBy ?aao1t .
+	?aao1 dct:isReplacedBy ?aao2 .  
+	?aao1t	time:intervalMeets ?aao2t .
 }
 WHERE {
 	?aao1 a aao:AAO ;
-		dct:temporal/time:hasEnd/time:inTimePosition/time:numericPosition ?end1 .
+		dct:temporal ?aao1t .
+	?aao1t time:hasEnd/time:inTimePosition/time:numericPosition ?end1 .
 	?aao2 a aao:AAO ;
-		dct:temporal/time:hasBeginning/time:inTimePosition/time:numericPosition ?begin2 .
+		dct:temporal ?aao2t .
+	?aao2t time:hasBeginning/time:inTimePosition/time:numericPosition ?begin2 .
 	FILTER (  ( ( ?begin2 - ?end1 ) >=0 ) && ( ( ?begin2 - ?end1 ) <= 4 )  )
 }
 ```

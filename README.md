@@ -7,6 +7,10 @@ a [Platforms for Open Data](https://pmc.gov.au/public-data/open-data/platforms-o
 [CSIRO](https://www.csiro.au/), the [Department of Finance](https://www.finance.gov.au/), the [National Archives of
 Australia](http://naa.gov.au/) and other interested agencies.
 
+## Data
+
+A [sample dataset](data.md) using this ontology is available.
+
 ## Source
 This ontology is based on the current structure of an AAO instance as listed at the [Federal Register of Legislation](https://www.legislation.gov.au/Browse/ByRegDate/AdministrativeArrangementsOrders/), e.g. [AAO for "2nd Gillard Adminstration"](https://www.legislation.gov.au/Details/C2010Q00191)
 .
@@ -54,7 +58,6 @@ The description of each Department of State should be formalized as an `auorg:De
 
 Each department is part of a `auorg:Portfolio`
 
-
 ## Ontology representations
 * [aao.ttl](schema/aao.ttl) - the formal RDF (turtle) ontology document
 * [aao.html](aao.html) - a human-readable, HTML, from the ontology document (TBD)
@@ -62,6 +65,13 @@ Each department is part of a `auorg:Portfolio`
 * [aao.shacl.ttl](shape/aao.shacl.ttl) - a [SHACL](https://www.w3.org/TR/shacl/) shape graph for validating AAO data (TBD)
 * [aao.profile.ttl](profile/aao.profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology (TBD)
 * [auorg.ttl](https://raw.githubusercontent.com/CSIRO-enviro-informatics/auorg-ont/master/auorg.ttl) the AU Org Ontology
+
+## Processing
+### Time sequence
+Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md)
+
+### Responsibility for Functions
+Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md)
 
 ## Alignments
 ### PROV-O

@@ -1,19 +1,39 @@
 # Data and examples
 A dataset has been assembled by scraping the AAOs for the last 10 years - see https://confluence.csiro.au/display/LongSpineGovFunc/Database
 
-These were exported into a set of CSV's, and converted into RDF for further analysis.
+These were exported into a set of CSV's, and converted into RDF using the [AAO Ontology](README.md).
+The information is factored into a number of files (graphs):
 
-- [AAOs.ttl](data/AAOs.ttl) AAOs formalized using the AAO Ontology and presented in RDF.
-- [PARTs.ttl](data/PARTs.ttl) Parts of AAOs
-- [PORTFOLIOs.ttl](data/PORTFOLIOs.ttl) Portfolios
-- [DEPTs.ttl](data/DEPTs.ttl) Departments of state mentioned in AAOs
-- [ACT_NAMEs.ttl](data/ACT_NAMEs.ttl) Legistation mentioned in AAOs and denoted by name
-- [MATTERs.ttl](data/MATTERs.ttl) Matters taken from AAOs
+- [AAOs.ttl](data/AAOs.ttl) AAOs each with their dates of validity
+- [PARTs.ttl](data/PARTs.ttl) Parts of AAOs with their department (and portfolio if available), each linked back to the AAO it belongs to
+- [PORTFOLIOs.ttl](data/PORTFOLIOs.ttl) Portfolios mentioned in AAOs denoted by name
+- [DEPTs.ttl](data/DEPTs.ttl) Departments of state mentioned in AAOs denoted by name
+- [ACT_NAMEs.ttl](data/ACT_NAMEs.ttl) Legislation mentioned in AAOs and denoted by name
+- [MATTERs.ttl](data/MATTERs.ttl) Matters taken from AAOs expressed as text
 - [PART_LEGs.ttl](data/PART_LEGs.ttl) Links from Parts to Administered legislation of AAOs
 - [PART_MATs.ttl](data/PART_MATs.ttl) Links from Parts to Matters dealt with of AAOs
 
+These can be viewed together in https://github.com/CSIRO-enviro-informatics/aao-ont/data/aao-all.ttl.
 
-Examples from https://github.com/CSIRO-enviro-informatics/aao-ont/data/aao-time.ttl:
+## Processing
+### Inverse relations 
+```
+INSERT {
+	?aao dct:hasPart ?aaop ;
+}
+WHERE {
+	?aaop a aao:AAO-Part ;
+		dct:isPartOf ?aao .
+}
+```
+### Time sequence
+Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md)
+
+### Responsibility for Functions
+Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md)
+
+## Preview
+
 ```
 aaos:A97
   rdf:type aao:AAO ;
@@ -21,20 +41,9 @@ aaos:A97
   dct:hasPart aaos:P684 ;
   dct:hasPart aaos:P685 ;
   dct:hasPart aaos:P686 ;
-  dct:hasPart aaos:P687 ;
-  dct:hasPart aaos:P688 ;
-  dct:hasPart aaos:P689 ;
-  dct:hasPart aaos:P690 ;
-  dct:hasPart aaos:P691 ;
-  dct:hasPart aaos:P692 ;
-  dct:hasPart aaos:P693 ;
-  dct:hasPart aaos:P694 ;
-  dct:hasPart aaos:P695 ;
+  [...]
   dct:hasPart aaos:P696 ;
-  dct:hasPart aaos:P697 ;
-  dct:hasPart aaos:P698 ;
-  dct:hasPart aaos:P699 ;
-  dct:hasPart aaos:P700 ;
+  [...]
   dct:isReplacedBy aaos:A98 ;
   dct:issued "2018-04-19"^^xsd:date ;
   dct:replaces aaos:A96 ;
@@ -50,8 +59,6 @@ aaos:A97
         ] ;
     ] ;
   rdfs:seeAlso <https://www.legislation.gov.au/Details/C2018Q00017> ;
-  owlTime:intervalMeets aaos:A98 ;
-  owlTime:intervalMetBy aaos:A96 ;
 .
 
 aaos:P696
@@ -60,46 +67,14 @@ aaos:P696
   aao:administeredLegislation legs:A1193 ;
   aao:administeredLegislation legs:A1280 ;
   aao:administeredLegislation legs:A1284 ;
-  aao:administeredLegislation legs:A1384 ;
-  aao:administeredLegislation legs:A1446 ;
-  aao:administeredLegislation legs:A1447 ;
-  aao:administeredLegislation legs:A1449 ;
-  aao:administeredLegislation legs:A1453 ;
-  aao:administeredLegislation legs:A1454 ;
-  aao:administeredLegislation legs:A1519 ;
-  aao:administeredLegislation legs:A1627 ;
-  aao:administeredLegislation legs:A1688 ;
-  aao:administeredLegislation legs:A1822 ;
-  aao:administeredLegislation legs:A1888 ;
-  aao:administeredLegislation legs:A1889 ;
-  aao:administeredLegislation legs:A1890 ;
-  aao:administeredLegislation legs:A2033 ;
-  aao:administeredLegislation legs:A2088 ;
-  aao:administeredLegislation legs:A2089 ;
+  [...]
   aao:administeredLegislation legs:A2090 ;
-  aao:administeredLegislation legs:A2091 ;
-  aao:administeredLegislation legs:A361 ;
-  aao:administeredLegislation legs:A363 ;
-  aao:administeredLegislation legs:A366 ;
-  aao:administeredLegislation legs:A367 ;
-  aao:administeredLegislation legs:A373 ;
-  aao:administeredLegislation legs:A380 ;
-  aao:administeredLegislation legs:A385 ;
-  aao:administeredLegislation legs:A386 ;
-  aao:administeredLegislation legs:A387 ;
-  aao:administeredLegislation legs:A388 ;
-  aao:administeredLegislation legs:A389 ;
-  aao:administeredLegislation legs:A392 ;
+  [...]
   aao:matterDealtWith aaos:M283 ;
   aao:matterDealtWith aaos:M395 ;
   aao:matterDealtWith aaos:M423 ;
   aao:matterDealtWith aaos:M424 ;
-  aao:matterDealtWith aaos:M454 ;
-  aao:matterDealtWith aaos:M466 ;
-  aao:matterDealtWith aaos:M504 ;
-  aao:matterDealtWith aaos:M56 ;
-  aao:matterDealtWith aaos:M59 ;
-  aao:matterDealtWith aaos:M64 ;
+  [...]
   aao:part-number 13 ;
   aao:responsibleDepartment auorgs:D56 ;
   auorg:isPartOfPortfolio auorgs:P0 ;
@@ -125,10 +100,6 @@ aaos:M424
 .
 
 ```
-
-##  data
-
-These refer to:
 
 ### Identifiers
 Identifiers for **AAOs** and for **Legislation** are taken from the [Federal Register of Legislation](https://www.legislation.gov.au), e.g.
