@@ -3,22 +3,52 @@
 Each `AAO` describes a set of responsibilities from an organizational viewpoint, sorted by each Department of State, over a specified time interval.
 A more functional view, centered on legislation and matters, can be constructed from this.
 
-## Time series
+The model for 'responsibility' follows the qualified-relation pattern:
 
-The sequence of responsibility for Matters can be computed using this SPARQL query:
+![Responsibility](image/responsibility.png)
+
+A Matter or Legislation is linked to a department during a specified time interval.
+The time intervals will form a sequence.
+The relationships between members of the sequence can be described using the Allen's interval relations, as specified in [OWL-Time](https://www.w3.org/TR/owl-time/).
+
+The set of `Responsibility` individual for a matter or piece of legislation can be computed as follows:
+
 ```
-SELECT ?matter ?dept ?begin ?end
+CONSTRUCT {
+	?matter aao:qualifiedResponsibility [
+		a aao:Responsibility ;
+		aao:definedByAAO ?aao ;
+		aao:responsibleDepartment ?dept ;
+		dct:temporal ?aaot ;
+	] .
+}
 WHERE {
-	?m a aao:Matter ;
-		dct:description ?matter .
+	?matter a aao:Matter ;
+		dct:description ?mattername .
 	?part a aao:AAO-Part ;
 		dct:isPartOf ?aao ;
-		aao:responsibleDepartment/dct:title ?dept ;
-		aao:matterDealtWith ?m .
-  ?aao dct:temporal/time:hasBeginning/time:inXSDDate ?begin .
-  OPTIONAL { ?aao dct:temporal/time:hasEnd/time:inXSDDate ?end . }
+		aao:responsibleDepartment ?dept ;
+		aao:matterDealtWith ?matter .
+  ?dept dct:title ?deptname .
+  ?aao dct:temporal ?aaot .
 }
-ORDER BY ?matter ASC(?begin)
+
+```
+
+## Time series
+
+The sequence of responsibility for Matters can then be computed using this SPARQL query:
+```
+SELECT ?matter ?dept ?mb
+WHERE {
+	?m a aao:Matter ;
+		dct:description ?matter ;
+		aao:qualifiedResponsibility ?mr .
+	?mr dct:temporal/time:hasBeginning/time:inXSDDate ?mb .
+	?mr aao:responsibleDepartment ?md .
+	?md dct:title ?dept .
+}
+ORDER BY ?matter ASC(?mb)
 ```
 
 Extract from https://github.com/CSIRO-enviro-informatics/aao-ont/data/matter-sequence.tsv:

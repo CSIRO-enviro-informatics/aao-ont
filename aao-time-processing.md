@@ -28,21 +28,35 @@ WHERE {
 }
 ```
 
-## Create a sequence of aaos
+## Create a sequence of time intervals
+Compare the ends and beginnings of time-intervals to find how they meet up. 
 ```
 INSERT {
-	?aao2 dct:replaces ?aao1 .
 	?aao2t	time:intervalMetBy ?aao1t .
-	?aao1 dct:isReplacedBy ?aao2 .  
 	?aao1t	time:intervalMeets ?aao2t .
 }
 WHERE {
-	?aao1 a aao:AAO ;
-		dct:temporal ?aao1t .
+	?aao1t a time:ProperInterval .
 	?aao1t time:hasEnd/time:inTimePosition/time:numericPosition ?end1 .
-	?aao2 a aao:AAO ;
-		dct:temporal ?aao2t .
+	?aao2t a time:ProperInterval .
 	?aao2t time:hasBeginning/time:inTimePosition/time:numericPosition ?begin2 .
 	FILTER (  ( ( ?begin2 - ?end1 ) >=0 ) && ( ( ?begin2 - ?end1 ) <= 4 )  )
+}
+```
+A 4-day tolerance is used.
+
+## Create a sequence of AAOs
+Use the topology of time-intervals to create a sequence of AAOs.
+```
+INSERT {
+	?aao2 dct:replaces ?aao1 .
+	?aao1 dct:isReplacedBy ?aao2 .  
+}
+WHERE {
+	?aao1t time:intervalMeets ?aao2t .
+	?aao1 a aao:AAO ;
+		dct:temporal ?aao1t .
+	?aao2 a aao:AAO ;
+		dct:temporal ?aao2t .
 }
 ```
