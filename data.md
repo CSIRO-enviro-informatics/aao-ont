@@ -16,7 +16,7 @@ The information is factored into a number of files (graphs):
 These can be viewed together in https://github.com/CSIRO-enviro-informatics/aao-ont/data/aao-all.ttl.
 
 ## Processing
-### Inverse relations 
+### Inverse relations
 ```
 INSERT {
 	?aao dct:hasPart ?aaop ;
@@ -27,10 +27,10 @@ WHERE {
 }
 ```
 ### Time sequence
-Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md)
+Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md) - results in [aao-time.ttl](data/aao-time.ttl)
 
 ### Responsibility for Functions
-Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md)
+Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md) - results in [aao-all.ttl](data/aao-all.ttl)
 
 ## Preview
 

@@ -68,10 +68,11 @@ Each department is part of a `auorg:Portfolio`
 
 ## Processing
 ### Time sequence
-Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md)
+Processing the AAOs into a time-sequence with OWL-Time relationships is described in [aao-time-processing](aao-time-processing.md) - results in [aao-time.ttl](data/aao-time.ttl)
 
 ### Responsibility for Functions
-Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md)
+Processing the AAOs to get a view of functional responsibility is described in [function-responsibility](function-responsibility.md) - results in [aao-all.ttl](data/aao-all.ttl)
+
 
 ## Alignments
 ### PROV-O
