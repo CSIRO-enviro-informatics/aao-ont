@@ -298,7 +298,7 @@ aao:definedByAAO
   a owl:ObjectProperty ;
   rdfs:domain aao:Responsibility ;
   rdfs:label "defined by AAO" ;
-  rdfs:range aao:AAO-Part ;
+  rdfs:range aao:AAO ;
 .
 aao:exceptionToLegislation
   a owl:ObjectProperty ;
