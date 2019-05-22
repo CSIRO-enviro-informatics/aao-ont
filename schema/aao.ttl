@@ -232,6 +232,7 @@ aao:Matter
 aao:Qualified-Act
   a owl:Class ;
   rdfs:label "Qualified act" ;
+  rdfs:subClassOf leg:Legislation ;
   rdfs:subClassOf prov:Entity ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -344,8 +345,7 @@ aao:qualifiedResponsibility
       a owl:Class ;
       owl:unionOf (
           aao:Matter
-          aao:Qualified-Act
-          leg:Act
+          leg:Legislation
         ) ;
     ] ;
   rdfs:label "qualified responsibility " ;
@@ -408,6 +408,7 @@ leg:Act
 leg:Act-Part
   a owl:Class ;
   rdfs:label "Part of an Act of Parlianment" ;
+  rdfs:subClassOf leg:Legislation ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom leg:Act ;
