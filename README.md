@@ -17,6 +17,10 @@ This ontology is based on the current structure of an AAO instance as listed at 
 A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/information-governance/aao/index.aspx) is also available from the
 [National Archives of Australia](http://www.naa.gov.au).
 
+## Dependencies
+
+![AAO ontology Dependencies](image/dependencies.png)
+
 ## Namespaces
 The AAO ontology is partitioned into two namespaces, [aao:](http://linked.data.gov.au/def/aao#) and [leg:](http://linked.data.gov.au/def/legislation#), and uses elements from the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont) in the namespace [auorg:](http://linked.data.gov.au/def/auorg).
 
@@ -52,6 +56,8 @@ is a collection which refers to either
 
 #### `aao:Matter`
 is an area of responsibility denoted by its `rdfs:label` which is a descriptive phrase.
+
+A key question is how `aao:Matter` relates to `agrif:Function` (which is defined as part of the [Commonwealth Record Series system ontology](https://github.com/CSIRO-enviro-informatics/crs-ont). 
 
 ### Organisations
 The description of each Department of State should be formalized as an `auorg:DepartmentOfState` using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
