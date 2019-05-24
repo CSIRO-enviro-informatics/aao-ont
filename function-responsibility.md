@@ -15,9 +15,9 @@ The set of `Responsibility` individual for a matter or piece of legislation can 
 
 ```
 CONSTRUCT {
-	?matter aao:qualifiedResponsibility [
-		a aao:Responsibility ;
-		aao:definedByAAO ?aao ;
+	?matter long:qualifiedResponsibility [
+		a long:Responsibility ;
+		long:definedByAAO ?aao ;
 		aao:responsibleDepartment ?dept ;
 		dct:temporal ?aaot ;
 	] .
@@ -43,7 +43,7 @@ SELECT ?matter ?dept ?mb
 WHERE {
 	?m a aao:Matter ;
 		dct:description ?matter ;
-		aao:qualifiedResponsibility ?mr .
+		long:qualifiedResponsibility ?mr .
 	?mr dct:temporal/time:hasBeginning/time:inXSDDate ?mb .
 	?mr aao:responsibleDepartment ?md .
 	?md dct:title ?dept .
@@ -92,7 +92,7 @@ Extract from https://github.com/CSIRO-enviro-informatics/aao-ont/data/matter-seq
 | Energy policy | Resources, Energy and Tourism | 2008-05-01 | 2010-03-07 |
 | ... | ... | ... | ... |
 
-The sequence of responsibility for Legislation can be computed using this SPARQL query:
+A sequence of responsibility for Legislation can be computed using this SPARQL query:
 ```
 SELECT ?act ?dept ?begin ?end
 WHERE {
