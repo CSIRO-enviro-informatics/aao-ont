@@ -165,9 +165,3 @@ There are several complications in mapping this data to a strict functional time
 - Departments routinely change name as their responsibilities shift
 - 'matters' are denoted by a text phrase, which may shift for either substantial reasons, or due to minor wording changes that have no significance of substance
 - ...
-
-A generic structure for expressing the sequence of responsibility which respects the formal conceptualization of the AAO is summarized in this figure:
-
-![](image/responsibility.png)
-
-Each `aao:Matter`, `leg:Act` or `aao:Qualified-Act` has one or more `aao:qualifiedResponsibility` whose value is a node of type `aao:Responsibility`. The latter indicates the associated Department of State using `aao:responsibleDepartment`, the temporal interval over which this applies using `dct:temporal`, and the Part of which Adminstrative Arrangements Order that establishes this using `aao:definedByAAO`.
