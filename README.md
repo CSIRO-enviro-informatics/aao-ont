@@ -21,8 +21,8 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 
 ![AAO ontology Dependencies](image/dependencies.png)
 
-- [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont)
-- [OWL-Time](https://www.w3.org/TR/owl-time/)
+- [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont) - for definitions of Departments and Portfolios
+- [OWL-Time](https://www.w3.org/TR/owl-time/) - for temporal intervals and relations
 - [Commonwealth Record Series system ontology](https://github.com/CSIRO-enviro-informatics/crs-ont)
 
 ## Namespaces
