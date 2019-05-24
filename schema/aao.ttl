@@ -1,8 +1,6 @@
 # baseURI: http://linked.data.gov.au/def/aao
-# imports: http://linked.data.gov.au/def/auorg
+# imports: http://linked.data.gov.au/def/auorg/
 # imports: http://www.w3.org/2006/time
-# imports: http://www.w3.org/ns/org#
-# imports: http://www.w3.org/ns/time/gregorian
 # imports: http://xmlns.com/foaf/0.1/
 # prefix: aao
 
@@ -25,10 +23,8 @@
 
 <http://linked.data.gov.au/def/aao>
   a owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/auorg> ;
+  owl:imports auorg: ;
   owl:imports <http://www.w3.org/2006/time> ;
-  owl:imports org: ;
-  owl:imports <http://www.w3.org/ns/time/gregorian> ;
   owl:imports foaf: ;
 .
 aao:AAO
