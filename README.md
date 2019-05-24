@@ -21,6 +21,10 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 
 ![AAO ontology Dependencies](image/dependencies.png)
 
+- [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont)
+- [OWL-Time](https://www.w3.org/TR/owl-time/)
+- [Commonwealth Record Series system ontology](https://github.com/CSIRO-enviro-informatics/crs-ont)
+
 ## Namespaces
 The AAO ontology is partitioned into two namespaces, [aao:](http://linked.data.gov.au/def/aao#) and [leg:](http://linked.data.gov.au/def/legislation#), and uses elements from the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont) in the namespace [auorg:](http://linked.data.gov.au/def/auorg).
 
@@ -60,7 +64,7 @@ is an area of responsibility denoted by its `rdfs:label` which is a descriptive 
 A key question is how `aao:Matter` relates to `agrif:Function` (which is defined as part of the [Commonwealth Record Series system ontology](https://github.com/CSIRO-enviro-informatics/crs-ont). 
 
 ### Organisations
-The description of each Department of State should be formalized as an `auorg:DepartmentOfState` using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont
+The description of each Department of State should be formalized as an `auorg:DepartmentOfState` using the [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont).
 
 Each department is part of a `auorg:Portfolio`
 
