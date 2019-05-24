@@ -307,12 +307,6 @@ aao:part-number
   rdfs:label "Part number" ;
   rdfs:range xsd:integer ;
 .
-aao:qualifiedAction
-  a owl:ObjectProperty ;
-  rdfs:domain auorg:DepartmentOfState ;
-  rdfs:label "qualified action " ;
-  rdfs:range aao:Action ;
-.
 aao:responsibleDepartment
   a owl:InverseFunctionalProperty ;
   a owl:ObjectProperty ;
