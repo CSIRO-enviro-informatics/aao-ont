@@ -1,10 +1,12 @@
-# baseURI: http://test.linked.data.gov.au/dataset/act-names
+# baseURI: http://test.linked.data.gov.au/dataset/acts/
 # imports: http://linked.data.gov.au/def/aao
+# prefix: acts
 
-@prefix legs: <http://test.linked.data.gov.au/dataset/legislation/> .
+@prefix acts: <http://test.linked.data.gov.au/dataset/acts/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
+@prefix legs: <http://test.linked.data.gov.au/dataset/legislation/> .
 @prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -14,6 +16,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+acts:
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+.
 legs:A1
   a leg:Act ;
   dct:title "Agricultural and Veterinary Chemical Products (Collection of Interim Levy) Act 1994" ;
@@ -56093,8 +56099,4 @@ legs:A9998
 legs:A9999
   a leg:Act ;
   dct:title "Hearing Services and Aghs Reform Act 1997" ;
-.
-<http://test.linked.data.gov.au/dataset/act-names>
-  a owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/aao> ;
 .

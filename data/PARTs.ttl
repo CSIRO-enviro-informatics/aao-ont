@@ -1,12 +1,12 @@
-# baseURI: http://test.linked.data.gov.au/dataset/aaops
+# baseURI: http://test.linked.data.gov.au/dataset/aao-parts/
 # imports: http://linked.data.gov.au/def/aao
-# imports: http://linked.data.gov.au/def/auorg
+# imports: http://linked.data.gov.au/def/auorg/
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
 @prefix act: <http://test.linked.data.gov.au/dataset/act/> .
 @prefix auorg: <http://linked.data.gov.au/def/auorg/> .
-@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorg/> .
+@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorgs/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
@@ -19,6 +19,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://test.linked.data.gov.au/dataset/aao-parts/>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+  owl:imports auorg: ;
+.
 aaos:P1
   a aao:AAO-Part ;
   aao:part-number 0 ;
@@ -5044,9 +5049,4 @@ aaos:P99
   aao:responsibleDepartment auorgs:D11 ;
   auorg:isPartOfPortfolio auorgs:P0 ;
   dct:isPartOf aaos:A65 ;
-.
-<http://test.linked.data.gov.au/dataset/aaops>
-  a owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/aao> ;
-  owl:imports <http://linked.data.gov.au/def/auorg> ;
 .

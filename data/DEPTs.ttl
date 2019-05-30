@@ -1,11 +1,12 @@
-# baseURI: http://test.linked.data.gov.au/dataset/auorgds
-# imports: http://linked.data.gov.au/def/auorg
+# baseURI: http://test.linked.data.gov.au/dataset/auorgds/
+# imports: http://linked.data.gov.au/def/auorg/
+# prefix: depts
 
 @prefix act: <http://test.linked.data.gov.au/dataset/act/> .
 @prefix auorg: <http://linked.data.gov.au/def/auorg/> .
-@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorg/> .
+@prefix auorgs: <http://test.linked.data.gov.au/dataset/auorgs/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dept: <http://test.linked.data.gov.au/dataset/dept/> .
+@prefix depts: <http://test.linked.data.gov.au/dataset/auorgds/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
 @prefix matter: <http://test.linked.data.gov.au/dataset/matter/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -276,7 +277,7 @@ auorgs:D9
   a auorg:DepartmentOfState ;
   dct:title "Finance and Administration" ;
 .
-<http://test.linked.data.gov.au/dataset/auorgds>
+depts:
   a owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/auorg> ;
+  owl:imports auorg: ;
 .

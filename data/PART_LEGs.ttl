@@ -1,5 +1,6 @@
-# baseURI: http://test.linked.data.gov.au/dataset/part-legs
+# baseURI: http://test.linked.data.gov.au/dataset/aao-part-legs/
 # imports: http://linked.data.gov.au/def/aao
+# imports: http://linked.data.gov.au/def/auorg/
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix aaos: <http://test.linked.data.gov.au/dataset/aao/> .
@@ -16,6 +17,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://test.linked.data.gov.au/dataset/aao-part-legs/>
+  a owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/aao> ;
+  owl:imports <http://linked.data.gov.au/def/auorg/> ;
+.
 aaos:P1
   aao:administeredLegislation legs:A1 ;
   aao:administeredLegislation legs:A10 ;
@@ -45120,8 +45126,4 @@ aaos:P99
   aao:administeredLegislation legs:A598 ;
   aao:administeredLegislation legs:A599 ;
   aao:administeredLegislation legs:A600 ;
-.
-<http://test.linked.data.gov.au/dataset/part-legs>
-  a owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/aao> ;
 .
