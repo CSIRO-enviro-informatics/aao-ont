@@ -1,7 +1,7 @@
 # baseURI: http://linked.data.gov.au/def/aao
 # imports: http://linked.data.gov.au/def/auorg/
+# imports: http://linked.data.gov.au/def/crs
 # imports: http://www.w3.org/2006/time
-# imports: http://xmlns.com/foaf/0.1/
 # prefix: aao
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
@@ -24,8 +24,8 @@
 <http://linked.data.gov.au/def/aao>
   a owl:Ontology ;
   owl:imports auorg: ;
+  owl:imports <http://linked.data.gov.au/def/crs> ;
   owl:imports <http://www.w3.org/2006/time> ;
-  owl:imports foaf: ;
 .
 aao:AAO
   a owl:Class ;
