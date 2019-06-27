@@ -10,7 +10,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
-@prefix long: <http://linked.data.gov.au/def/longspine#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav> .
@@ -241,7 +240,7 @@ aao:Action
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty long:definedByAAO ;
+      owl:onProperty aao:definedByAAO ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -273,7 +272,7 @@ aao:Matter
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty long:qualifiedResponsibility ;
+      owl:onProperty aao:qualifiedResponsibility ;
     ] ;
 .
 aao:Qualified-Act
@@ -360,7 +359,7 @@ aao:responsibleDepartment
       a owl:Class ;
       owl:unionOf (
           aao:AAO-Part
-          long:Responsibility
+          aao:Responsibility
         ) ;
     ] ;
   rdfs:range auorg:DepartmentOfState ;
@@ -459,7 +458,7 @@ leg:regID
   rdfs:subPropertyOf dct:identifier ;
   rdfs:subPropertyOf skos:notation ;
 .
-long:Responsibility
+aao:Responsibility
   a owl:Class ;
   rdfs:label "Responsibility association" ;
   rdfs:subClassOf [
@@ -477,16 +476,16 @@ long:Responsibility
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty long:definedByAAO ;
+      owl:onProperty aao:definedByAAO ;
     ] ;
 .
-long:definedByAAO
+aao:definedByAAO
   a owl:ObjectProperty ;
-  rdfs:domain long:Responsibility ;
+  rdfs:domain aao:Responsibility ;
   rdfs:label "defined by AAO" ;
   rdfs:range aao:AAO ;
 .
-long:qualifiedResponsibility
+aao:qualifiedResponsibility
   a owl:ObjectProperty ;
   rdfs:domain [
       a owl:Class ;
@@ -496,5 +495,5 @@ long:qualifiedResponsibility
         ) ;
     ] ;
   rdfs:label "qualified responsibility " ;
-  rdfs:range long:Responsibility ;
+  rdfs:range aao:Responsibility ;
 .
