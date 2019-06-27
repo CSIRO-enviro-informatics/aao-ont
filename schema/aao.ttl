@@ -17,6 +17,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,6 +27,55 @@
   owl:imports auorg: ;
   owl:imports <http://linked.data.gov.au/def/crs> ;
   owl:imports <http://www.w3.org/2006/time> ;
+  dct:title "Administrative Arrangements Orders Ontology" ;
+  dct:descrption """This is an [OWL2](https://www.w3.org/OWL/) ontology that models the elements within the Australian Government's Administrative Arrangement Orders (AAOs).
+
+This ontology and instance data have been created for the *Longitudinal Spine of Government Functions* project which is
+a [Platforms for Open Data](https://pmc.gov.au/public-data/open-data/platforms-open-data)-funded project involving
+[CSIRO](https://www.csiro.au/), the [Department of Finance](https://www.finance.gov.au/), the [National Archives of
+Australia](http://naa.gov.au/) and other interested agencies."""@en ;
+  dct:creator [
+      a sdo:Person ;
+      sdo:email "simon.cox@csiro.au" ;
+      sdo:identifier <https://orcid.org/0000-0002-3884-3420> ;
+      sdo:memberOf [
+          a sdo:Organization ;
+          sdo:identifier <http://catalogue.linked.data.gov.au/def/csiro> ;
+          sdo:name "CSIRO" ;
+        ] ;
+      sdo:name "Simon J.D.Cox" ;
+    ] ;
+  dct:contributor [
+      a sdo:Person ;
+      sdo:email "nicholas.car@csiro.au" ;
+      sdo:identifier <https://orcid.org/0000-0002-8742-7730> ;
+      sdo:memberOf [
+          a sdo:Organization ;
+          sdo:identifier <http://catalogue.linked.data.gov.au/def/csiro> ;
+          sdo:name "CSIRO" ;
+        ] ;
+      sdo:name "Nicholas J. Car" ;
+    ] ;
+  dct:contributor [
+      a sdo:Person ;
+      sdo:memberOf [
+          a sdo:Organization ;
+          sdo:identifier <http://catalogue.linked.data.gov.au/def/finance> ;
+          sdo:name "Department of Finance" ;
+        ] ;
+      sdo:name "David Morton" ;
+    ] ;
+  dct:contributor [
+      a sdo:Person ;
+      sdo:memberOf [
+          a sdo:Organization ;
+          sdo:identifier <http://catalogue.linked.data.gov.au/def/csiro> ;
+          sdo:name "CSIRO" ;
+        ] ;
+      sdo:name "Neil Bacon" ;
+    ] ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/aao-ont> ;
 .
 aao:AAO
   a owl:Class ;
