@@ -3,7 +3,7 @@
 <head>
     <title>Administrative Arrangements Orders Ontology</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css" href="schema/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">pyLODE</a></div>
@@ -15,29 +15,28 @@
         <dd><code>http://linked.data.gov.au/def/aao</code></dd>
         <dt>Creator(s)</dt>
         <dd>
+            <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a> (<a href="mailto:nicholas.car@csiro.au">nicholas.car@csiro.au</a>) of <a href="http://catalogue.linked.data.gov.au/def/csiro">CSIRO</a><br/>
             <a href="https://orcid.org/0000-0002-3884-3420">Simon J.D.Cox</a> (<a href="mailto:simon.cox@csiro.au">simon.cox@csiro.au</a>) of <a href="http://catalogue.linked.data.gov.au/def/csiro">CSIRO</a><br/>
         </dd>
         <dt>Contributors(s)</dt>
         <dd>
-            <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a> (<a href="mailto:nicholas.car@csiro.au">nicholas.car@csiro.au</a>) of <a href="http://catalogue.linked.data.gov.au/def/csiro">CSIRO</a><br/>
             Neil Bacon of <a href="http://catalogue.linked.data.gov.au/def/csiro">CSIRO</a><br/>
             David Morton of <a href="http://catalogue.linked.data.gov.au/def/finance">Department of Finance</a><br/>
         </dd>
         <dt>Imports</dt>
         <dd>
-            <a href="http://www.w3.org/2006/time">http://www.w3.org/2006/time</a><br/>
-            <a href="http://linked.data.gov.au/def/crs">http://linked.data.gov.au/def/crs</a><br/>
+            <a href="http://www.w3.org/2006/time">time:</a><br/>
             <a href="http://linked.data.gov.au/def/auorg/">auorg:</a><br/>
         </dd>
         <dt>License</dt>
-        <dd><a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></dd>
+        <dd><a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a></dd>
         <dt>Ontology Source</dt>
-        <dd><a href="schema/aao.ttl">RDF (turtle)</a></dd>
+        <dd><a href="aao.ttl">RDF (turtle)</a></dd>
         <dt>Further Documentation</dt>
         <dd>
-	       <p>See the code repository online containing this ontology for further documentaion:</p>
-	       <ul><li><a href="https://github.com/CSIRO-enviro-informatics/aao-ont">AAO Ontology in GitHub</a></li></ul>
-	     </dd>
+	          <p>See the code repository online containing this ontology for further documentaion:</p>
+	          <ul><li><a href="https://github.com/CSIRO-enviro-informatics/aao-ont">AAO Ontology in GitHub</a></li></ul>
+	      </dd>
     </dl>
 </section>
 <section id="toc">
@@ -60,18 +59,18 @@
 <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#amatterdealtwithbyadepartment">A matter dealt with by a department</a></li>
-        <li><a href="#aaopart-usuallyconcernedwithonedepartment">AAO Part - usually concerned with one Department</a></li>
+        <li><a href="#aaopart">AAO Part</a></li>
         <li><a href="#actofparliament">Act of Parliament</a></li>
         <li><a href="#actionassociation">Action association</a></li>
         <li><a href="#administrativearrangementsorder">Administrative Arrangements Order</a></li>
-        <li><a href="#amendmenttoadministrativearrangementsorder">Amendment to Administrative Arrangements Order</a></li>
+        <li><a href="#administrativearrangementsorderamendment">Administrative Arrangements Order Amendment</a></li>
         <li><a href="#legislation">Legislation</a></li>
-        <li><a href="#legislativeinstrument">Legislative instrument</a></li>
-        <li><a href="#notifiableinstrument">Notifiable instrument</a></li>
-        <li><a href="#partofanactofparlianment">Part of an Act of Parlianment</a></li>
-        <li><a href="#prerogativeinstrument">Prerogative instrument</a></li>
-        <li><a href="#qualifiedact">Qualified act</a></li>
+        <li><a href="#legislativeinstrument">Legislative Instrument</a></li>
+        <li><a href="#matter">Matter</a></li>
+        <li><a href="#notifiableinstrument">Notifiable Instrument</a></li>
+        <li><a href="#partofanact">Part of an Act</a></li>
+        <li><a href="#prerogativeinstrument">Prerogative Instrument</a></li>
+        <li><a href="#qualifiedact">Qualified Act</a></li>
         <li><a href="#regulation">Regulation</a></li>
         <li><a href="#responsibilityassociation">Responsibility association</a></li>
     </ul>
@@ -85,20 +84,20 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
+                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">min</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/replaces">dct:replaces</a> <span class="cardinality">max</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/isReplacedBy">dct:isReplacedBy</a> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/replaces">dct:replaces</a> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://purl.org/dc/terms/modified">dct:modified</a> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">only</span> <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://purl.org/dc/terms/replaces">dct:replaces</a> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://linked.data.gov.au/def/legislation#regID">leg:regID</a> <sup class="sup-ap" title="annotation property">ap</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/isReplacedBy">dct:isReplacedBy</a> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/replaces">dct:replaces</a> <span class="cardinality">max</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">min</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/isReplacedBy">dct:isReplacedBy</a> <span class="cardinality">max</span> 1<br/>
                     <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/isReplacedBy">dct:isReplacedBy</a> <span class="cardinality">max</span> 1<br/>
+                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://linked.data.gov.au/def/legislation#regID">leg:regID</a> <sup class="sup-ap" title="annotation property">ap</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1<br/>
                 </td>
             </tr>
             <tr>
@@ -110,8 +109,8 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="amendmenttoadministrativearrangementsorder">
-        <h3>Amendment to Administrative Arrangements Order<sup title="class" class="type-c">c</sup></h3>
+    <div class="entity class" id="administrativearrangementsorderamendment">
+        <h3>Administrative Arrangements Order Amendment<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -120,31 +119,37 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#amends">aao:amends</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">min</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#amends">aao:amends</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">exactly</span> 1<br/>
                     <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#amends">aao:amends</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#amends">aao:amends</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://linked.data.gov.au/def/legislation#dateOfRegistration">leg:dateOfRegistration</a> <sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">only</span> <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="aaopart-usuallyconcernedwithonedepartment">
-        <h3>AAO Part - usually concerned with one Department<sup title="class" class="type-c">c</sup></h3>
+    <div class="entity class" id="aaopart">
+        <h3>AAO Part<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/aao#AAO-Part</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    A part of an AAO, usually concerned with one Department
+                </td>
+            </tr>
+            <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/isPartOf">dct:isPartOf</a> <span class="cardinality">only</span> (<a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup> or <a href="#amendmenttoadministrativearrangementsorder">aao:AAO-Amendment</a> <sup class="sup-c" title="class">c</sup>)<br/>
-                    <a href="#matterdealtwith">aao:matterDealtWith</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/isPartOf">dct:isPartOf</a> <span class="cardinality">only</span> (<a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup> or <a href="#administrativearrangementsorderamendment">aao:AAO-Amendment</a> <sup class="sup-c" title="class">c</sup>)<br/>
                     <a href="http://purl.org/dc/terms/isPartOf">dct:isPartOf</a> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#matterdealtwith">aao:matterDealtWith</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="#administeredlegislation">aao:administeredLegislation</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
@@ -168,18 +173,24 @@
                 <td>
                     <a href="#matterdealtwith">aao:matterDealtWith</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1<br/>
                     <a href="#administeredlegislation">aao:administeredLegislation</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">max</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="#definedbyaao">aao:definedByAAO</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> <sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="amatterdealtwithbyadepartment">
-        <h3>A matter dealt with by a department<sup title="class" class="type-c">c</sup></h3>
+    <div class="entity class" id="matter">
+        <h3>Matter<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/aao#Matter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A a descriptive phrase of an area of responsibility, dealt with by a department
+                </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
@@ -190,8 +201,8 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#qualifiedresponsibility">aao:qualifiedResponsibility</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                     <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#qualifiedresponsibility">aao:qualifiedResponsibility</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 1<br/>
                 </td>
             </tr>
             <tr>
@@ -203,7 +214,7 @@
         </table>
     </div>
     <div class="entity class" id="qualifiedact">
-        <h3>Qualified act<sup title="class" class="type-c">c</sup></h3>
+        <h3>Qualified Act<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -212,8 +223,8 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#Legislation">leg:Legislation</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a> <sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -229,6 +240,35 @@
                 <td>
                     <a href="#exceptiontolegislation">aao:exceptionToLegislation</a> <sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#includedlegislation">aao:includedLegislation</a> <sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="responsibilityassociation">
+        <h3>Responsibility association<sup title="class" class="type-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/aao#Responsibility</code></td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#definedbyaao">aao:definedByAAO</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="#responsibledepartment">aao:responsibleDepartment</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#definedbyaao">aao:definedByAAO</a> <sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#qualifiedresponsibility">aao:qualifiedResponsibility</a> <sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -249,21 +289,27 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="http://linked.data.gov.au/def/legislation#Act-Part">leg:Act-Part</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://purl.org/dc/terms/date">dct:date</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2001/XMLSchema#gYear">xsd:gYear</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://linked.data.gov.au/def/legislation#regID">leg:regID</a> <sup class="sup-ap" title="annotation property">ap</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/title">dct:title</a> <span class="cardinality">exactly</span> 1<br/>
                     <a href="http://purl.org/dc/terms/issued">dct:issued</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://linked.data.gov.au/def/legislation#regID">leg:regID</a> <sup class="sup-ap" title="annotation property">ap</sup> <span class="cardinality">exactly</span> 1<br/>
+                    <a href="http://purl.org/dc/terms/hasPart">dct:hasPart</a> <span class="cardinality">only</span> <a href="http://linked.data.gov.au/def/legislation#Act-Part">leg:Act-Part</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/dc/terms/title">dct:title</a> <span class="cardinality">exactly</span> 1<br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="partofanactofparlianment">
-        <h3>Part of an Act of Parlianment<sup title="class" class="type-c">c</sup></h3>
+    <div class="entity class" id="partofanact">
+        <h3>Part of an Act<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/legislation#Act-Part</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Part of an Act of Parlianment
+                </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
@@ -301,19 +347,19 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://linked.data.gov.au/def/legislation#Regulation">leg:Regulation</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#Prerogative-Instrument">leg:Prerogative-Instrument</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://linked.data.gov.au/def/legislation#Legislative-Instrument">leg:Legislative-Instrument</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://linked.data.gov.au/def/legislation#Regulation">leg:Regulation</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#qualifiedact">aao:Qualified-Act</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#Act">leg:Act</a> <sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://linked.data.gov.au/def/legislation#Legislative-Instrument">leg:Legislative-Instrument</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#Act-Part">leg:Act-Part</a> <sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://linked.data.gov.au/def/legislation#Notifiable-Instrument">leg:Notifiable-Instrument</a> <sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#qualifiedact">aao:Qualified-Act</a> <sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="legislativeinstrument">
-        <h3>Legislative instrument<sup title="class" class="type-c">c</sup></h3>
+        <h3>Legislative Instrument<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -328,7 +374,7 @@
         </table>
     </div>
     <div class="entity class" id="notifiableinstrument">
-        <h3>Notifiable instrument<sup title="class" class="type-c">c</sup></h3>
+        <h3>Notifiable Instrument<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -343,7 +389,7 @@
         </table>
     </div>
     <div class="entity class" id="prerogativeinstrument">
-        <h3>Prerogative instrument<sup title="class" class="type-c">c</sup></h3>
+        <h3>Prerogative Instrument<sup title="class" class="type-c">c</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -372,50 +418,21 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="responsibilityassociation">
-        <h3>Responsibility association<sup title="class" class="type-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>IRI</th>
-                <td><code>#qualifiedresponsibilityResponsibility</code></td>
-            </tr>
-            <tr>
-                <th>Restrictions</th>
-                <td>
-                    <a href="#definedbyaao">aao:definedByAAO</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="#responsibledepartment">aao:responsibleDepartment</a> <sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1<br/>
-                    <a href="http://purl.org/dc/terms/temporal">dct:temporal</a> <span class="cardinality">exactly</span> 1 <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> <sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#definedbyaao">aao:definedByAAO</a> <sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#qualifiedresponsibility">aao:qualifiedResponsibility</a> <sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
 </section>
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#administeredlegislation">administeredLegislation</a></li>
+        <li><a href="#administeredlegislation">administered legislation</a></li>
         <li><a href="#amends">amends</a></li>
-        <li><a href="#exceptiontolegislation">exceptionToLegislation</a></li>
-        <li><a href="#includedlegislation">includedLegislation</a></li>
-        <li><a href="#matterdealtwith">matterDealtWith</a></li>
-        <li><a href="#responsibledepartment">responsibleDepartment</a></li>
         <li><a href="#definedbyaao">defined by AAO</a></li>
+        <li><a href="#exceptiontolegislation">exception to legislation</a></li>
+        <li><a href="#includedlegislation">included legislation</a></li>
+        <li><a href="#matterdealtwith">matter dealt with</a></li>
         <li><a href="#qualifiedresponsibility">qualified responsibility </a></li>
+        <li><a href="#responsibledepartment">responsible department</a></li>
     </ul>
     <div class="entity property" id="administeredlegislation">
-        <h3>administeredLegislation<sup title="object property" class="type-op">op</sup></h3>
+        <h3>administered legislation<sup title="object property" class="type-op">op</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -424,7 +441,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#actionassociation">aao:Action</a> <sup class="sup-c" title="class">c</sup>)
+                    (<a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#actionassociation">aao:Action</a> <sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -451,8 +468,29 @@
             </tr>
         </table>
     </div>
+    <div class="entity property" id="definedbyaao">
+        <h3>defined by AAO<sup title="object property" class="type-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/aao#definedByAAO</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#responsibilityassociation">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="exceptiontolegislation">
-        <h3>exceptionToLegislation<sup title="object property" class="type-op">op</sup></h3>
+        <h3>exception to legislation<sup title="object property" class="type-op">op</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -473,7 +511,7 @@
         </table>
     </div>
     <div class="entity property" id="includedlegislation">
-        <h3>includedLegislation<sup title="object property" class="type-op">op</sup></h3>
+        <h3>included legislation<sup title="object property" class="type-op">op</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -495,7 +533,7 @@
         </table>
     </div>
     <div class="entity property" id="matterdealtwith">
-        <h3>matterDealtWith<sup title="object property" class="type-op">op</sup></h3>
+        <h3>matter dealt with<sup title="object property" class="type-op">op</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -504,61 +542,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#actionassociation">aao:Action</a> <sup class="sup-c" title="class">c</sup>)
+                    (<a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#actionassociation">aao:Action</a> <sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#amatterdealtwithbyadepartment">aao:Matter</a> <sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="responsibledepartment">
-        <h3>responsibleDepartment<sup title="object property" class="type-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/aao#responsibleDepartment</code></td>
-            </tr>
-            <tr>
-                <th>Super-properties</th>
-                <td>
-                    <a href="http://purl.org/dc/terms/relation">dct:relation</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    (<a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#responsibility">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>)
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://linked.data.gov.au/def/auorg/DepartmentOfState">auorg:DepartmentOfState</a> <sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="definedbyaao">
-        <h3>defined by AAO<sup title="object property" class="type-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>IRI</th>
-                <td><code>http://linked.data.gov.au/def/aao#definedByAAO</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#responsibility">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="#administrativearrangementsorder">aao:AAO</a> <sup class="sup-c" title="class">c</sup>
+                    <a href="#matter">aao:Matter</a> <sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -573,27 +563,53 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#amatterdealtwithbyadepartment">aao:Matter</a> <sup class="sup-c" title="class">c</sup> or <a href="http://linked.data.gov.au/def/legislation#Legislation">leg:Legislation</a> <sup class="sup-c" title="class">c</sup>)
+                    (<a href="#matter">aao:Matter</a> <sup class="sup-c" title="class">c</sup> or <a href="http://linked.data.gov.au/def/legislation#Legislation">leg:Legislation</a> <sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#responsibility">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>
+                    <a href="#responsibilityassociation">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="responsibledepartment">
+        <h3>responsible department<sup title="object property" class="type-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>IRI</th>
+                <td><code>http://linked.data.gov.au/def/aao#responsibleDepartment</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="http://purl.org/dc/terms/relation">dct:relation</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    (<a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup> or <a href="#responsibilityassociation">aao:Responsibility</a> <sup class="sup-c" title="class">c</sup>)
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://linked.data.gov.au/def/auorg/DepartmentOfState">auorg:DepartmentOfState</a> <sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
     </div>
 </section>
-
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#partnumber">Part number</a></li>
-        <li><a href="#dateofregistration">dateOfRegistration</a></li>
+        <li><a href="#partnumber">part number</a></li>
+        <li><a href="#dateofregistration">date of registration</a></li>
     </ul>
     <div class="entity property" id="partnumber">
-        <h3>Part number<sup title="datatype property" class="type-dp">dp</sup></h3>
+        <h3>part number<sup title="datatype property" class="type-dp">dp</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -602,7 +618,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#aaopart-usuallyconcernedwithonedepartment">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup>
+                    <a href="#aaopart">aao:AAO-Part</a> <sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -614,7 +630,7 @@
         </table>
     </div>
     <div class="entity property" id="dateofregistration">
-        <h3>dateOfRegistration<sup title="datatype property" class="type-dp">dp</sup></h3>
+        <h3>date of registration<sup title="datatype property" class="type-dp">dp</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
@@ -635,24 +651,29 @@
         </table>
     </div>
 </section>
-
 <section id="annotationproperties">
     <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#officialidentifierintheaustraliangovernmentfederalregisteroflegislation">Official identifier in the Australian Government Federal Register of Legislation</a></li>
+        <li><a href="#federalregisteridentifier">federal register identifier</a></li>
     </ul>
-    <div class="entity property" id="officialidentifierintheaustraliangovernmentfederalregisteroflegislation">
-        <h3>Official identifier in the Australian Government Federal Register of Legislation<sup title="annotation property" class="type-ap">ap</sup></h3>
+    <div class="entity property" id="federalregisteridentifier">
+        <h3>federal register identifier<sup title="annotation property" class="type-ap">ap</sup></h3>
         <table>
             <tr>
                 <th>IRI</th>
                 <td><code>http://linked.data.gov.au/def/legislation#regID</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    Official identifier in the Australian Government Federal Register of Legislation
+                </td>
+            </tr>
+            <tr>
                 <th>Super-properties</th>
                 <td>
-                    <a href="http://purl.org/dc/terms/identifier">dct:identifier</a>
                     <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>
+                    <a href="http://purl.org/dc/terms/identifier">dct:identifier</a>
                 </td>
             </tr>
             <tr>
@@ -673,8 +694,6 @@
         <dd><code>http://linked.data.gov.au/def/aao#</code></dd>
         <dt>auorg</dt>
         <dd><code>http://linked.data.gov.au/def/auorg/</code></dd>
-        <dt>crs</dt>
-        <dd><code>http://linked.data.gov.au/def/crs#</code></dd>
         <dt>dct</dt>
         <dd><code>http://purl.org/dc/terms/</code></dd>
         <dt>foaf</dt>

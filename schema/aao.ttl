@@ -1,12 +1,10 @@
 # baseURI: http://linked.data.gov.au/def/aao
 # imports: http://linked.data.gov.au/def/auorg/
-# imports: http://linked.data.gov.au/def/crs
 # imports: http://www.w3.org/2006/time
 # prefix: aao
 
 @prefix aao: <http://linked.data.gov.au/def/aao#> .
 @prefix auorg: <http://linked.data.gov.au/def/auorg/> .
-@prefix crs: <http://linked.data.gov.au/def/crs#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix leg: <http://linked.data.gov.au/def/legislation#> .
@@ -24,8 +22,7 @@
 <http://linked.data.gov.au/def/aao>
   a owl:Ontology ;
   owl:imports auorg: ;
-  owl:imports <http://linked.data.gov.au/def/crs> ;
-  owl:imports <http://www.w3.org/2006/time> ;
+  owl:imports time: ;
   dct:title "Administrative Arrangements Orders Ontology" ;
   dct:descrption """This is an [OWL2](https://www.w3.org/OWL/) ontology that models the elements within the Australian Government's Administrative Arrangement Orders (AAOs).
 
@@ -44,7 +41,7 @@ Australia](http://naa.gov.au/) and other interested agencies."""@en ;
         ] ;
       sdo:name "Simon J.D.Cox" ;
     ] ;
-  dct:contributor [
+  dct:creator [
       a sdo:Person ;
       sdo:email "nicholas.car@csiro.au" ;
       sdo:identifier <https://orcid.org/0000-0002-8742-7730> ;
@@ -155,7 +152,8 @@ aao:AAO
 .
 aao:AAO-Amendment
   a owl:Class ;
-  rdfs:label "Amendment to Administrative Arrangements Order" ;
+  rdfs:label "Administrative Arrangements Order Amendment" ;
+  rdfs:scopeNote "AAOs can be ammended and, when they are, an AAO Amendment, not a new AAO, is issued."@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom aao:AAO ;
@@ -199,7 +197,8 @@ aao:AAO-Amendment
 .
 aao:AAO-Part
   a owl:Class ;
-  rdfs:label "AAO Part - usually concerned with one Department" ;
+  rdfs:label "AAO Part" ;
+  skos:definition "A part of an AAO, usually concerned with one Department"@en ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom [
@@ -232,7 +231,7 @@ aao:Action
   rdfs:label "Action association" ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      rdfs:comment "This should corrspond to the dct:temporal on the associated AAO" ;
+      rdfs:comment "This should corrspond to the dct:temporal on the associated AAO"@en ;
       owl:onClass time:ProperInterval ;
       owl:onProperty dct:temporal ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -254,6 +253,7 @@ aao:Action
     ] ;
 .
 aao:Legislation
+  rdfs:label "exception to legislation" ;
   rdfs:subClassOf [
       a owl:Restriction ;
       owl:allValuesFrom leg:Act-Part ;
@@ -262,7 +262,8 @@ aao:Legislation
 .
 aao:Matter
   a owl:Class ;
-  rdfs:label "A matter dealt with by a department" ;
+  rdfs:label "Matter" ;
+  skos:definition "A a descriptive phrase of an area of responsibility, dealt with by a department"@en ;
   rdfs:subClassOf prov:Activity ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -277,7 +278,7 @@ aao:Matter
 .
 aao:Qualified-Act
   a owl:Class ;
-  rdfs:label "Qualified act" ;
+  rdfs:label "Qualified Act" ;
   rdfs:subClassOf leg:Legislation ;
   rdfs:subClassOf prov:Entity ;
   rdfs:subClassOf [
@@ -300,6 +301,7 @@ aao:Qualified-Act
 .
 aao:administeredLegislation
   a owl:ObjectProperty ;
+  rdfs:label "administered legislation" ;
   rdfs:domain [
       a owl:Class ;
       owl:unionOf (
@@ -326,6 +328,7 @@ aao:exceptionToLegislation
 .
 aao:includedLegislation
   a owl:ObjectProperty ;
+  rdf:label "included legislation" ;
   rdfs:domain aao:Qualified-Act ;
   rdfs:range [
       a owl:Class ;
@@ -337,6 +340,7 @@ aao:includedLegislation
 .
 aao:matterDealtWith
   a owl:ObjectProperty ;
+  rdf:label "matter dealt with" ;
   rdfs:domain [
       a owl:Class ;
       owl:unionOf (
@@ -349,12 +353,13 @@ aao:matterDealtWith
 aao:part-number
   a owl:DatatypeProperty ;
   rdfs:domain aao:AAO-Part ;
-  rdfs:label "Part number" ;
+  rdfs:label "part number" ;
   rdfs:range xsd:integer ;
 .
 aao:responsibleDepartment
   a owl:InverseFunctionalProperty ;
   a owl:ObjectProperty ;
+  rdfs:label "responsible department"@en ;
   rdfs:domain [
       a owl:Class ;
       owl:unionOf (
@@ -408,7 +413,8 @@ leg:Act
 .
 leg:Act-Part
   a owl:Class ;
-  rdfs:label "Part of an Act of Parlianment" ;
+  rdfs:label "Part of an Act" ;
+  skos:definition "Part of an Act of Parlianment"@en ;
   rdfs:subClassOf leg:Legislation ;
   rdfs:subClassOf [
       a owl:Restriction ;
@@ -428,17 +434,17 @@ leg:Legislation
 .
 leg:Legislative-Instrument
   a owl:Class ;
-  rdfs:label "Legislative instrument" ;
+  rdfs:label "Legislative Instrument" ;
   rdfs:subClassOf leg:Legislation ;
 .
 leg:Notifiable-Instrument
   a owl:Class ;
-  rdfs:label "Notifiable instrument" ;
+  rdfs:label "Notifiable Instrument" ;
   rdfs:subClassOf leg:Legislation ;
 .
 leg:Prerogative-Instrument
   a owl:Class ;
-  rdfs:label "Prerogative instrument" ;
+  rdfs:label "Prerogative Instrument" ;
   rdfs:subClassOf leg:Legislation ;
 .
 leg:Regulation
@@ -448,12 +454,14 @@ leg:Regulation
 .
 leg:dateOfRegistration
   a owl:DatatypeProperty ;
-  rdfs:comment "Date when the AAO was added to the registry at legislation.gov.au" ;
+  rdfs:label "date of registration" ;
+  skos:definition"Date when the AAO was added to the registry at legislation.gov.au"@en ;
   rdfs:subPropertyOf dct:date ;
 .
 leg:regID
   a owl:AnnotationProperty ;
-  rdfs:label "Official identifier in the Australian Government Federal Register of Legislation" ;
+  rdfs:label "federal register identifier"@en ;
+  skos:definition "Official identifier in the Australian Government federal Register of Legislation"@en ;
   rdfs:range xsd:string ;
   rdfs:subPropertyOf dct:identifier ;
   rdfs:subPropertyOf skos:notation ;
