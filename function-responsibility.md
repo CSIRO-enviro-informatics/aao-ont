@@ -5,7 +5,7 @@ A more functional view, centered on legislation and matters, can be constructed 
 
 The model for 'responsibility' follows the qualified-relation pattern:
 
-![Responsibility](image/responsibility.png)
+![Responsibility](images/responsibility.png)
 
 A Matter or Legislation is linked to a department during a specified time interval.
 The time intervals will form a sequence.

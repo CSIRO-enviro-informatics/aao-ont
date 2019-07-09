@@ -19,7 +19,7 @@ A [comprehensive archive of AAOs](http://www.naa.gov.au/information-management/i
 
 ## Dependencies
 
-![AAO ontology Dependencies](image/dependencies.png)
+![AAO ontology Dependencies](images/dependencies.png)
 
 - [Au Org Ontology](https://github.com/CSIRO-enviro-informatics/auorg-ont) - for definitions of Departments and Portfolios
 - [OWL-Time](https://www.w3.org/TR/owl-time/) - for temporal intervals and relations
@@ -31,7 +31,7 @@ The AAO ontology is partitioned into two namespaces, [aao:](http://linked.data.g
 ## Classes
 An `AAO` is composed of a set of numbered `Parts`, each relating to a single `Department of State` which provides a list of the `matters dealt with` and the `legislation administered` by the department. Each `Matter` is expressed as a text phrase. Each item of `Legislation` is either (i) one dated `Act` optionally excluding one or more `parts`, or (ii) one or more parts of an Act.  Thus, the ontology includes classes for each of these concepts:
 
-![](image/aao.png)
+![](images/aao.png)
 
 Figure: The AAO ontology's main classes and properties.
 
@@ -71,7 +71,7 @@ Each department is part of a `auorg:Portfolio`
 ## Ontology representations
 * [aao.ttl](schema/aao.ttl) - the formal RDF (turtle) ontology document
 * [aao.html](aao.html) - a human-readable, HTML, from the ontology document (TBD)
-* [aao.png](image/aao.png) - a top-level diagram of the ontology classes
+* [aao.png](images/aao.png) - a top-level diagram of the ontology classes
 * [aao.shacl.ttl](shape/aao.shacl.ttl) - a [SHACL](https://www.w3.org/TR/shacl/) shape graph for validating AAO data (TBD)
 * [aao.profile.ttl](profile/aao.profile.ttl) - a [Profiles Ontology](https://www.w3.org/TR/prof/) description of this ontology (TBD)
 * [auorg.ttl](https://raw.githubusercontent.com/CSIRO-enviro-informatics/auorg-ont/master/auorg.ttl) the AU Org Ontology
@@ -88,22 +88,22 @@ Processing the AAOs to get a view of functional responsibility is described in [
 ### PROV-O
 PROV-O provides a standard formalization of the relationships between Entities (e.g. Legislation), Agents (e.g. Departments and Agencies) and Activities.
 
-![PROV Ontology](image/starting-points.svg)
+![PROV Ontology](images/starting-points.svg)
 
 The main classes in the AAO ontology can be aligned to the W3C PROV Ontology as shown in the following diagram:
 
-![AAO-Org](image/prov-alignment.png)
+![AAO-Org](images/prov-alignment.png)
 
 Figure: provisional alignment of the principal classes from the AAO Ontology with PROV-O.
 
 ### ORG
 ORG provides a standard formalization of organizational structures, organizational change events, and the relationships between persons and organizations.
 
-![Organization ontology](image/OrgOntology20130502.png)
+![Organization ontology](images/OrgOntology20130502.png)
 
 The main classes in the AAO ontology can be aligned to the W3C Organization Ontology as shown in the following diagram:
 
-![AAO-Prov](image/org-alignment.png)
+![AAO-Prov](images/org-alignment.png)
 
 Figure: provisional alignment of the principal classes from the AAO Ontology with ORG.
 
@@ -115,7 +115,7 @@ The time interval during which an AAO is in force will be related to other time 
 
 The relationships between these may be described following the relationships defined by Allen:
 
-![Allen's interval relations](image/IntervalRelations.png)
+![Allen's interval relations](images/IntervalRelations.png)
 
 ## License
 This ontology and all other content in this repository are licensed under the
