@@ -11,6 +11,8 @@ A Matter or Legislation is linked to a department during a specified time interv
 The time intervals will form a sequence.
 The relationships between members of the sequence can be described using the Allen's interval relations, as specified in [OWL-Time](https://www.w3.org/TR/owl-time/).
 
+## Computing responsibility for matters
+
 The set of `Responsibility` individual for a matter or piece of legislation can be computed as follows:
 
 ```
