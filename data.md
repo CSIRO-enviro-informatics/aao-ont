@@ -13,7 +13,7 @@ The information is factored into a number of files (graphs):
 - [PART_LEGs.ttl](data/PART_LEGs.ttl) Links from Parts to Administered legislation of AAOs
 - [PART_MATs.ttl](data/PART_MATs.ttl) Links from Parts to Matters dealt with of AAOs
 
-These can be viewed together in [data/aao-all.ttl](data/aao-all.ttl).
+These can be viewed together in [aao-all.ttl](data/aao-all.ttl).
 
 ## Processing
 ### Inverse relations
